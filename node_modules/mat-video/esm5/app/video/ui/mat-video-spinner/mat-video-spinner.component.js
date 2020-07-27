@@ -1,0 +1,49 @@
+import * as tslib_1 from "tslib";
+import { Component, Input, Renderer2 } from '@angular/core';
+import { EventService } from '../../services/event.service';
+var MatVideoSpinnerComponent = /** @class */ (function () {
+    function MatVideoSpinnerComponent(renderer, evt) {
+        this.renderer = renderer;
+        this.evt = evt;
+        this.spinner = 'spin';
+        this.videoBuffering = false;
+        this.videoLoaded = false;
+        this.events = [];
+    }
+    MatVideoSpinnerComponent.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this.events = [
+            { element: this.video, name: 'loadstart', callback: function (event) { return _this.videoLoaded = false; }, dispose: null },
+            { element: this.video, name: 'loadedmetadata', callback: function (event) { return _this.videoLoaded = true; }, dispose: null },
+            { element: this.video, name: 'canplay', callback: function (event) { return _this.videoBuffering = false; }, dispose: null },
+            { element: this.video, name: 'waiting', callback: function (event) { return _this.videoBuffering = true; }, dispose: null },
+            { element: this.video, name: 'durationchange', callback: function (event) { return _this.videoBuffering = true; }, dispose: null }
+        ];
+        this.video.onloadeddata = function () { return _this.videoLoaded = true; };
+        this.evt.addEvents(this.renderer, this.events);
+    };
+    MatVideoSpinnerComponent.prototype.ngOnDestroy = function () {
+        this.video.onloadeddata = null;
+        this.evt.removeEvents(this.events);
+    };
+    tslib_1.__decorate([
+        Input(),
+        tslib_1.__metadata("design:type", HTMLVideoElement)
+    ], MatVideoSpinnerComponent.prototype, "video", void 0);
+    tslib_1.__decorate([
+        Input(),
+        tslib_1.__metadata("design:type", String)
+    ], MatVideoSpinnerComponent.prototype, "spinner", void 0);
+    MatVideoSpinnerComponent = tslib_1.__decorate([
+        Component({
+            selector: 'mat-video-spinner',
+            template: "<div *ngIf=\"!videoLoaded || videoBuffering\" [class]=\"spinner\"></div>",
+            styles: [":host{position:absolute;left:calc(50% - 32px);top:calc(50% - 32px);z-index:1}", ".spin{box-sizing:border-box;width:64px;height:64px;border-radius:100%;border:10px solid rgba(255,255,255,.2);border-top-color:#fff;-webkit-animation:1s linear infinite spin;animation:1s linear infinite spin}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@keyframes spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}", ".dot{width:64px;height:64px;background-color:#fff;border-radius:100%;-webkit-animation:1s ease-in-out infinite dot;animation:1s ease-in-out infinite dot}@-webkit-keyframes dot{0%{-webkit-transform:scale(0)}100%{-webkit-transform:scale(1);opacity:0}}@keyframes dot{0%{-webkit-transform:scale(0);transform:scale(0)}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}}", ".split-ring{display:inline-block;width:64px;height:64px}.split-ring:after{content:\" \";display:block;width:46px;height:46px;margin:1px;border-radius:50%;border:5px solid #fff;border-color:#fff transparent;-webkit-animation:1.2s linear infinite split-ring;animation:1.2s linear infinite split-ring}@-webkit-keyframes split-ring{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@keyframes split-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}", ".hourglass{display:inline-block;position:relative;width:64px;height:64px}.hourglass:after{content:\" \";display:block;border-radius:50%;width:0;height:0;margin:6px;box-sizing:border-box;border:26px solid #fff;border-color:#fff transparent;-webkit-animation:1.2s infinite hourglass;animation:1.2s infinite hourglass}@-webkit-keyframes hourglass{0%{-webkit-transform:rotate(0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19)}50%{-webkit-transform:rotate(360deg);-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1)}100%{-webkit-transform:rotate(720deg)}}@keyframes hourglass{0%{-webkit-transform:rotate(0);transform:rotate(0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}50%{-webkit-transform:rotate(360deg);transform:rotate(360deg);-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}100%{-webkit-transform:rotate(720deg);transform:rotate(720deg)}}"]
+        }),
+        tslib_1.__metadata("design:paramtypes", [Renderer2,
+            EventService])
+    ], MatVideoSpinnerComponent);
+    return MatVideoSpinnerComponent;
+}());
+export { MatVideoSpinnerComponent };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWF0LXZpZGVvLXNwaW5uZXIuY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6Im5nOi8vbWF0LXZpZGVvLyIsInNvdXJjZXMiOlsiYXBwL3ZpZGVvL3VpL21hdC12aWRlby1zcGlubmVyL21hdC12aWRlby1zcGlubmVyLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsT0FBTyxFQUFpQixTQUFTLEVBQUUsS0FBSyxFQUFhLFNBQVMsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUd0RixPQUFPLEVBQUUsWUFBWSxFQUFFLE1BQU0sOEJBQThCLENBQUM7QUFhNUQ7SUFTRSxrQ0FDVSxRQUFtQixFQUNuQixHQUFpQjtRQURqQixhQUFRLEdBQVIsUUFBUSxDQUFXO1FBQ25CLFFBQUcsR0FBSCxHQUFHLENBQWM7UUFUbEIsWUFBTyxHQUFXLE1BQU0sQ0FBQztRQUVsQyxtQkFBYyxHQUFHLEtBQUssQ0FBQztRQUN2QixnQkFBVyxHQUFHLEtBQUssQ0FBQztRQUVaLFdBQU0sR0FBbUIsRUFBRSxDQUFDO0lBS2hDLENBQUM7SUFFTCxrREFBZSxHQUFmO1FBQUEsaUJBWUM7UUFYQyxJQUFJLENBQUMsTUFBTSxHQUFHO1lBQ1osRUFBRSxPQUFPLEVBQUUsSUFBSSxDQUFDLEtBQUssRUFBRSxJQUFJLEVBQUUsV0FBVyxFQUFFLFFBQVEsRUFBRSxVQUFBLEtBQUssSUFBSSxPQUFBLEtBQUksQ0FBQyxXQUFXLEdBQUcsS0FBSyxFQUF4QixDQUF3QixFQUFFLE9BQU8sRUFBRSxJQUFJLEVBQUU7WUFDdEcsRUFBRSxPQUFPLEVBQUUsSUFBSSxDQUFDLEtBQUssRUFBRSxJQUFJLEVBQUUsZ0JBQWdCLEVBQUUsUUFBUSxFQUFFLFVBQUEsS0FBSyxJQUFJLE9BQUEsS0FBSSxDQUFDLFdBQVcsR0FBRyxJQUFJLEVBQXZCLENBQXVCLEVBQUUsT0FBTyxFQUFFLElBQUksRUFBRTtZQUMxRyxFQUFFLE9BQU8sRUFBRSxJQUFJLENBQUMsS0FBSyxFQUFFLElBQUksRUFBRSxTQUFTLEVBQUUsUUFBUSxFQUFFLFVBQUEsS0FBSyxJQUFJLE9BQUEsS0FBSSxDQUFDLGNBQWMsR0FBRyxLQUFLLEVBQTNCLENBQTJCLEVBQUUsT0FBTyxFQUFFLElBQUksRUFBRTtZQUN2RyxFQUFFLE9BQU8sRUFBRSxJQUFJLENBQUMsS0FBSyxFQUFFLElBQUksRUFBRSxTQUFTLEVBQUUsUUFBUSxFQUFFLFVBQUEsS0FBSyxJQUFJLE9BQUEsS0FBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLEVBQTFCLENBQTBCLEVBQUUsT0FBTyxFQUFFLElBQUksRUFBRTtZQUN0RyxFQUFFLE9BQU8sRUFBRSxJQUFJLENBQUMsS0FBSyxFQUFFLElBQUksRUFBRSxnQkFBZ0IsRUFBRSxRQUFRLEVBQUUsVUFBQSxLQUFLLElBQUksT0FBQSxLQUFJLENBQUMsY0FBYyxHQUFHLElBQUksRUFBMUIsQ0FBMEIsRUFBRSxPQUFPLEVBQUUsSUFBSSxFQUFFO1NBQzlHLENBQUM7UUFFRixJQUFJLENBQUMsS0FBSyxDQUFDLFlBQVksR0FBRyxjQUFNLE9BQUEsS0FBSSxDQUFDLFdBQVcsR0FBRyxJQUFJLEVBQXZCLENBQXVCLENBQUM7UUFFeEQsSUFBSSxDQUFDLEdBQUcsQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLFFBQVEsRUFBRSxJQUFJLENBQUMsTUFBTSxDQUFDLENBQUM7SUFDakQsQ0FBQztJQUVELDhDQUFXLEdBQVg7UUFDRSxJQUFJLENBQUMsS0FBSyxDQUFDLFlBQVksR0FBRyxJQUFJLENBQUM7UUFFL0IsSUFBSSxDQUFDLEdBQUcsQ0FBQyxZQUFZLENBQUMsSUFBSSxDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBQ3JDLENBQUM7SUEvQlE7UUFBUixLQUFLLEVBQUU7MENBQVEsZ0JBQWdCOzJEQUFDO0lBQ3hCO1FBQVIsS0FBSyxFQUFFOzs2REFBMEI7SUFGdkIsd0JBQXdCO1FBWHBDLFNBQVMsQ0FBQztZQUNULFFBQVEsRUFBRSxtQkFBbUI7WUFDN0Isb0ZBQWlEOztTQVFsRCxDQUFDO2lEQVdvQixTQUFTO1lBQ2QsWUFBWTtPQVhoQix3QkFBd0IsQ0FrQ3BDO0lBQUQsK0JBQUM7Q0FBQSxBQWxDRCxJQWtDQztTQWxDWSx3QkFBd0IiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBBZnRlclZpZXdJbml0LCBDb21wb25lbnQsIElucHV0LCBPbkRlc3Ryb3ksIFJlbmRlcmVyMiB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xyXG5cclxuaW1wb3J0IHsgRXZlbnRIYW5kbGVyIH0gZnJvbSAnLi4vLi4vaW50ZXJmYWNlcy9ldmVudC1oYW5kbGVyLmludGVyZmFjZSc7XHJcbmltcG9ydCB7IEV2ZW50U2VydmljZSB9IGZyb20gJy4uLy4uL3NlcnZpY2VzL2V2ZW50LnNlcnZpY2UnO1xyXG5cclxuQENvbXBvbmVudCh7XHJcbiAgc2VsZWN0b3I6ICdtYXQtdmlkZW8tc3Bpbm5lcicsXHJcbiAgdGVtcGxhdGVVcmw6ICcuL21hdC12aWRlby1zcGlubmVyLmNvbXBvbmVudC5odG1sJyxcclxuICBzdHlsZVVybHM6IFtcclxuICAgICcuL21hdC12aWRlby1zcGlubmVyLmNvbXBvbmVudC5zY3NzJyxcclxuICAgICcuL2luZGljYXRvcnMvc3Bpbi5jc3MnLFxyXG4gICAgJy4vaW5kaWNhdG9ycy9kb3QuY3NzJyxcclxuICAgICcuL2luZGljYXRvcnMvc3BsaXQtcmluZy5jc3MnLFxyXG4gICAgJy4vaW5kaWNhdG9ycy9ob3VyZ2xhc3MuY3NzJ1xyXG4gIF1cclxufSlcclxuZXhwb3J0IGNsYXNzIE1hdFZpZGVvU3Bpbm5lckNvbXBvbmVudCBpbXBsZW1lbnRzIEFmdGVyVmlld0luaXQsIE9uRGVzdHJveSB7XHJcbiAgQElucHV0KCkgdmlkZW86IEhUTUxWaWRlb0VsZW1lbnQ7XHJcbiAgQElucHV0KCkgc3Bpbm5lcjogc3RyaW5nID0gJ3NwaW4nO1xyXG5cclxuICB2aWRlb0J1ZmZlcmluZyA9IGZhbHNlO1xyXG4gIHZpZGVvTG9hZGVkID0gZmFsc2U7XHJcblxyXG4gIHByaXZhdGUgZXZlbnRzOiBFdmVudEhhbmRsZXJbXSA9IFtdO1xyXG5cclxuICBjb25zdHJ1Y3RvcihcclxuICAgIHByaXZhdGUgcmVuZGVyZXI6IFJlbmRlcmVyMixcclxuICAgIHByaXZhdGUgZXZ0OiBFdmVudFNlcnZpY2VcclxuICApIHsgfVxyXG5cclxuICBuZ0FmdGVyVmlld0luaXQoKTogdm9pZCB7XHJcbiAgICB0aGlzLmV2ZW50cyA9IFtcclxuICAgICAgeyBlbGVtZW50OiB0aGlzLnZpZGVvLCBuYW1lOiAnbG9hZHN0YXJ0JywgY2FsbGJhY2s6IGV2ZW50ID0+IHRoaXMudmlkZW9Mb2FkZWQgPSBmYWxzZSwgZGlzcG9zZTogbnVsbCB9LFxyXG4gICAgICB7IGVsZW1lbnQ6IHRoaXMudmlkZW8sIG5hbWU6ICdsb2FkZWRtZXRhZGF0YScsIGNhbGxiYWNrOiBldmVudCA9PiB0aGlzLnZpZGVvTG9hZGVkID0gdHJ1ZSwgZGlzcG9zZTogbnVsbCB9LFxyXG4gICAgICB7IGVsZW1lbnQ6IHRoaXMudmlkZW8sIG5hbWU6ICdjYW5wbGF5JywgY2FsbGJhY2s6IGV2ZW50ID0+IHRoaXMudmlkZW9CdWZmZXJpbmcgPSBmYWxzZSwgZGlzcG9zZTogbnVsbCB9LFxyXG4gICAgICB7IGVsZW1lbnQ6IHRoaXMudmlkZW8sIG5hbWU6ICd3YWl0aW5nJywgY2FsbGJhY2s6IGV2ZW50ID0+IHRoaXMudmlkZW9CdWZmZXJpbmcgPSB0cnVlLCBkaXNwb3NlOiBudWxsIH0sXHJcbiAgICAgIHsgZWxlbWVudDogdGhpcy52aWRlbywgbmFtZTogJ2R1cmF0aW9uY2hhbmdlJywgY2FsbGJhY2s6IGV2ZW50ID0+IHRoaXMudmlkZW9CdWZmZXJpbmcgPSB0cnVlLCBkaXNwb3NlOiBudWxsIH1cclxuICAgIF07XHJcblxyXG4gICAgdGhpcy52aWRlby5vbmxvYWRlZGRhdGEgPSAoKSA9PiB0aGlzLnZpZGVvTG9hZGVkID0gdHJ1ZTtcclxuXHJcbiAgICB0aGlzLmV2dC5hZGRFdmVudHModGhpcy5yZW5kZXJlciwgdGhpcy5ldmVudHMpO1xyXG4gIH1cclxuXHJcbiAgbmdPbkRlc3Ryb3koKTogdm9pZCB7XHJcbiAgICB0aGlzLnZpZGVvLm9ubG9hZGVkZGF0YSA9IG51bGw7XHJcblxyXG4gICAgdGhpcy5ldnQucmVtb3ZlRXZlbnRzKHRoaXMuZXZlbnRzKTtcclxuICB9XHJcblxyXG59XHJcbiJdfQ==
