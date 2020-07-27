@@ -115,7 +115,6 @@ const routes: Routes = [
   { path: 'globtechvend', component: GlobtechvendComponent },
   { path: 'globtechlisting', component: GlobtechlistingComponent },
   { path: 'detailglobtech', component: DetailglobtechComponent }
-
 ];
 
 @NgModule({
