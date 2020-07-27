@@ -1,0 +1,151 @@
+<ngb-tabset [destroyOnHide]="false">
+  <ngb-tab title="Simple">
+    <ng-template ngbTabContent>
+      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+      master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh
+      dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum
+      iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab>
+    <ng-template ngbTabTitle><b>Fancy</b> title</ng-template>
+    <ng-template ngbTabContent>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+      <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+      craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl
+      cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia
+      yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean
+      shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero
+      sint qui sapiente accusamus tattooed echo park.</p>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="Disabled" [disabled]="true">
+    <ng-template ngbTabContent>
+      <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi. Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio. Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>
+<select class="form-control selectBox" name="username" #username="ngModel" required ngModel>
+  <option disabled selected>Select User Name</option>
+  <option *ngFor="let user of userList" [value]="user.uid">{{user.name }}</option>
+  </select>
+
+
+  <h6>Image</h6>
+  <p>Input four</p>
+<input (change)="picked($event)" type="file" >
+
+
+<br>
+<hr>
+
+<button class="butoncus_sig" id="dnext" (click)="addPictures()">Submit</button>
+<br>
+<!-- <button type="button" class="btn btn-sm btn-primary" (click)="this.openModal()">
+  Open Modal
+</button> -->
+
+
+
+<div class="container">
+  <div class="row">
+   <div class="col-md-12 py-4 text-center">
+    <h1>List of Users</h1>
+   </div>
+  </div>
+  <div class="row justify-content-center">
+   <div class="col-md-12 py-4">
+    <table class="table table-striped">
+     <thead>
+      <tr>
+       <th scope="col">#</th>
+       <th scope="col">First Name</th>
+       <th scope="col">Last Name</th>
+       <th scope="col">Username</th>
+       <th scope="col">Email</th>
+       <th scope="col">Action</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr *ngFor="let user of userList">
+       <th scope="row">{{ user.id }}</th>
+       <td>{{ user.firstname }}</td>
+       <td>{{ user.lastname }}</td>
+       <td>{{ user.username }}</td>
+       <td>{{ user.email }}</td>
+       <td>
+        <button type="button" class="btn btn-primary" (click)="openModal(editProfileModal, user)">Edit</button>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+ </div>
+ <ng-template #editProfileModal let-modal>
+  <div class="modal-header">
+   <h5 class="modal-title" id="editProfileLabel">Edit Profile</h5>
+   <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+   </button>
+  </div>
+  
+  <div class="modal-body">
+   <form [formGroup]="editProfileForm" (ngSubmit)="onSubmit()">
+    <div class="form-group row">
+     <label for="firstname" class="col-sm-4 col-form-label">First Name</label>
+     <div class="col-sm-8">
+      <input type="text" class="form-control" formControlName="firstname" id="firstname">
+     </div>
+    </div>
+    <div class="form-group row">
+     <label for="lastname" class="col-sm-4 col-form-label">Last Name</label>
+     <div class="col-sm-8">
+      <input type="text" class="form-control" formControlName="lastname" id="lastname">
+     </div>
+    </div>
+    <div class="form-group row">
+     <label for="username" class="col-sm-4 col-form-label">Username</label>
+     <div class="col-sm-8">
+      <input type="text" class="form-control" formControlName="username" id="username">
+     </div>
+    </div>
+    <div class="form-group row">
+     <label for="email" class="col-sm-4 col-form-label">Email</label>
+     <div class="col-sm-8">
+      <input type="email" class="form-control" formControlName="email" id="email">
+     </div>
+    </div>
+    <div class="modal-footer">
+     <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">Close</button>
+     <button type="submit" class="btn btn-primary">Save changes</button>
+    </div>
+   </form>
+  </div>
+ </ng-template>
+
+<div class="container">
+ <form [formGroup]="myForm" (ngSubmit)="myFormSubmit(myForm)">
+   <div class="form-group">
+     <label>Email</label>
+     <input type="email" class="form-control" formControlName="email">
+   </div>
+   <div class="form-group">
+    <label>Password</label>
+    <input type="password" class="form-control" formControlName="password">
+  </div>
+  <div class="form-group">
+    <label>Name</label>
+    <input type="email" class="form-control" formControlName="fname">
+  </div>
+  <div class="form-group">
+    <label>Contact</label>
+    <input type="email" class="form-control" formControlName="contact">
+  </div>
+  <div class="form-group text-center">
+    <button type="submit" class="btn btn-success">Submit</button>
+  </div>
+ </form>
+</div>
+
+
+ 

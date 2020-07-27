@@ -1,0 +1,57 @@
+<app-inner-header></app-inner-header>
+<div class="pt-3 crumbActive">
+    <ol class="breadcrumb">
+       <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+       <li class="breadcrumb-item active" aria-current="page">Boats</li>
+    </ol>
+ </div>
+<!--header-->
+
+<!--//-->
+<div class="container-fluid">
+    <!-- Cat list -->
+    <section class="realstate_section">
+        <h3 class="section-heading">Boat
+            <small class="float-right"><span class="viewall" title="Viewall">Sort By &nbsp;<i
+                        class="fa fa-bars"></i></span></small>
+        </h3>
+        <div *ngIf="noBoat">
+            <h6 class="error_msg">{{error_msg}}</h6>
+         </div>
+        <div class="row ">
+            <div class="col-md-3 mb-4" *ngFor="let boats of boat">
+                <div class="pro-item border">
+                    <a [routerLink]="['/viewboat/', boats._id]">
+                        <video class="video-fluid">
+                            <source src="assets/video/multimb.mp4" type="video/mp4">
+                            <!-- <source src = {{boats.video_url}} type="video/mp4"> -->
+                         </video>
+                    </a>
+                    <div class="pro-desc">
+                        <div title="description">
+                            <h3 class="pro-title">
+                                {{boats.make}}
+                                <img src="assets/images/globautologo.png" class="brand-logo ml-1">
+                                <span class="float-right pro-price text-right">
+                                    &euro; {{boats.price}}
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="pro-attr">
+                            <div class="d-flex justify-content-around">
+                                <span class="text-dark cc">{{boats.boat_type}}</span>
+                                <span class="text-dark km"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{boats.no_of_bedrooms}}</span>
+                                <span class="text-dark trans"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{boats.no_of_bathrooms}}</span>
+                                <span class="text-dark make"><i class="fa fa-car"
+                                        aria-hidden="true"></i>&nbsp;{{boats.fuel}}</span>
+                                <span class="flag"><img src="assets/images/flag.jpg"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//-->
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,57 @@
+<app-inner-header></app-inner-header>
+<div class="pt-3 crumbActive">
+   <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Automobile</li>
+   </ol>
+</div>
+<div class="container-fluid">
+   <!-- Cat list -->
+   <section class="realstate_section">
+      <h3 class="section-heading">Automobile
+         <small class="float-right"><span class="viewall" title="Viewall">Sort By &nbsp;<i
+            class="fa fa-bars"></i></span></small>
+      </h3>
+      <div *ngIf="noAutomobile">
+         <h6 class="error_msg">{{error_msg}}</h6>
+      </div>
+      
+      <div class="row ">
+         <div class="col-md-3 mb-4" *ngFor="let automobile of getautomobile">
+            <div class="pro-item border">
+               <a [routerLink]="['/viewautomobile/', automobile._id]">
+                  <video class="video-fluid">
+                     <source src="assets/video/3mb.mp4" type="video/mp4">
+                     <!-- <source src = {{automobile.video_url}} type="video/mp4"> -->
+                  </video>
+               </a>
+               <div class="pro-desc">
+                  <div title="description">
+                     <h3 class="pro-title">
+                        {{automobile.make}}
+                        <!--<img src="assets/images/globautologo.png" class="brand-logo ml-1">-->
+                        <span class="float-right pro-price text-right">
+                        &euro; {{automobile.price}}
+                        </span>
+                     </h3>
+                  </div>
+                  <div class="pro-attr">
+                     <div class="d-flex justify-content-around">
+                        <span class="text-dark cc">{{automobile.engine}}</span>
+                        <span class="text-dark km"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{automobile.mileage}}</span>
+                        <span class="text-dark trans"><i class="fa fa-car"
+                           aria-hidden="true"></i>&nbsp;{{automobile.gear_type}}</span>
+                        <span class="text-dark make"><i class="fa fa-car"
+                           aria-hidden="true"></i>&nbsp;{{automobile.color}}</span>
+                        <span class="flag"><img src="assets/images/flag.jpg"></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+     
+      </div>
+   </section>
+   <!--//-->
+</div>
+<app-footer></app-footer>

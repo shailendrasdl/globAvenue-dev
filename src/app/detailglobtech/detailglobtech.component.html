@@ -1,0 +1,129 @@
+<!--Header new-->
+<div class="profile_header bg-light">
+    <div class="container-fluid">
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" routerLink="/home">
+             <img src="assets/images/globegif5.gif" class="img-fluid" width="250">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle indivi_navlink" routerLink="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-th-large"></i>&nbsp;&nbsp;Dashboard</a>
+                <ul class="dropdown-menu dashboard_menu" aria-labelledby="dropdownMenuButton">
+                   <li><a class="dropdown-item" routerLink="/clientlist" >
+                      <div class="dashboard_item">
+                         <img src="assets/images/client_img.png" width="30">
+                         &nbsp;&nbsp;<span class="dashboard_subitem">Client Gallery</span>
+                      </div>
+                   </a></li>
+                   <li><a class="dropdown-item" routerLink="/dashboard">
+                      <div class="dashboard_item">
+                         <img src="assets/images/product_img.png" width="30">
+                         &nbsp;&nbsp;<span class="dashboard_subitem">Website</span>
+                      </div>
+                   </a></li>
+                   <li><a class="dropdown-item" routerLink="#">
+                      <div class="dashboard_item">
+                         <img src="assets/images/store_img.png" width="30">
+                         &nbsp;&nbsp;<span class="dashboard_subitem">Store</span>
+                      </div>
+                   </a></li>
+                   <div class="view_dashboarditem"><a routerLink="/dashboard"><i class="fa fa-th-large"></i>&nbsp;&nbsp;View dashboard</a></div>
+                </ul>
+             </li>
+             
+            </ul>
+            
+            <ul class="navbar-nav mt-2 mt-lg-0">
+             <li class="nav-item">
+               <a class="nav-link" routerLink="#"><i class="fa fa-bell fa-2x"></i></a>
+             </li>
+             <li class="nav-item dropdown profile_dropdown">
+                <a class="nav-link dropdown-toggle indivi_navlink" routerLink="#" title="My Profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="custom_profile"><span class="">b</span></div>
+                </a>
+                <ul class="dropdown-menu profile_dp_menu" aria-labelledby="dropdownMenuButton">
+                   <li><a class="dropdown-item" routerLink="#">User</a></li>
+                   <li><a class="dropdown-item" routerLink="/dashboard">Dashboard</a></li>
+                   <li><a class="dropdown-item" routerLink="/account">Account</a></li>
+                   <li><a class="dropdown-item" routerLink="#">change password</a></li>
+                   <li><a class="dropdown-item" routerLink="/myprofile">My Profile</a></li>
+                   <li><a class="dropdown-item" style="cursor:pointer" (click)="logout()">Logout</a></li>
+                </ul>
+             </li>
+             
+           </ul>
+          </div>
+        </nav>
+    </div>
+</div>
+<!--//-->
+
+<!---->
+<div class="gt_detail_bg">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="prpty_title">
+                <h4 class="prptyHead">Internet Advertising</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//-->
+
+<!---->
+<div class="detailSection">
+    <div class="content-wrap">
+    <div class="container">
+        <div class="row clearfix">
+        <div class="col-md-8">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, </p>
+                            <h5 class="mb-0 ">Sepicification</h5>
+                            <hr>
+							<div class="row clearfix">
+								<div class="col-md-4">
+									<ul class="iconlist">
+										<li class="mb-1"><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Globtech Shopping</li>
+                                        <li class="mb-1"><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Price: 50010</li>
+                                        <li class="mb-1"><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Location: Indore</li>
+									</ul>
+								</div>
+                            </div>
+                           
+						 <p class="mt-3">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                            </p>
+        </div>
+        <div class="col-md-4">
+            <div class="bookNow_section">
+                <div class="card bg-light">
+                    <div class="card-header"><span class="text-uppercase">
+                        drop us a line	</span></div>
+                    <div class="card-body">
+                        <form  class="">
+                            <input type="text" class="form-control" placeholder="Full Name" />
+                            <input type="text" class="form-control" placeholder="Email Address" />
+                            <input type="number" class="form-control" placeholder="Phone Number" />
+                            <textarea class="form-control"  rows="4" cols="30" placeholder="Message"></textarea>
+                            
+                            <button type="button" class="btnblueSearch w-100 bg-blue">Book Now</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!--//-->
+
+<!---->
+<app-footer></app-footer>
+<!--//-->

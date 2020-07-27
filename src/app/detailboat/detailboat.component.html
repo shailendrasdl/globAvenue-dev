@@ -1,0 +1,201 @@
+<!--Header new-->
+<div class="profile_header bg-light">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" routerLink="/home">
+                <img src="assets/images/globegif5.gif" class="img-fluid" width="250">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle indivi_navlink" routerLink="#" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><i
+                                class="fa fa-th-large"></i>&nbsp;&nbsp;Dashboard</a>
+                        <ul class="dropdown-menu dashboard_menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" routerLink="/clientlist">
+                                    <div class="dashboard_item">
+                                        <img src="assets/images/client_img.png" width="30">
+                                        &nbsp;&nbsp;<span class="dashboard_subitem">Client Gallery</span>
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item" routerLink="/dashboard">
+                                    <div class="dashboard_item">
+                                        <img src="assets/images/product_img.png" width="30">
+                                        &nbsp;&nbsp;<span class="dashboard_subitem">Website</span>
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item" routerLink="#">
+                                    <div class="dashboard_item">
+                                        <img src="assets/images/store_img.png" width="30">
+                                        &nbsp;&nbsp;<span class="dashboard_subitem">Store</span>
+                                    </div>
+                                </a></li>
+                            <div class="view_dashboarditem"><a routerLink="/dashboard"><i
+                                        class="fa fa-th-large"></i>&nbsp;&nbsp;View dashboard</a></div>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="#"><i class="fa fa-bell fa-2x"></i></a>
+                    </li>
+                    <li class="nav-item dropdown profile_dropdown">
+                        <a class="nav-link dropdown-toggle indivi_navlink" routerLink="#" title="My Profile"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="custom_profile"><span class="">b</span></div>
+                        </a>
+                        <ul class="dropdown-menu profile_dp_menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" routerLink="#">User</a></li>
+                            <li><a class="dropdown-item" routerLink="/dashboard">Dashboard</a></li>
+                            <li><a class="dropdown-item" routerLink="/account">Account</a></li>
+                            <li><a class="dropdown-item" routerLink="#">change password</a></li>
+                            <li><a class="dropdown-item" routerLink="/myprofile">My Profile</a></li>
+                            <li><a class="dropdown-item" style="cursor:pointer" (click)="logout()">Logout</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!--//-->
+
+<!---->
+<div class="bt_detail_bg">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="prpty_title">
+                <h4 class="prptyHead">GOLDEN ODYSSEY</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//-->
+<!---->
+<div class="boat_gallery">
+    <div class="content-wrap">
+        <div class="container">
+            <h3 class="mb-3"><strong>Gallery</strong></h3>
+            <div class="row clearfix">
+                <div class="col-md-8">
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails auto_gallery"
+                        data-ride="carousel">
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="assets/images/bt_gallery2.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="assets/images/bt_gallery5.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="assets/images/bt_gallery4.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="assets/images/bt_gallery6.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <!--/.Slides-->
+                        <!--Controls-->
+                        <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!--/.Controls-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-thumb" data-slide-to="0" class="active"> <img
+                                    src="assets/images/bt_gallery2.jpg"></li>
+                            <li data-target="#carousel-thumb" data-slide-to="1"><img
+                                    src="assets/images/bt_gallery5.jpg"></li>
+                            <li data-target="#carousel-thumb" data-slide-to="2"><img
+                                    src="assets/images/bt_gallery4.jpg"></li>
+                            <li data-target="#carousel-thumb" data-slide-to="3"><img
+                                    src="assets/images/bt_gallery6.jpg"></li>
+                        </ol>
+                    </div>
+                    <!--/.Carousel Wrapper-->
+                </div>
+                <div class="col-md-4">
+                    <div class="seller_bt bg_lt_blue">
+                        <h4 class="widget-title-2"><strong>Message Seller</strong></h4>
+                        <div class="seller_ct">
+                          <div class="widget-inner">
+                            <form class="seller_fm">
+                              <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Name">
+                              </div>
+                              <div class="form-group">
+                                <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+                              </div>
+                              <button class="btnGreenseach w-100 bg-blue">send message now</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//-->
+
+<!---->
+<div class="boat_specification">
+    <div class="content-wrap">
+      
+        <div class="container">
+            <h3 class="mb-3"><strong>Boat Specifications</strong></h3>
+            <div class="row clearfix">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul class="data_list_descriptions">
+                                <li><span class="mt_spec">Make:</span>&nbsp;<span class="mt_type">Celebrations</span></li>
+                                <li><span class="mt_spec">Engine Model:</span>&nbsp;<span class="mt_type">C32A</span></li>
+                                <li><span class="mt_spec">Length:</span>&nbsp;<span class="mt_type">110 ft</span></li>
+                                <li><span class="mt_spec">Gross Weight:</span>&nbsp;<span class="mt_type">278,000 lb</span></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="col-md-4">
+                            <ul class="data_list_descriptions">
+                                <li><span class="mt_spec">Make:</span>&nbsp;<span class="mt_type">Celebrations</span></li>
+                                <li><span class="mt_spec">Engine Model:</span>&nbsp;<span class="mt_type">C32A</span></li>
+                                <li><span class="mt_spec">Length:</span>&nbsp;<span class="mt_type">110 ft</span></li>
+                                <li><span class="mt_spec">Gross Weight:</span>&nbsp;<span class="mt_type">278,000 lb</span></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="data_list_descriptions">
+                                <li><span class="mt_spec">Make:</span>&nbsp;<span class="mt_type">Celebrations</span></li>
+                                <li><span class="mt_spec">Engine Model:</span>&nbsp;<span class="mt_type">C32A</span></li>
+                                <li><span class="mt_spec">Length:</span>&nbsp;<span class="mt_type">110 ft</span></li>
+                                <li><span class="mt_spec">Gross Weight:</span>&nbsp;<span class="mt_type">278,000 lb</span></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//-->
+
+<app-footer></app-footer>

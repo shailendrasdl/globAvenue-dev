@@ -1,0 +1,2082 @@
+<!--header-->
+<div class="container-fluid">
+    <!--Mobile view-->
+  <div class="mobileview">
+     <div class="row ">
+       <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" routerLink="home.html"> <img src="assets/images/logo_mobile.gif" class="img-fluid"></a>
+          <span class="bell-icon"><a class="" routerLink="#" title="Notification"><i class="fa fa-bell-o fa-lg"></i></a></span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav" >
+                <li class="nav-item active">
+                   <a class="nav-link " routerLink="#" title="Home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" routerLink="#" title="My Favorites">My Favorites</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" routerLink="#" title="My Alerts">My Alerts</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" routerLink="#" title="My Charts">My Charts</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" routerLink="/mypost" title="My Posts">My Posts</a>
+                </li>
+                <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" routerLink="#" title="My Profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Profile</a>
+                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" routerLink="#">User</a></li>
+                      <li><a class="dropdown-item" routerLink="/dashboard">Dashboard</a></li>
+                      <li><a class="dropdown-item" routerLink="#">change password</a></li>
+                      <li><a class="dropdown-item" routerLink="/myprofile">My Profile</a></li>
+                      <li><a class="dropdown-item" style="cursor:pointer" (click)="logout()">Logout</a></li>
+                   </ul>
+                </li>
+                <li class="nav-item">
+                 <a routerLink="#postad_form" class="btn grad_brd grad_custom_brd" title="Post AD"><span class="btn grad_btn_custom glob_grad"><i class="fa fa-plus"></i>&nbsp;&nbsp;POST AD</span></a>
+              </li>
+             </ul>
+          </div>
+       </nav>
+        <div class="col-md-12 mt-3 mb-5">
+          <div class="d-flex justify-content-around">
+             <div class="p-2">
+             <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/realestate" title="Realestate" class="single-category">
+             <img src="assets/images/pro1.png" class="img-fluid not_selected" alt="Realestate">
+             <img src="assets/images/ringpro1.jpg" class="img-fluid selected_image" alt="Realestate">
+             </a>
+             </div>
+              <div class="p-2">
+             <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/automobile" title="Automobiles" class="single-category"><img src="assets/images/pro2.png" class="img-fluid not_selected" alt="Automobiles">
+             <img src="assets/images/ringpro2.jpg" class="img-fluid selected_image" alt="Automobiles">
+             </a>
+                </div>
+              <div class="p-2">
+             <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/boats" title="Boats" class="single-category">
+                <img src="assets/images/pro3.png" class="img-fluid not_selected" alt="Boats">
+    
+                <img src="assets/images/ringpro3.jpg" class="img-fluid selected_image" alt="Boats">
+             </a>
+          </div>
+           <div class="p-2">
+             <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/globtech" title="Globtech" class="single-category"><img src="assets/images/pro4.png" class="img-fluid not_selected" alt="Globtech">
+             <img src="assets/images/ringpro4.jpg" class="img-fluid selected_image" alt="Globtech">
+             </a>
+          </div>
+           <div class="p-2">
+             <a  routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/globpage" title="Globpage" class="single-category">
+                <img src="assets/images/pro5.png" class="img-fluid not_selected" alt="Globpage">
+             <img src="assets/images/ringpro5.jpg" class="img-fluid selected_image" alt="Globpage">
+             </a>
+          </div>
+        </div>
+       </div>
+      
+    </div>
+ </div>
+    <!--//-->
+     <div class="webview">
+         <div class="row ">
+             <div class="col-md-8">
+                 <!-- logo -->
+                 <div class="row">
+                     <div class="col-md-6 col-sm-4 border-bottom border-right">
+                         <a class="navbar-brand" routerLink="home.html">
+                             <img src="assets/images/globegif5.gif" class="img-fluid">
+                         </a>
+                         <button class="navbar-toggler" type="button" data-toggle="collapse"
+                             data-target="#bs-example-navbar-collapse-1">
+                             <span class="navbar-toggler-icon"></span>
+                         </button>
+                     </div>
+                     <div class="col-md-6 col-sm-8 border-bottom">
+                         <div class="row clearfix">
+                             <div class="primary-menu">
+                                 <nav class="navbar navbar-expand-lg navbar-light">
+                                     <!--  <a class="navbar-brand" routerLink="#">Brand</a> -->
+                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                         <ul class="navbar-nav">
+                                             <li class="nav-item active">
+                                                 <a class="nav-link " routerLink="#" title="Home">Home <span
+                                                         class="sr-only">(current)</span></a>
+                                             </li>
+                                             <li class="nav-item">
+                                                 <a class="nav-link" routerLink="#" title="My Favorites">My Favorites</a>
+                                             </li>
+                                             <li class="nav-item">
+                                                 <a class="nav-link" routerLink="#" title="My Alerts">My Alerts</a>
+                                             </li>
+                                             <li class="nav-item">
+                                                 <a class="nav-link" routerLink="#" title="My Charts">My Charts</a>
+                                             </li>
+                                             <li class="nav-item">
+                                                 <a class="nav-link" routerLink="/mypost" title="My Posts">My Posts</a>
+                                             </li>
+                                         </ul>
+                                     </div>
+                                 </nav>
+                             </div>
+                         </div>
+                         <div class="flex-row clearfix">
+                             <div class="d-flex  justify-content-around text-center">
+                                 <div class="visitors_num"><span>100 836 5456</span><br> <span>Visitors</span></div>
+                                 <a (click)="openModal(postad_boat)" class="btn grad_brd grad_custom_brd"
+                                     title="Post AD"><span class="btn grad_btn_custom glob_grad"><i
+                                             class="fa fa-plus"></i>&nbsp;&nbsp;POST AD</span></a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="d-flex justify-content-around padding">
+                     <a routerLinkActive=" cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/realestate"
+                         title="Realestate" class="single-category">
+                         <img src="assets/images/pro1.png" class="img-fluid not_selected" alt="realestate">
+ 
+                         <img src="assets/images/ringpro1.jpg" class="img-fluid selected_image" alt="realestate">
+                     </a>
+ 
+                     <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/automobile"
+                         title="Automobile" class="single-category">
+                         <img src="assets/images/pro2.png" class="img-fluid not_selected" alt="automobile">
+ 
+                         <img src="assets/images/ringpro2.jpg" class="img-fluid selected_image" alt="automobile">
+                     </a>
+ 
+                     <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/boats"
+                         title="Boats" class="single-category">
+                         <img src="assets/images/pro3.png" class="img-fluid not_selected" alt="Boats">
+ 
+                         <img src="assets/images/ringpro3.jpg" class="img-fluid selected_image" alt="Boats">
+                     </a>
+                     <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/globtech"
+                         title="Globtech" class="single-category">
+                         <img src="assets/images/pro4.png" class="img-fluid not_selected" alt="Globtech">
+ 
+                         <img src="assets/images/ringpro4.jpg" class="img-fluid selected_image" alt="Globtech">
+                     </a>
+                     <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/globpage"
+                         title="Globpage" class="single-category">
+                         <img src="assets/images/pro5.png" class="img-fluid not_selected" alt="Globpage">
+ 
+                         <img src="assets/images/ringpro5.jpg" class="img-fluid selected_image" alt="Globpage">
+                     </a>
+                 </div>
+ 
+ 
+ 
+             </div>
+             <div class="col-md-4">
+                 <div class="row">
+                     <div class="navbar navbar-expand-lg right-navbar">
+                         <ul class="navbar-nav langoption">
+                             <li class="nav-item btn-group">
+                                 <button class="dropdown-toggle lang-btn" type="button" data-toggle="dropdown"
+                                     aria-haspopup="true" aria-expanded="false">
+                                     <img src="assets/images/eng.jpg">&nbsp;English
+                                 </button>
+                                 <div class="dropdown-menu">
+                                     <a class="dropdown-item" routerLink="#"><img src="assets/images/france.jpg"
+                                             alt="">&nbsp;&nbsp;French</a>
+                                     <a class="dropdown-item" routerLink="#"><img src="assets/images/japanese.jpg"
+                                             alt="#">&nbsp;&nbsp;Japanese</a>
+                                 </div>
+                                 <a routerLink="#" type="button" class="search_button" title="Search"><img
+                                         src="assets/images/search_button.jpg"></a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" routerLink="#" title="Connection">Connection</a>
+                             </li>
+                             <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" routerLink="#" title="My Profile"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Profile</a>
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                     <li><a class="dropdown-item" routerLink="#">User</a></li>
+                                     <li><a class="dropdown-item" routerLink="/dashboard">Dashboard</a></li>
+                                     <li><a class="dropdown-item" routerLink="#">change password</a></li>
+                                     <li><a class="dropdown-item" routerLink="/myprofile">My Profile</a></li>
+                                     <li><a class="dropdown-item" style="cursor:pointer" (click)="logout()">Logout</a>
+                                     </li>
+                                 </ul>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-md-12 border p-3">
+                         <video class="video-fluid z-depth-1" loop controls>
+                             <source src="assets/video/real-estate2.mp4" type="video/mp4" />
+                         </video>
+ 
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="row clearfix border-top pt-3 crumbActive">
+         <ol class="breadcrumb">
+             <li class="breadcrumb-item"><a routerLink="#">Home</a></li>
+             <li class="breadcrumb-item active" aria-current="page">My Post</li>
+         </ol>
+     </div>
+     <div class="row clearfix  primary-form">
+         <div class="col-md-5">
+             <form [formGroup]="">
+                 <div class="input-group md-form form-sm form-2 pl-0">
+                     <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search"
+                         aria-label="Search">
+                     <div class="input-group-append">
+                         <span class="input-group-text red lighten-3" id="basic-text1" type="submit"><i
+                                 class="fa fa-search text-grey" aria-hidden="true"></i></span>
+                     </div>
+                 </div>
+             </form>
+         </div>
+         <div class="col-md-3">
+             <div class="input-group md-form form-sm form-2 pl-0">
+                 <input type="text" class="form-control my-0 py-1 red-border" type="text" placeholder="Search"
+                     aria-label="Search" id="txtPlaces" placeholder="Enter a location">
+                 <div class="input-group-append">
+                     <span class="input-group-text red lighten-3" id="basic-text1"><i class="fa fa-map-marker text-grey"
+                             aria-hidden="true"></i></span>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!--//-->
+ </div>
+ <!--//-->
+<div class="container-fluid">
+    <h3 class="section-heading">My Posts <small class="float-right"><a class="viewall" href="#" title="Viewall">Sort By
+        &nbsp;<i class="fa fa-bars"></i></a></small></h3>
+        <!--Realestate-->
+        <section class="realstate_section">
+            <h3 class="section-heading">REAL ESTATE</h3>
+            <div *ngIf="noRealestate">
+                <h6 class="error_msg">{{error_msg}}</h6>
+             </div>
+            <div class="row">
+                
+                <div class="col-md-3 mb-4" *ngFor="let item of realestate">
+                <div class="pro-item border">
+                        <a (click)="this.openRealestate(realestateModal,item)">
+                            <video class="video-fluid">
+                                <source src="assets/video/building2mb.mp4" type="video/mp4">
+                                <!-- <source src = {{item.video_url}} type="video/mp4"> -->
+                             </video>
+                        </a>
+                        <!-- {{item.video_url}} -->
+                        <div class="pro-desc">
+                        <a href="#" title="description">
+                            <h3 class="pro-title" >
+                                {{item.type}}
+                                <img src="assets/images/globautologo.png" class="brand-logo ml-1">
+                                <span class="float-right pro-price text-right">
+                                    &euro; {{item.price}}
+                                </span>
+                            </h3>
+                        </a>
+                        <div class="pro-attr">
+                            <div class="d-flex justify-content-around">
+                                <span class="text-dark cc">{{item.type_of_space}}</span>
+                                <span class="text-dark km"><i class="fa fa-shower"></i>&nbsp;{{item.no_of_bathrooms}}</span>
+                                <span class="text-dark trans"><i class="fa fa-bed"></i>&nbsp;{{item.no_of_bedrooms}}</span>
+                                <span class="text-dark make"><i class="fa fa-square"></i>&nbsp;{{item.square_feet}}</span>
+                                <span class="flag"><img src="assets/images/flag.jpg"></span>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
+                </div>
+                
+            </div>
+            
+        </section>
+        <!--//-->
+
+        <!--Automobile-->
+        <section class="realstate_section">
+            <h3 class="section-heading">AUTOMOBILE</h3>
+            <div *ngIf="noAutomobile">
+                <h6 class="error_msg">{{error_msg}}</h6>
+             </div>
+            <div class="row ">
+               <div class="col-md-3 mb-4" *ngFor="let automobile of getautomobile">
+                  <div class="pro-item border">
+                     <a (click)="this.openAutomobile(automobileDetail ,automobile)">
+                        <video class="video-fluid">
+                            <source src="assets/video/3mb.mp4" type="video/mp4">
+                            <!-- <source src = {{item.video_url}} type="video/mp4"> -->
+                         </video>
+                     </a>
+                     <div class="pro-desc">
+                        <a href="#" title="description">
+                           <h3 class="pro-title">
+                              {{automobile.make}}
+                              <!--<img src="assets/images/globautologo.png" class="brand-logo ml-1">-->
+                              <span class="float-right pro-price text-right">
+                              &euro; {{automobile.price}}
+                              </span>
+                           </h3>
+                        </a>
+                        <div class="pro-attr">
+                           <div class="d-flex justify-content-around">
+                              <span class="text-dark cc">{{automobile.engine}}</span>
+                              <span class="text-dark km"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{automobile.mileage}}</span>
+                              <span class="text-dark trans"><i class="fa fa-car"
+                                 aria-hidden="true"></i>&nbsp;{{automobile.gear_type}}</span>
+                              <span class="text-dark make"><i class="fa fa-car"
+                                 aria-hidden="true"></i>&nbsp;{{automobile.color}}</span>
+                              <span class="flag"><img src="assets/images/flag.jpg"></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+           
+            </div>
+         </section>
+        <!--//-->
+        
+        <!--Boat-->
+        <section class="realstate_section">
+            <h3 class="section-heading">BOATS</h3>
+            <div *ngIf="noBoat">
+                <h6 class="error_msg">{{error_msg}}</h6>
+             </div>
+            <div class="row ">
+                <div class="col-md-3 mb-4" *ngFor="let boats of boat">
+                    <div class="pro-item border">
+                        <a (click)="openBoatdetails(boatDetails, boats)">
+                            <video class="video-fluid">
+                                <source src="assets/video/building2mb.mp4" type="video/mp4">
+                                <!-- <source src = {{item.video_url}} type="video/mp4"> -->
+                             </video>
+                        </a>
+                        <div class="pro-desc">
+                            <a href="#" title="description">
+                                <h3 class="pro-title">
+                                    {{boats.make}}
+                                    <img src="assets/images/globautologo.png" class="brand-logo ml-1">
+                                    <span class="float-right pro-price text-right">
+                                        &euro; {{boats.price}}
+                                    </span>
+                                </h3>
+                            </a>
+                            <div class="pro-attr">
+                                <div class="d-flex justify-content-around">
+                                    <span class="text-dark cc">{{boats.boat_type}}</span>
+                                    <span class="text-dark km"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{boats.no_of_bedrooms}}</span>
+                                    <span class="text-dark trans"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{boats.no_of_bathrooms}}</span>
+                                    <span class="text-dark make"><i class="fa fa-car"
+                                            aria-hidden="true"></i>&nbsp;{{boats.fuel}}</span>
+                                    <span class="flag"><img src="assets/images/flag.jpg"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//-->
+        <!--Globtech-->
+        <section class="realestate_Section">
+            <h3 class="section-heading">GLOBTECH</h3>
+            <div *ngIf="noGlobtech">
+                <h6 class="error_msg">{{error_msg}}</h6>
+             </div>
+        <div class="row mb-4">
+            <div class="col-md-3" *ngFor="let globtech of globtech">
+                <div class="pro-item border">
+                    <a (click)="openGlobtechModal(viewGlobtech, globtech)">
+                        <video class="video-fluid">
+                            <source src="assets/video/multimb.mp4" type="video/mp4">
+                            <!-- <source src = {{item.video_url}} type="video/mp4"> -->
+                         </video>
+                    </a>
+                    <div class="pro-desc">
+                        <a href="#" title="description">
+                            <h3 class="pro-title">
+                                {{globtech.make}}
+                                <!--<img src="assets/images/globautologo.png" class="brand-logo ml-1">-->
+                                <span class="float-right pro-price text-right">
+                                    &euro; {{globtech.price}} <br>
+                                    <span class="trans_sect">Transport included</span>
+                                </span>
+                            </h3>
+
+                        </a>
+
+                        <div class="pro-attr d-flex align-items-start">
+                            <span class="text-dark make p-1">Delivery</span>
+                            <span class="flag p-1"><img src="assets/images/flag.jpg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        </section>
+        <!--//-->
+    <!--//-->
+</div>
+
+<!--realestate-->
+<!--View Detail-->
+<ng-template #realestateModal let-modal>
+    <div class="modal-header">
+            <h5 class="modal-title" id="editProfileLabel">View Realestate</h5>
+            <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body pro-item">
+            <video class="video-fluid z-depth-1" loop controls muted>
+            <source src={{realestate_details.video_url}} type="video/mp4" />
+            </video>
+            <div class="pro-desc">
+    
+            <h3 class="pro-title">
+                {{realestate_details.type}}
+                <span class="float-right pro-price text-right">
+                    <a routerLink="#" class="btn grad_brd custom_btn_sm" title="contact"><span
+                        class="btn glob_grad  inner_btn_sm">contact</span></a>
+                    € {{realestate_details.price}}
+                </span>
+            </h3>
+    
+            <div class="pro-attr">
+                <div class="d-flex justify-content-around">
+                    <span class="text-dark cc">{{realestate_details.type}}</span>
+                    <span class="text-dark km"><i class="fa fa-shower"></i>&nbsp;{{realestate_details.no_of_bathrooms}}</span>
+                    <span class="text-dark trans"><i class="fa fa-bed" aria-hidden="true"></i>&nbsp;{{realestate_details.no_of_bedrooms}}</span>
+                    <span class="text-dark make"><i class="fa fa-square"></i>&nbsp;{{realestate_details.square_feet}}</span>
+                    <span class="flag"><img src="assets/images/flag.jpg"></span>
+                </div>
+            </div>
+            </div>
+            <div class="text-center viewBtn mt-2">
+            <a data-toggle="collapse" href="#viewDetails" role="button" aria-expanded="false"
+                aria-controls="viewDetails">
+                View Details
+            </a>
+            </div>
+            <div id="viewDetails" class="collapse viewDetails">
+            <div class="row clearfix">
+                <div class="col-md-4 det-item">
+                    <ul class="foot-links list-unstyled">
+                        <li class="det-head"><span class="sp-head">garden:</span><span class="sp-desc">231</span></li>
+                        <li class="det-head"><span class="sp-head">heat:</span><span class="sp-desc"> Gas</span></li>
+                        <li class="det-head"><span class="sp-head">balcony: </span><span class="sp-desc">Yes</span></li>
+                        <li class="det-head"><span class="sp-head">Kitchen: </span><span class="sp-desc">Fully
+                            Equipped</span></li>
+                        <li class="det-head"><span class="sp-head">pool: </span><span class="sp-desc">No</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 det-item">
+                    <ul class="foot-links list-unstyled">
+                        <li class="det-head"><span class="sp-head">free:</span><span class="sp-desc"> On act</span></li>
+                        <li class="det-head"><span class="sp-head">lift:</span><span class="sp-desc"> {{realestate_details.lift}}</span></li>
+                        <li class="det-head"><span class="sp-head">aircon:</span><span class="sp-desc"> Yes</span></li>
+                        <li class="det-head"><span class="sp-head">levels:</span><span class="sp-desc">{{realestate_details.level}}</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 det-item">
+                    <ul class="foot-links list-unstyled">
+                        <li class="det-head"><span class="sp-head">view:</span><span class="sp-desc"> 231</span></li>
+                        <li class="det-head"><span class="sp-head">heat:</span><span class="sp-desc"> Gas</span></li>
+                        <li class="det-head"><span class="sp-head">balcony:</span><span class="sp-desc"> Yes</span></li>
+                        <li class="det-head"><span class="sp-head">Kitchen: </span>Fully <span
+                            class="sp-desc">Equipped</span></li>
+                        <li class="det-head"><span class="sp-head">pool:</span><span class="sp-desc">No</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="seller-info">
+                <h6 class="seller-title">SELLER: Professional</h6>
+                <div class="row clearfix">
+                    <div class="col-md-5"><span class="sell-head">Name:</span><span class="sell-head">{{realestate_details.name}}</span>
+                    </div>
+                    <div class="col-md-7"><span class="sell-head">Email:</span><span class="sell-head">
+                        {{realestate_details.email}}</span></div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-md-5"><span class="sell-head">Phone:</span><span class="sell-head">{{realestate_details.mobile}}</span></div>
+                    <div class="col-md-7"><span class="sell-head">Address:</span><span class="sell-head">{{realestate_details.address}}</span></div>
+                </div>
+            </div>
+            <div class="equipment_desc">
+                <h6 class="seller-title">Equipment Description:</h6>
+                <p>{{realestate_details.description}}
+                </p>
+            </div>
+            <div class="row clearfix">
+                <div class="col-md-10 offset-md-1">
+                    <div class="d-flex justify-content-around">
+    
+                        <button class="btn brd_grey custom_btn_sm"><span
+                            class="btn inner_btn_sm bg_white text_grey" (click)="open(deleteDetail)">Delete</span></button>
+    
+                        <a (click)="this.editRealestateModal(realestateEditModal, realestate_details)" (click)="modal.dismiss()" class="btn grad_brd custom_btn_sm" title="edit"><span
+                            class="btn glob_grad  inner_btn_sm">Edit</span></a>
+    
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+</ng-template>
+<!--//-->
+<!--Delete details-->
+<ng-template #deleteDetail let-modal>
+    <div class="modal-header modalHeader">
+        <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+       </button>
+    </div>
+   <div class="modal-body">
+    <p class="modal-title text-center"><strong>ARE YOU SURE WANT TO DELETE YOUR AD?</strong></p>
+   </div>
+ <div class="modalFooter d-flex justify-content-center">
+    <div class=" brd_grey mr-3"><button type="button" class="btn reset_btn bg_white" (click)="modal.dismiss()">DISMISS</button></div>
+    <div class="grad_brd reset_d mr-3"><button type="submit" class="btn reset_btn glob_grad" (click)="deleteRealestate(realestate_details._id)">DELETE</button></div>
+ </div>
+ </ng-template>
+<!--//-->
+<!--Realestate edit-->
+<ng-template #realestateEditModal let-modal>
+    <div class="modal-header">
+         <h5 class="modal-title" id="editProfileLabel">Edit Realestate</h5>
+         <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+         </button>
+        </div>
+        <div class="modal-body pro-item">
+          <form [formGroup]="edit_realestate" class="formcl" (ngSubmit)="updateRealestate(edit_realestate)">
+            <div class="row clearfix mb-3">
+                <div class="col-md-6">
+                   <video class="video-fluid z-depth-1" loop controls muted>
+                      <source src={{realestate_details.video_url}} type="video/mp4" />
+                   </video> 
+                </div>
+                <div class="col-md-6">
+                   <!-- <input type="file" (change)="picked($event)" class="" accept="video/*" base-sixty-four-input/> -->
+                        
+                   <!-- <div class="form-group">
+                      <input type="file" class="form-control-file border" formControlName="video_url" (change)="picked($event)" accept="video/*" [ngClass]="{'is-invalid':submitted && editVal.video_url.errors}" base-sixty-four-input>
+                      <div *ngIf="submitted && editVal.video_url.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.video_url.errors.required">Video is required</div>
+                     </div>  
+                   </div> -->
+                </div>
+             </div> 
+            
+             <div class="row clearfix">
+                <div class="col-md-6">
+                   <input type="hidden" formControlName="postId" [(ngModel)]="realestate_details._id" class="form-control">
+                </div>
+               
+             </div>
+            <div class="row clearfix">
+                <div class="col-md-6">
+                   <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="name" #name [(ngModel)]="realestate_details.name" readonly [ngClass]="{'is-invalid':submitted && editVal.name.errors}">
+                      <div *ngIf="submitted && editVal.name.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.name.errors.required">Name is required</div>
+                     </div>
+                   </div>
+                
+                   <div class="form-group">
+                      <label>Email ID</label>
+                      <input type="email" class="form-control" placeholder="" formControlName="email" #email [(ngModel)]="realestate_details.email" readonly [ngClass]="{'is-invalid':submitted && editVal.email.errors}">
+                      <div *ngIf="submitted && editVal.email.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.email.errors.required">Email is required</div>
+                     </div>
+                   </div>
+ 
+                   <div class="form-group">
+                      <label>Description</label>
+                      <textarea class="form-control" rows="5" formControlName="description" [(ngModel)]="realestate_details.description" #description [ngClass]="{'is-invalid':submitted && editVal.description.errors}"></textarea>
+                      <div *ngIf="submitted && editVal.description.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.description.errors.required">Description is required</div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-md-6">
+                   <div class="form-group">
+                      <label>Phone Number</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="mobile" [(ngModel)]="realestate_details.mobile" #mobile [ngClass]="{'is-invalid':submitted && editVal.mobile.errors}" [pattern]="mobNumberPattern">
+                      <div *ngIf="submitted && editVal.mobile.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.mobile.errors.required">Mobile is required</div>
+                          <div *ngIf="editVal.mobile.errors.pattern">Enter Valid Mobile number</div>
+                     </div>
+                   </div>
+ 
+                   <div class="form-group">
+                      <label>Keywords</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="keywords" [(ngModel)]="realestate_details.keywords" #keywords [ngClass]="{'is-invalid':submitted && editVal.keywords.errors}">
+                      <div *ngIf="submitted && editVal.keywords.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.keywords.errors.required">Keyword is required</div>
+                     </div>
+                   </div>
+ 
+                   <div class="form-group">
+                      <label>Address</label>
+                        <textarea class="form-control" rows="5" formControlName="address" [(ngModel)]="realestate_details.address" #address [ngClass]="{'is-invalid':submitted && editVal.address.errors}"></textarea>
+                        <div *ngIf="submitted && editVal.address.errors" class="invalid-feedback">
+                           <div *ngIf="editVal.address.errors.required">Address is required</div>
+                       </div>
+                   </div>
+ 
+                </div>
+             </div>
+             <h5 class="postad_features">FEATURES</h5>
+             <div class="row clearfix">
+                 <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Type</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="type" [(ngModel)]="realestate_details.type" #type [ngClass]="{'is-invalid':submitted && editVal.type.errors}">
+                      <div *ngIf="submitted && editVal.type.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.type.errors.required">Type is required</div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Purpose</label>
+                      <select class="form-control" placeholder="" formControlName="purpose" [(ngModel)]="realestate_details.purpose" [ngClass]="{'is-invalid': submitted && editVal.purpose.errors}">
+                         <option value="">Select</option>
+                         <option value="lease">Lease</option>
+ 
+                      </select>
+                      <div *ngIf="submitted && editVal.purpose.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.purpose.errors.required">Purpose is required</div>
+                     </div>
+ 
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Time of avaliability</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="time_of_avaliability" [(ngModel)]="realestate_details.time_of_avaliability" #time_of_avaliability [ngClass]="{'is-invalid':submitted && editVal.time_of_avaliability.errors}">
+                      <div *ngIf="submitted && editVal.time_of_avaliability.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.time_of_avaliability.errors.required">Time is required</div>
+                     </div>
+                </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Type of space</label>
+                      <select class="form-control" placeholder="" formControlName="type_of_space" [(ngModel)]="realestate_details.type_of_space" [ngClass]="{'is-invalid': submitted && editVal.type_of_space.errors}">
+                         <option value="0">Select</option>
+                         <option value="office">Office</option>
+                         <option value="home">Home</option>
+                         <option value="hotel">Hotel</option>
+                      </select>
+                      <div *ngIf="submitted && editVal.type_of_space.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.type_of_space.errors.required">Space Type is required</div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Square feet</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="square_feet" [(ngModel)]="realestate_details.square_feet" #square_feet [ngClass]="{'is-invalid':submitted && editVal.square_feet.errors}">
+                      <div *ngIf="submitted && editVal.square_feet.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.square_feet.errors.required">Square feet is required</div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Location</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="location" [(ngModel)]="realestate_details.location" #location [ngClass]="{'is-invalid':submitted && editVal.location.errors}">
+                      <div *ngIf="submitted && editVal.location.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.location.errors.required">Location is required</div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>No of bathrooms</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="no_of_bathrooms" [(ngModel)]="realestate_details.no_of_bathrooms" #no_of_bathrooms [ngClass]="{'is-invalid':submitted && editVal.no_of_bathrooms.errors}">
+                      <div *ngIf="submitted && editVal.no_of_bathrooms.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.no_of_bathrooms.errors.required">Bathroom is required</div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>No of bedrooms</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="no_of_bedrooms" [(ngModel)]="realestate_details.no_of_bedrooms" #no_of_bedrooms [ngClass]="{'is-invalid':submitted && editVal.no_of_bedrooms.errors}">
+                      <div *ngIf="submitted && editVal.no_of_bedrooms.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.no_of_bedrooms.errors.required">Bedroom is required</div>
+                     </div>
+                   </div>
+                </div> 
+ 
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Residential or holiday</label><br>
+                      <input type="radio" value="resedential" formControlName="residential_or_holiday" [(ngModel)]="realestate_details.residential_or_holiday" #residential_or_holiday [ngClass]="{'is-invalid':submitted && editVal.residential_or_holiday.errors}">&nbsp;&nbsp;<label class="check_desc">Residential</label><br>
+                      <input type="radio" value="holiday" formControlName="residential_or_holiday" [(ngModel)]="realestate_details.residential_or_holiday" #residential_or_holiday [ngClass]="{'is-invalid':submitted && editVal.residential_or_holiday.errors}">&nbsp;&nbsp;<label class="check_desc">Holiday</label>
+                      <div *ngIf="submitted && editVal.residential_or_holiday.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.residential_or_holiday.errors.required">It is required</div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Condition</label><br>
+                      <input type="radio" value="used" formControlName="condition" [(ngModel)]="realestate_details.condition" #condition [ngClass]="{'is-invalid': submitted && editVal.condition.errors}">&nbsp;&nbsp;<label
+                         class="check_desc">Used</label><br>
+                      <input type="radio" value="new" formControlName="condition" [(ngModel)]="realestate_details.condition" #condition [ngClass]="{'is-invalid': submitted && editVal.condition.errors}">&nbsp;&nbsp;<label
+                         class="check_desc">New</label><br>
+                         <div *ngIf="submitted && editVal.condition.errors" class="invalid-feedback">
+                            <div *ngIf="editVal.condition.errors.required">Condition is required</div>
+                         </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Garage included</label><br>
+                      <input type="radio" value="yes" formControlName="garage_included" [(ngModel)]="realestate_details.garage_included" #garage_included [ngClass]="{'is-invalid':submitted && editVal.garage_included.errors}">&nbsp;&nbsp;<label
+                         class="check_desc">Yes</label><br>
+                      <input type="radio" value="no" formControlName="garage_included" [(ngModel)]="realestate_details.garage_included" #garage_included [ngClass]="{'is-invalid':submitted && editVal.garage_included.errors}">&nbsp;&nbsp;<label
+                         class="check_desc">No</label>
+                       <div *ngIf="submitted && editVal.garage_included.errors" class="invalid-feedback">
+                               <div *ngIf="editVal.garage_included.errors.required">Garage is required</div>
+                         </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Lift</label><br>
+                      <input type="radio" value="yes" formControlName="lift" [(ngModel)]="realestate_details.lift" #lift [ngClass]="{'is-invalid': submitted && editVal.lift.errors}">&nbsp;&nbsp;<label
+                         class="check_desc">Yes</label><br>
+                      <input type="radio" value="no" formControlName="lift" [(ngModel)]="realestate_details.lift" #lift [ngClass]="{'is-invalid': submitted && editVal.lift.errors}">&nbsp;&nbsp;<label
+                         class="check_desc">No</label><br>
+                         <div *ngIf="submitted && editVal.lift.errors" class="invalid-feedback">
+                            <div *ngIf="editVal.lift.errors.required">Lift is required</div>
+                         </div>
+                   </div>
+                </div>
+ 
+ 
+               <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Currency</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="currency" [(ngModel)]="realestate_details.currency" #currency [ngClass]="{'is-invalid':submitted && editVal.currency.errors}">
+                      <div *ngIf="submitted && editVal.currency.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.currency.errors.required">Currency is required</div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Price</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="price" [(ngModel)]="realestate_details.price" #price [ngClass]="{'is-invalid':submitted && editVal.price.errors}">
+                      <div *ngIf="submitted && editVal.price.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.price.errors.required">Price is required</div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Rent price</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="rent_price" [(ngModel)]="realestate_details.rent_price" #rent_price [ngClass]="{'is-invalid':submitted && editVal.rent_price.errors}">
+                      <div *ngIf="submitted && editVal.rent_price.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.rent_price.errors.required">Rent Price is required</div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Monthly charges</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="monthly_charges" [(ngModel)]="realestate_details.monthly_charges" #monthly_charges [ngClass]="{'is-invalid':submitted && editVal.monthly_charges.errors}">
+                      <div *ngIf="submitted && editVal.monthly_charges.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.monthly_charges.errors.required">Monthly charges is required</div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="form-group">
+                      <label>Level</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="level" [(ngModel)]="realestate_details.level" #level [ngClass]="{'is-invalid':submitted && editVal.level.errors}">
+                      <div *ngIf="submitted && editVal.level.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.level.errors.required">Level is required</div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-md-6">
+                   <div class="form-group">
+                      <label>Amenities</label>
+                      <textarea type="text" class="form-control" placeholder="" rows="3" formControlName="amenities" [(ngModel)]="realestate_details.amenities" #amenities [ngClass]="{'is-invalid':submitted && editVal.amenities.errors}"></textarea>
+                      <div *ngIf="submitted && editVal.amenities.errors" class="invalid-feedback">
+                         <div *ngIf="editVal.amenities.errors.required">Amenities is required</div>
+                     </div>
+                   </div>
+                </div>
+ 
+             </div>
+ 
+             <div class="row clearfix">
+                <div class="col-md-10 offset-md-1">
+                   <div class="d-flex justify-content-around">
+    
+                      <a href="#" class="btn brd_grey custom_btn_sm" title="delete"><span
+                            class="btn inner_btn_sm bg_white text_grey">Cancel</span></a>
+    
+                            <button [disabled]="loading" type="submit" class="btn grad_brd custom_btn_sm"><span
+                               class="btn glob_grad  inner_btn_sm"><span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>&nbsp;Update</span></button>
+    
+                   </div>
+                </div>
+             </div>
+          </form>
+      
+ 
+      </div>
+ </ng-template>
+ <!--//-->
+<!--/Realestate end/---->
+
+<!--Automobile-->
+<!--Automobile detail-->
+<ng-template #automobileDetail let-modal>
+    <div class="modal-header">
+       <h5 class="modal-title" id="editProfileLabel">View Automobile</h5>
+       <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+       </button>
+    </div>
+    <div class="modal-body pro-item">
+       <video class="video-fluid z-depth-1" loop="" controls="" muted="">
+          <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4">
+       </video>
+       <div class="pro-desc">
+          <h3 class="pro-title">
+               {{automobile_details.make}} &nbsp;{{automobile_details.model}}
+                <span class="float-right pro-price text-right">
+                <a href="#" class="btn grad_brd custom_btn_sm" title="contact"><span class="btn glob_grad  inner_btn_sm">contact</span></a>
+                € {{automobile_details.price}} 
+                </span>
+             </h3>
+        
+          <div class="pro-attr">
+             <div class="d-flex justify-content-around">
+                <span class="text-dark cc"><img src="assets/images/autm1.jpg">{{automobile_details.engine}}</span>
+                <span class="text-dark km"><img src="assets/images/autm2.jpg">&nbsp;{{automobile_details.mileage}}</span>
+                <span class="text-dark trans"><img src="assets/images/autm3.jpg">&nbsp;{{automobile_details.gear_type}}</span>
+                <span class="text-dark make"><img src="assets/images/autm4.jpg">&nbsp;{{automobile_details.fuel}}</span>
+               
+                <span class="flag"><img src="assets/images/flag.jpg"></span>
+             </div>
+          </div>
+       </div>
+       <div class="text-center viewBtn mt-2">
+          <a data-toggle="collapse" href="#viewDetails" role="button" aria-expanded="true" aria-controls="viewDetails" class="">
+          View Details
+          </a>
+       </div>
+       <div id="viewDetails" class="viewDetails collapse show">
+          <div class="row clearfix">
+             <div class="col-md-4 det-item">
+                <ul class="foot-links list-unstyled">
+                   <li class="det-head"><span class="sp-head">Horsepower:</span><span class="sp-desc">{{automobile_details.horse_power}}</span></li>
+                   <li class="det-head"><span class="sp-head">Emission:</span><span class="sp-desc">{{automobile_details.emission_class}}</span></li>
+                   <li class="det-head"><span class="sp-head">Seats: </span><span class="sp-desc">{{automobile_details.seats}}</span></li>
+                   
+                </ul>
+             </div>
+             <div class="col-md-4 det-item">
+                <ul class="foot-links list-unstyled">
+                   <li class="det-head"><span class="sp-head">interior:</span><span class="sp-desc">{{automobile_details.interior_seats}}</span></li>
+                   <li class="det-head"><span class="sp-head">Warranty:</span><span class="sp-desc">{{automobile_details.warranty}}</span></li>
+                   <li class="det-head"><span class="sp-head">variant:</span><span class="sp-desc">{{automobile_details.variant}}</span></li>
+                 
+                </ul>
+             </div>
+             <div class="col-md-4 det-item">
+                <ul class="foot-links list-unstyled">
+                   <li class="det-head"><span class="sp-head">doors:</span><span class="sp-desc">{{automobile_details.doors}}</span></li>
+                   <li class="det-head"><span class="sp-head">color:</span><span class="sp-desc">{{automobile_details.color}}</span></li>
+                   <!-- <li class="det-head"><span class="sp-head">Interior Seats:</span><span class="sp-desc"> Beige</span></li> -->
+                   
+                </ul>
+             </div>
+          </div>
+          <div class="seller-info">
+             <h6 class="seller-title">SELLER: Professional&nbsp;<sub>Home</sub></h6>
+             <div class="row clearfix">
+                <div class="col-md-5"><span class="sell-head">Name:</span><span class="sell-head"> {{automobile_details.name}}</span></div>
+                <div class="col-md-7"><span class="sell-head">Email:</span><span class="sell-head"> {{automobile_details.email}}</span></div>
+             </div>
+             <div class="row clearfix">
+                <div class="col-md-5"><span class="sell-head">Phone:</span><span class="sell-head"> {{automobile_details.mobile}}</span></div>
+                <div class="col-md-7"><span class="sell-head">Address:</span><span class="sell-head"> {{automobile_details.address}}</span></div>
+             </div>
+          </div>
+          <div class="equipment_desc">
+             <h6 class="seller-title">Equipment Description:</h6>
+             <p>
+                {{automobile_details.description}}
+             </p>
+          </div>
+         <div class="row clearfix">
+             <div class="col-md-10 offset-md-1">
+                <div class="d-flex justify-content-around">
+                    <a (click)="open(deleteAutomobileDetails)" class="btn brd_grey custom_btn_sm" title="delete"><span class="btn   inner_btn_sm bg_white text_grey">Delete</span></a>
+                    <a (click)="this.editAutomobileModal(automobileEditModal, automobile_details)" (click)="modal.dismiss()" class="btn grad_brd custom_btn_sm" title="edit"><span class="btn glob_grad  inner_btn_sm">Edit</span></a>
+                  
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </ng-template>
+ <!--//-->
+ <!--Delete Automobile-->
+<ng-template #deleteAutomobileDetails let-modal>
+    <div class="modal-header">
+       
+       <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+       </button>
+    </div>
+   <div class="modal-body">
+      <p class="modal-title text-center"><strong>Are you sure you want to delete this details?</strong></p>
+   </div>
+ <div class="modalFooter d-flex justify-content-center">
+   <div class=" brd_grey mr-3"><button type="button" class="btn reset_btn bg_white" (click)="modal.dismiss()">DISMISS</button></div>
+   <div class="grad_brd reset_d mr-3"><button type="submit" class="btn reset_btn glob_grad" (click)="deleteAutomobile(automobile_details._id)">DELETE</button></div> 
+ </div>
+ </ng-template>
+ <!--//-->
+ <!--Automobile Edit-->
+<ng-template #automobileEditModal let-modal>
+    <div class="modal-header">
+       <h5 class="modal-title" id="editProfileLabel">Edit Automobile</h5>
+       <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+       </button>
+    </div>
+    <div class="modal-body pro-item">
+       <div class="modal-body">
+          <!-- <form [formGroup]="form" (ngSubmit)="submit()">
+             <label formArrayName="orders" *ngFor="let order of form.controls.orders.controls; let i = index">
+               <input type="checkbox" [formControlName]="i">
+               {{orders[i].name}}
+             </label>
+           
+             <div *ngIf="!form.valid">At least one order must be selected</div>
+             <br>
+             <button [disabled]="!form.valid">submit</button>
+           </form> -->
+          <form [formGroup]="edit_automobile" class="formcl" (ngSubmit)="updateAUtomobile(edit_automobile)">
+             <input type="hidden" class="form-control" formControlName="postId" [(ngModel)]="automobile_details._id">
+             <div class="row clearfix">
+                 <div class="col-md-10 offset-md-1">
+                  <!-- <div class="upload_video">
+                      <div class="pro_upload">
+                         <img src="assets/images/file-upload.jpg" class="image-thumbnail mx-auto d-block">
+ 
+                         <div class="vfile text-center">
+                            <div class="box mt-3">
+                               <input type="file" (change)="picked($event)" formControlName="video_url"
+                                  id="video_url" class="inputfile inputfile-1" accept="video/*" base-sixty-four-input/>
+                               <label for="video_url"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span>Upload
+                                     Video&hellip;</span></label>
+                                    <div *ngIf="submitted && editAuto_val.video_url.errors" class="invalid-feedback">
+                                        <div *ngIf="editAuto_val.video_url.errors.required">Video is required</div>
+                                    </div>     
+                            </div>
+                           
+                            <h6 class="text-center vfile_desc">Or drag and drop video files</h6>
+                         </div>
+                       
+                      </div>
+                      <div class="vfile_resolution">
+                         <h6 class="vfile_desc">Supported Resolution "2K" 2048x1080 ,"4k"3840 x 2160.</h6>
+                      </div>
+ 
+                   </div> -->
+                 </div>
+              </div>
+              
+                <div class="row clearfix">    
+                 <div class="col-md-6">
+                    <div class="form-group">
+                       <label>Category</label>
+                       <input type="text" class="form-control" formControlName="category" placeholder="" readonly  #category [(ngModel)]="automobile_details.category" readonly >
+                       <!-- <div *ngIf="submitted && editAuto_val.category.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.category.errors.required">Category is required</div>
+                      </div> -->
+                    </div>
+                    <div class="form-group">
+                       <label>Name</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="name" #name [(ngModel)]="automobile_details.name" [ngClass]="{'is-invalid': submitted && editAuto_val.name.errors}">
+                       <div *ngIf="submitted && editAuto_val.category.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.category.errors.required">Name is required</div>
+                      </div>
+                    </div>
+                 </div>
+                 <!-- <div class="col-md-6">
+                   <div class="form-group">
+                      <label>Select the details to display for contact</label><br>
+                   <div *ngFor="let choice of checks; let i=index">
+                      <label>
+                        <input type="checkbox" [value]="choice.value"  (change)="onCheckChange($event)">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label class="check_desc">{{choice.description}}</label>
+                      </label>
+                    </div>
+                   </div>
+                    
+                 </div> -->
+                 <div class="col-md-6">
+                   <div class="form-group">
+                      <label>Mobile Number</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="mobile" #mobile [(ngModel)]="automobile_details.mobile" [ngClass]="{'is-invalid':submitted && editAuto_val.mobile.errors}" [pattern]="mobNumberPattern">
+                      <div *ngIf="submitted && editAuto_val.mobile.errors" class="invalid-feedback">
+                         <div *ngIf="editAuto_val.mobile.errors.required">Mobile is required</div>
+                          <div *ngIf="editAuto_val.mobile.errors.pattern">Enter Valid Mobile number</div>
+                     </div>
+                   </div>
+                    <div class="form-group">
+                       <label>Email ID</label>
+                       <input type="email" class="form-control" placeholder="" formControlName="email" #email [(ngModel)]="automobile_details.email" [ngClass]="{'is-invalid': submitted && editAuto_val.email.errors}">
+                       <div *ngIf="editAuto_val.email.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.email.errors.required">Email is required.</div>
+                       </div>
+                   </div>
+                 </div>
+              </div>
+              <div class="row clearfix">
+                
+                 <div class="col-md-6">
+                    <div class="form-group">
+                       <label>Address</label>
+                       <textarea class="form-control" rows="5" formControlName="address" #address [(ngModel)]="automobile_details.address" [ngClass]="{'is-invalid':submitted && editAuto_val.address.errors}"></textarea>
+                       <div *ngIf="submitted && editAuto_val.address.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.address.errors.required">Address is required</div>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="col-md-6">
+                   <div class="form-group">
+                      <label>Map</label>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14716.679368643816!2d75.86500349999999!3d22.7590774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1580720018491!5m2!1sen!2sin" rameborder="0" style="border:0;" width="100%"></iframe>
+                   </div>
+                </div>
+              </div>
+              <div class="row clearfix">
+                 <div class="col-md-6">
+                    <div class="form-group">
+                       <label>Description</label>
+                       <textarea class="form-control" formControlName="description" #description [(ngModel)]="automobile_details.description" [ngClass]="{'is-invalid':submitted && editAuto_val.description.errors}"></textarea>
+                       <div *ngIf="submitted && editAuto_val.description.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.description.errors.required">Description is required</div>
+                      </div>
+                    </div>
+                    
+                 </div>
+                 <div class="col-md-6">
+                   <div class="form-group">
+                      <label>Keywords</label>
+                      <input type="text" class="form-control" placeholder="" formControlName="keywords" #keywords [(ngModel)]="automobile_details.keywords" [ngClass]="{'is-invalid':submitted && editAuto_val.keywords.errors}">
+                     <div *ngIf="submitted && editAuto_val.keywords.errors" class="invalid-feedback">
+                        <div *ngIf="editAuto_val.keywords.errors.required">Keyword is required</div>
+                    </div>
+                   </div>
+                 </div>
+             
+              </div>
+              <h5 class="postad_features">FEATURES</h5>
+              <div class="row clearfix">
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Make</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="make" #make [(ngModel)]="automobile_details.make" [ngClass]="{'is-invalid': submitted && editAuto_val.make.errors}">
+                       <div *ngIf="submitted && editAuto_val.make.errors" class="invalid-feedback">
+                           <div *ngIf="editAuto_val.make.errors.required">Make is required.</div>
+                       </div>
+                      </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Model</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="model" #model [(ngModel)]="automobile_details.model" [ngClass]="{'is-invalid': submitted && editAuto_val.model.errors}">
+                       <div *ngIf="submitted && editAuto_val.model.errors" class="invalid-feedback">
+                           <div *ngIf="editAuto_val.model.errors.required">Model is required.</div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Variant</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="variant" #variant [(ngModel)]="automobile_details.variant" [ngClass]="{'is-invalid': submitted && editAuto_val.variant.errors}">
+                       <div *ngIf="submitted && editAuto_val.variant.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.variant.errors.required">Variant is required.</div>
+                      </div>
+                  </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Engine</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="engine" #engine [(ngModel)]="automobile_details.engine" [ngClass]="{'is-invalid':submitted && editAuto_val.engine.errors}">
+                       <div *ngIf="submitted && editAuto_val.engine.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.engine.errors.required">Engine is required</div>
+                      </div>
+                      </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Horse Power</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="horse_power" #horse_power [(ngModel)]="automobile_details.horse_power" [ngClass]="{'is-invalid':submitted && editAuto_val.horse_power.errors}">
+                       <div *ngIf="submitted && editAuto_val.horse_power.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.horse_power.errors.required">Horse Power is required</div>
+                      </div>
+                  </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Mileage</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="mileage" #mileage [(ngModel)]="automobile_details.mileage" [ngClass]="{'is-invalid':submitted && editAuto_val.mileage.errors}">
+                       <div *ngIf="submitted && editAuto_val.mileage.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.mileage.errors.required">Mileage is required</div>
+                      </div>
+                      </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Fuel</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="fuel" #fuel [(ngModel)]="automobile_details.fuel" [ngClass]="{'is-invalid':submitted && editAuto_val.fuel.errors}">
+                       <div *ngIf="submitted && editAuto_val.fuel.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.fuel.errors.required">Fuel is required</div>
+                      </div>
+                     </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Emission class</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="emission_class" #emission_class [(ngModel)]="automobile_details.emission_class" [ngClass]="{'is-invalid':submitted && editAuto_val.emission_class.errors}">
+                       <div *ngIf="submitted && editAuto_val.emission_class.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.emission_class.errors.required">Emission Class is required</div>
+                      </div>
+                      </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Seller</label><br>
+                       <input type="radio" formControlName="seller" value="company" #seller [(ngModel)]="automobile_details.seller" [ngClass]="{'is-invalid':submitted && editAuto_val.seller.errors}">&nbsp;&nbsp;<label class="check_desc">Company</label><br>
+                       <input type="radio" formControlName="seller" value="individual" #seller
+                        [(ngModel)]="automobile_details.seller" [ngClass]="{'is-invalid':submitted && editAuto_val.seller.errors}">&nbsp;&nbsp;<label class="check_desc">Individual</label>
+                       <div *ngIf="submitted && editAuto_val.seller.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.seller.errors.required">Seller is required</div>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Condition</label><br>
+                       <input type="radio" formControlName="condition" value="used" #condition [(ngModel)]="automobile_details.condition" [ngClass]="{'is-invalid':submitted && editAuto_val.condition.errors}">&nbsp;&nbsp;<label class="check_desc">Used</label><br>
+                       <input type="radio" formControlName="condition" value="new" #condition [(ngModel)]="automobile_details.condition" [ngClass]="{'is-invalid':submitted && editAuto_val.condition.errors}">&nbsp;&nbsp;<label class="check_desc">New</label><br>
+                       <div *ngIf="submitted && editAuto_val.condition.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.condition.errors.required">Condition is required</div>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Gear type</label><br>
+                       <input type="radio" formControlName="gear_type" value="automatic" #gear_type [(ngModel)]="automobile_details.gear_type" [ngClass]="{'is-invalid':submitted && editAuto_val.gear_type.errors}">&nbsp;&nbsp;<label class="check_desc">Automatic</label><br>
+                       <input type="radio" formControlName="gear_type" value="manual" #gear_type [(ngModel)]="automobile_details.gear_type" [ngClass]="{'is-invalid':submitted && editAuto_val.gear_type.errors}">&nbsp;&nbsp;<label class="check_desc">Manual</label>
+                       <div *ngIf="submitted && editAuto_val.gear_type.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.gear_type.errors.required">Gear Type is required</div>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>1st registration year</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="registration_year" #registration_year [(ngModel)]="automobile_details.registration_year" [ngClass]="{'is-invalid':submitted && editAuto_val.registration_year.errors}">
+                       <div *ngIf="submitted && editAuto_val.fuel.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.fuel.errors.required">Registration year is required</div>
+                      </div>
+                      </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Currency</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="currency" #currency [(ngModel)]="automobile_details.currency" [ngClass]="{'is-invalid':submitted && editAuto_val.currency.errors}">
+                       <div *ngIf="submitted && editAuto_val.currency.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.currency.errors.required">Currency is required</div>
+                      </div>
+                      </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Price</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="price" #price [(ngModel)]="automobile_details.price" [ngClass]="{'is-invalid':submitted && editAuto_val.price.errors}">
+                       <div *ngIf="submitted && editAuto_val.price.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.price.errors.required">Price is required</div>
+                      </div>
+                  </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Guarantee</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="warranty" #warranty [(ngModel)]="automobile_details.warranty" [ngClass]="{'is-invalid':submitted && editAuto_val.warranty.errors}">
+                       <div *ngIf="submitted && editAuto_val.warranty.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.warranty.errors.required">Guarantee is required</div>
+                      </div>    
+                  </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Location</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="location" #location [(ngModel)]="automobile_details.location" [ngClass]="{'is-invalid':submitted && editAuto_val.location.errors}">
+                       <div *ngIf="submitted && editAuto_val.location.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.location.errors.required">Location is required</div>
+                      </div>  
+                      </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Color</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="color" #color [(ngModel)]="automobile_details.color" [ngClass]="{'is-invalid':submitted && editAuto_val.color.errors}">
+                       <div *ngIf="submitted && editAuto_val.color.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.color.errors.required">Color is required</div>
+                      </div>  
+                  </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Interior seats</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="interior_seats" #interior_seats [(ngModel)]="automobile_details.interior_seats" [ngClass]="{'is-invalid':submitted && editAuto_val.interior_seats.errors}">
+                       <div *ngIf="submitted && editAuto_val.interior_seats.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.interior_seats.errors.required">Interior Seat is required</div>
+                      </div> 
+                    </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Doors</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="doors" #doors [(ngModel)]="automobile_details.doors" [ngClass]="{'is-invalid':submitted && editAuto_val.doors.errors}">
+                       <div *ngIf="submitted && editAuto_val.doors.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.doors.errors.required">Door is required</div>
+                      </div> 
+                  </div>
+                 </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                       <label>Seats</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="seats" #seats [(ngModel)]="automobile_details.seats" [ngClass]="{'is-invalid':submitted && editAuto_val.seats.errors}">
+                       <div *ngIf="submitted && editAuto_val.seats.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.seats.errors.required">Seat is required</div>
+                      </div> 
+                    </div>
+                 </div>
+                 <div class="col-md-6">
+                    <div class="form-group">
+                       <label class="">Equipment description</label>
+                       <textarea class="form-control" rows="4" formControlName="equipment_description" #equipment_description [(ngModel)]="automobile_details.equipment_description" [ngClass]="{'is-invalid':submitted && editAuto_val.equipment_description.errors}"></textarea>
+                       <div *ngIf="submitted && editAuto_val.equipment_description.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.equipment_description.errors.required">Description is required</div>
+                      </div> 
+                    </div>
+                 </div>
+                 <div class="col-md-6">
+                    <div class="form-group">
+                       <label class="">Accessories</label>
+                       <textarea class="form-control" rows="4" formControlName="accessories" #accessories [ngModel]="automobile_details.accessories" [ngClass]="{'is-invalid':submitted && editAuto_val.accessories.errors}"></textarea>
+                       <div *ngIf="submitted && editAuto_val.accessories.errors" class="invalid-feedback">
+                          <div *ngIf="editAuto_val.accessories.errors.required">Accessories is required</div>
+                      </div> 
+                    </div>
+                 </div>
+              </div>
+              <div class="row clearfix">
+                 <div class="col-md-10 offset-md-1">
+                    <div class="d-flex justify-content-around">
+                       <a href="#" class="btn brd_grey custom_btn_sm" title="delete"><span class="btn   inner_btn_sm bg_white text_grey">Cancel</span></a>
+                       <button type="submit" [disabled]="loading" class="btn grad_brd custom_btn_sm"><span class="btn glob_grad  inner_btn_sm"><span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>&nbsp;Submit</span></button>
+                    </div>
+                 </div>
+              </div>
+           </form>
+        </div>
+    </div>
+ </ng-template>
+ <!--//-->
+ <!--//-->
+
+ <!--Boat-->
+ <!--View boat details-->
+<ng-template #boatDetails let-modal>
+   <div class="modal-header">
+       <h5 class="modal-title" id="editProfileLabel">View Boats</h5>
+       <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+       </button>
+   </div>
+   <div class="modal-body pro-item">
+       <video class="video-fluid z-depth-1" loop controls muted>
+          <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
+       </video>
+       <div class="pro-desc">
+          
+             <h3 class="pro-title">
+                {{boat_details.make}}
+                <span class="float-right pro-price text-right">
+               <a href="#" class="btn grad_brd custom_btn_sm" title="contact"><span class="btn glob_grad  inner_btn_sm">contact</span></a>
+                € {{boat_details.price}}
+                </span>
+             </h3>
+          
+             <div class="pro-attr">
+               <div class="d-flex justify-content-around">
+                   <span class="text-dark cc">{{boat_details.boat_type}}</span>
+                   <span class="text-dark km"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{boat_details.no_of_bedrooms}}</span>
+                   <span class="text-dark trans"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{boat_details.no_of_bathrooms}}</span>
+                   <span class="text-dark make"><i class="fa fa-car"
+                           aria-hidden="true"></i>&nbsp;{{boat_details.fuel}}</span>
+                   <span class="flag"><img src="assets/images/flag.jpg"></span>
+               </div>
+           </div>
+       </div>
+       <div class="text-center viewBtn mt-2">
+          <a data-toggle="collapse" href="#viewDetails" role="button" aria-expanded="false" aria-controls="viewDetails">
+          View Details
+          </a>
+       </div>
+       <div id="viewDetails" class="collapse viewDetails">
+          <div class="row clearfix">
+             <div class="col-md-4 det-item">
+                <ul class="foot-links list-unstyled">
+                   <li class="det-head"><span class="sp-head">Boat Type:</span><span class="sp-desc">{{boat_details.boat_type}}</span></li>
+                   <li class="det-head"><span class="sp-head">engines: </span><span class="sp-desc">{{boat_details.engine_type}}</span></li>
+                   <li class="det-head"><span class="sp-head">Engine Hours: </span><span class="sp-desc">{{boat_details.engine_hours}}</span></li>
+                   <li class="det-head"><span class="sp-head">Engine Type:</span><span class="sp-desc">{{boat_details.engine_type}}</span></li>
+                   <li class="det-head"><span class="sp-head">Engine No: </span><span class="sp-desc">{{boat_details.no_of_engines}}</span></li>
+                </ul>
+             </div>
+             <div class="col-md-4 det-item">
+                <ul class="foot-links list-unstyled">
+                   <li class="det-head"><span class="sp-head">Horsepower:</span><span class="sp-desc">{{boat_details.horse_power}}</span></li>
+                   <li class="det-head"><span class="sp-head">Power:</span><span class="sp-desc">{{boat_details.power}}</span></li>
+                   <li class="det-head"><span class="sp-head">Fuel:</span><span class="sp-desc">{{boat_details.fuel}}</span></li>
+                   <li class="det-head"><span class="sp-head">Water Capacity:</span><span class="sp-desc">{{boat_details.water_capacity}}</span></li>
+                </ul>
+             </div>
+             <div class="col-md-4 det-item">
+                <ul class="foot-links list-unstyled">
+                   <li class="det-head"><span class="sp-head">Bedroom:</span><span class="sp-desc">{{boat_details.no_of_bedrooms}}</span></li>
+                   <li class="det-head"><span class="sp-head">Bathroom:</span><span class="sp-desc">{{boat_details.no_of_bathrooms}}</span></li>
+                   <li class="det-head"><span class="sp-head">Hull Material:</span><span class="sp-desc">{{boat_details.hull_material}}</span></li>
+                   <li class="det-head"><span class="sp-head">Hull Color:</span><span class="sp-desc">{{boat_details.color_hull}}</span></li>
+                   <li class="det-head"><span class="sp-head">Location:</span><span class="sp-desc">{{boat_details.location}}</span></li>
+                </ul>
+             </div>
+          </div>
+          <div class="seller-info">
+             <h6 class="seller-title">SELLER: Professional</h6>
+             <div class="row clearfix">
+                <div class="col-md-5"><span class="sell-head">Name:</span><span class="sell-head">{{boat_details.name}}</span></div>
+                <div class="col-md-7"><span class="sell-head">Email:</span><span class="sell-head">{{boat_details.email}}</span></div>
+             </div>
+             <div class="row clearfix">
+                <div class="col-md-5"><span class="sell-head">Mobile:</span><span class="sell-head">{{boat_details.mobile}}</span></div>
+                <div class="col-md-7"><span class="sell-head">Address:</span><span class="sell-head">{{boat_details.address}}</span></div>
+             </div>
+          </div>
+          <div class="equipment_desc">
+             <h6 class="seller-title">Equipment Description:</h6>
+             <p>{{boat_details.description}}</p>
+          </div>
+          <div class="row clearfix">
+             <div class="col-md-10 offset-md-1">
+                <div class="d-flex justify-content-around">
+                   
+                   <button class="btn brd_grey custom_btn_sm"><span
+                       class="btn inner_btn_sm bg_white text_grey" (click)="open(deleteBoatDetail)">Delete</span></button>
+
+                   <a (click)="this.editBoatModal(boateditModal, boat_details)" (click)="modal.dismiss()" class="btn grad_brd custom_btn_sm" title="edit"><span
+                       class="btn glob_grad  inner_btn_sm">Edit</span></a>
+
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+</ng-template>
+<!--//-->
+<!--Delete Modal-->
+<ng-template #deleteBoatDetail let-modal>
+   <div class="modal-header">
+    
+      <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+       <span aria-hidden="true">&times;</span>
+      </button>
+   </div>
+ <div class="modal-body">
+   <p class="modal-title text-center" id="editProfileLabel"><strong>Are you sure you want to delete this details?</strong></p>
+ </div> 
+<div class="modalFooter d-flex justify-content-center">
+   <div class=" brd_grey mr-3"><button type="button" (click)="modal.dismiss()" class="btn reset_btn bg_white ">DISMISS</button></div>
+   <div class="grad_brd reset_d mr-3"><button type="submit" class="btn reset_btn glob_grad" (click)="deleteBoats(boat_details._id)">DELETE</button></div>
+</div>
+</ng-template>
+<!--//-->
+<!--Edit Modal-->
+<ng-template #boateditModal let-modal>
+   <div class="modal-header">
+       <h5 class="modal-title" id="editProfileLabel">Edit Boats</h5>
+       <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+       </button>
+   </div>
+   <div class="modal-body">
+       <form class="formcl" [formGroup]="edit_boat" (ngSubmit)="update_boat()">
+           <div class="row clearfix">
+               <div class="col-md-6">
+                  <input type="hidden" formControlName="postId" [(ngModel)]="boat_details._id" class="form-control">
+               </div>
+              
+            </div>
+           <div class="row clearfix">
+               <div class="col-md-10 offset-md-1">
+                   <!-- <div class="upload_video">
+                 <div class="pro_upload">
+                    <img src="assets/images/file-upload.jpg" class="image-thumbnail mx-auto d-block">
+
+                    <div class="vfile text-center">
+                       <div class="box mt-3">
+                          <input type="file" (change)="picked($event)" formControlName="video_url"
+                             id="video_url" class="inputfile inputfile-1" [ngClass]="{'is-invalid': submitted && editBoat_val.video_url.errors}" accept="video/*" base-sixty-four-input/>
+                          <label for="video_url"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span>Upload
+                                Video&hellip;</span></label>
+                                <div *ngIf="submitted && editBoat_val.video_url.errors" class="invalid-feedback">
+                                   <div *ngIf="editBoat_val.video_url.errors.required">Video is required</div>
+                               </div>      
+                       </div>
+                      
+                       <h6 class="text-center vfile_desc">Or drag and drop video files</h6>
+                    </div>
+                  
+                 </div>
+                 <div class="vfile_resolution">
+                    <h6 class="vfile_desc">Supported Resolution "2K" 2048x1080 ,"4k"3840 x 2160.</h6>
+                 </div>
+
+              </div> -->
+               </div>
+           </div>
+           <div class="row clearfix">
+               <div class="col-md-6">
+                   <div class="form-group">
+                       <label>Category</label>
+                       <input type="text" class="form-control" formControlName="category" readonly #category [(ngModel)]="boat_details.category">
+                   </div>
+                   <div class="form-group">
+                       <label>Name</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="name" #name [(ngModel)]="boat_details.name"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.name.errors}">
+                       <div *ngIf="submitted && editBoat_val.name.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.name.errors.required">Name is required</div>
+                       </div>
+                   </div>
+
+               </div>
+               <div class="col-md-6">
+                   <div class="form-group">
+                       <label>Select the details to display for contact</label><br>
+                       <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;<label class="check_desc">Mobile
+                           Number</label><br>
+                       <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;<label class="check_desc">Email ID</label>
+                       <br>
+                       <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;<label class="check_desc">Address</label>
+                       <br>
+                       <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;<label class="check_desc">Location</label>
+                   </div>
+               </div>
+           </div>
+           <div class="row clearfix">
+               <div class="col-md-6">
+                   <div class="form-group">
+                       <label>Mobile Number</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="mobile" #mobile [(ngModel)]="boat_details.mobile"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.mobile.errors}" [pattern]="mobNumberPattern">
+                       <div *ngIf="submitted && editBoat_val.mobile.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.mobile.errors.required">Mobile is required</div>
+                           <div *ngIf="editBoat_val.mobile.errors.pattern">Enter Valid Mobile number</div>
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <label>Email ID</label>
+                       <input type="email" class="form-control" placeholder="" formControlName="email" #email [(ngModel)]="boat_details.email" [ngClass]="{'is-invalid':submitted && editBoat_val.email.errors}">
+                       <div *ngIf="submitted && editBoat_val.email.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.email.errors.required">Email is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="form-group">
+                       <label>Address</label>
+                       
+                       <textarea class="form-control" rows="5" formControlName="address" #address [(ngModel)]="boat_details.address"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.address.errors}"></textarea>
+                       <div *ngIf="submitted && editBoat_val.address.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.address.errors.required">Address is required</div>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+           <div class="row clearfix">
+               <div class="col-md-6">
+                   <div class="form-group">
+                       <label>Description</label>
+                       <textarea class="form-control" formControlName="description"  #description [(ngModel)]="boat_details.description"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.description.errors}"></textarea>
+                       <div *ngIf="submitted && editBoat_val.description.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.description.errors.required">Description is required</div>
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <label>Keywords</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="keywords" #keywords [(ngModel)]="boat_details.keywords"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.keywords.errors}">
+                       <div *ngIf="submitted && editBoat_val.keywords.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.keywords.errors.required">Keyword is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="form-group">
+                       <label>Map</label>
+                       <iframe
+                           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14716.679368643816!2d75.86500349999999!3d22.7590774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1580720018491!5m2!1sen!2sin"
+                           rameborder="0" style="border:0;" width="100%"></iframe>
+                   </div>
+               </div>
+
+           </div>
+           <h5 class="postad_features">FEATURES</h5>
+           <div class="row clearfix">
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>Make</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="make" #make [(ngModel)]="boat_details.make"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.make.errors}">
+                       <div *ngIf="submitted && editBoat_val.make.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.make.errors.required">Make is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>Model</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="model" #model [(ngModel)]="boat_details.model"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.model.errors}">
+                       <div *ngIf="submitted && editBoat_val.model.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.model.errors.required">Model is required</div>
+                       </div>>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>Currency</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="currency" #currency [(ngModel)]="boat_details.currency"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.currency.errors}">
+                       <div *ngIf="submitted && editBoat_val.currency.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.currency.errors.required">Currency is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>Price</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="price" #price [(ngModel)]="boat_details.price"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.price.errors}">
+                       <div *ngIf="submitted && editBoat_val.price.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.price.errors.required">Price is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>Year</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="year" #year [(ngModel)]="boat_details.year"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.year.errors}">
+                       <div *ngIf="submitted && editBoat_val.year.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.year.errors.required">Year is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>Length</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="length" #length [(ngModel)]="boat_details.length"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.length.errors}">
+                       <div *ngIf="submitted && editBoat_val.length.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.length.errors.required">Length is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>Width</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="width" #width [(ngModel)]="boat_details.width"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.width.errors}">
+                       <div *ngIf="submitted && editBoat_val.width.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.width.errors.required">Width is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>Depth</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="depth" #depth [(ngModel)]="boat_details.depth"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.depth.errors}">
+                       <div *ngIf="submitted && editBoat_val.depth.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.depth.errors.required">Depth is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="row clearfix">
+                       <div class="col-md-6">
+                           <div class="form-group">
+                               <label>VAT payed</label><br>
+                               <input type="radio" formControlName="vat_payed" value="yes" #vat_payed [(ngModel)]="boat_details.vat_payed"
+                                   [ngClass]="{'is-invalid':submitted && editBoat_val.vat_payed.errors}">&nbsp;&nbsp;<label
+                                   class="check_desc">Yes</label><br>
+                               <input type="radio" formControlName="vat_payed" value="no" #vat_payed [(ngModel)]="boat_details.vat_payed"
+                                   [ngClass]="{'is-invalid':submitted && editBoat_val.vat_payed.errors}">&nbsp;&nbsp;<label
+                                   class="check_desc">No</label>
+                               <div *ngIf="submitted && editBoat_val.vat_payed.errors" class="invalid-feedback">
+                                   <div *ngIf="editBoat_val.vat_payed.errors.required">Vat is required</div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                           <div class="form-group">
+                               <label>For</label><br>
+                               <input type="radio" formControlName="for" value="sale" #for [(ngModel)]="boat_details.for"
+                                   [ngClass]="{'is-invalid':submitted && editBoat_val.for.errors}">&nbsp;&nbsp;<label
+                                   class="check_desc">Sale</label><br>
+                               <input type="radio" formControlName="for" value="lease" #for [(ngModel)]="boat_details.for"
+                                   [ngClass]="{'is-invalid':submitted && editBoat_val.for.errors}">&nbsp;&nbsp;<label
+                                   class="check_desc">Lease</label><br>
+                               <input type="radio" formControlName="for" value="new" #for [(ngModel)]="boat_details.for"
+                                   [ngClass]="{'is-invalid':submitted && editBoat_val.for.errors}">&nbsp;&nbsp;<label
+                                   class="check_desc">New</label>
+                               <div *ngIf="submitted && editBoat_val.for.errors" class="invalid-feedback">
+                                   <div *ngIf="editBoat_val.for.errors.required">For is required</div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="row clearfix">
+                       <div class="col-md-6">
+                           <div class="form-group">
+                               <label>Boat Type</label>
+                               <input type="text" class="form-control" placeholder="" formControlName="boat_type" #boat_type [(ngModel)]="boat_details.boat_type"
+                                   [ngClass]="{'is-invalid':submitted && editBoat_val.boat_type.errors}">
+                               <div *ngIf="submitted && editBoat_val.boat_type.errors" class="invalid-feedback">
+                                   <div *ngIf="editBoat_val.boat_type.errors.required">Boat type is required</div>
+                               </div>
+                           </div>
+                           <div class="form-group">
+                               <label>Fuel</label>
+                               <input type="text" class="form-control" placeholder="" formControlName="fuel" #fuel [(ngModel)]="boat_details.fuel"
+                                   [ngClass]="{'is-invalid':submitted && editBoat_val.fuel.errors}">
+                               <div *ngIf="submitted && editBoat_val.fuel.errors" class="invalid-feedback">
+                                   <div *ngIf="editBoat_val.fuel.errors.required">Fuel is required</div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                           <div class="form-group">
+                               <label>Power</label>
+                               <input type="text" class="form-control" placeholder="" formControlName="power" #power [(ngModel)]="boat_details.power"
+                                   [ngClass]="{'is-invalid':submitted && editBoat_val.power.errors}">
+                               <div *ngIf="submitted && editBoat_val.power.errors" class="invalid-feedback">
+                                   <div *ngIf="editBoat_val.power.errors.required">Power is required</div>
+                               </div>
+                           </div>
+                           <div class="form-group">
+                               <label>Water capacity</label>
+                               <input type="text" class="form-control" placeholder="" formControlName="water_capacity" #water_capacity [(ngModel)]="boat_details.water_capacity"
+                                   [ngClass]="{'is-invalid':submitted && editBoat_val.water_capacity.errors}">
+                               <div *ngIf="submitted && editBoat_val.water_capacity.errors" class="invalid-feedback">
+                                   <div *ngIf="editBoat_val.water_capacity.errors.required">Water capacity is required</div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>No. of Bedroom</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="no_of_bedrooms" #no_of_bedrooms [(ngModel)]="boat_details.no_of_bedrooms"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.no_of_bedrooms.errors}">
+                       <div *ngIf="submitted && editBoat_val.no_of_bedrooms.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.no_of_bedrooms.errors.required">Bedroom is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>No. of Bathroom</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="no_of_bathrooms" #no_of_bathrooms [(ngModel)]="boat_details.no_of_bathrooms"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.no_of_bathrooms.errors}">
+                       <div *ngIf="submitted && editBoat_val.no_of_bathrooms.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.no_of_bathrooms.errors.required">Bathroom is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>Engine hours</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="engine_hours" #engine_hours [(ngModel)]="boat_details.engine_hours"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.engine_hours.errors}">
+                       <div *ngIf="submitted && editBoat_val.engine_hours.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.engine_hours.errors.required">Engine hours is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>Type of Engine</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="engine_type" #engine_type [(ngModel)]="boat_details.engine_type"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.engine_type.errors}">
+                       <div *ngIf="submitted && editBoat_val.engine_type.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.engine_type.errors.required">Engine type is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>No. of Engines</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="no_of_engines" #no_of_engines [(ngModel)]="boat_details.no_of_engines"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.no_of_engines.errors}">
+                       <div *ngIf="submitted && editBoat_val.no_of_engines.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.no_of_engines.errors.required">Engine no. is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>Hull material</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="hull_material" #hull_material [(ngModel)]="boat_details.hull_material"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.hull_material.errors}">
+                       <div *ngIf="submitted && editBoat_val.hull_material.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.hull_material.errors.required">Hull Material is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>Color hull</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="color_hull" #color_hull [(ngModel)]="boat_details.color_hull"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.color_hull.errors}">
+                       <div *ngIf="submitted && editBoat_val.color_hull.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.color_hull.errors.required">Hull color is required</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="form-group">
+                       <label>Location</label>
+                       <input type="text" class="form-control" placeholder="" formControlName="location" #location [(ngModel)]="boat_details.location"
+                           [ngClass]="{'is-invalid':submitted && editBoat_val.location.errors}">
+                       <div *ngIf="submitted && editBoat_val.location.errors" class="invalid-feedback">
+                           <div *ngIf="editBoat_val.location.errors.required">Location is required</div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="row clearfix">
+               <div class="col-md-6 offset-md-3">
+                   <div class="d-flex justify-content-around">
+
+                       <a href="#" class="btn brd_grey custom_btn_sm" title="delete"><span
+                               class="btn inner_btn_sm bg_white text_grey">Cancel</span></a>
+
+                    <button [disabled]="loading" type="submit" class="btn grad_brd custom_btn_sm" title="Submit"><span
+                                   class="btn glob_grad  inner_btn_sm"><span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>&nbsp;Submit</span></button>
+
+                   </div>
+               </div>
+           </div>
+       </form>
+
+
+   </div>
+</ng-template>
+<!--//-->
+ <!--//-->
+
+ <!--Globtech-->
+ <!--View Globtech details-->
+<ng-template #viewGlobtech let-modal>
+   <div class="modal-header">
+       <h5 class="modal-title" id="editProfileLabel">View Globtech</h5>
+       <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+       </button>
+   </div>
+   <div class="modal-body pro-item">
+       <video class="video-fluid z-depth-1" loop controls muted>
+          <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
+       </video>
+       <div class="pro-desc">
+          
+             <h3 class="pro-title">
+              Business Opportunity
+                <span class="float-right pro-price text-right">
+               <a href="#" class="btn grad_brd custom_btn_sm" title="contact"><span class="btn glob_grad  inner_btn_sm">contact</span></a>
+                € {{globtech_details.price}}
+               </span>
+             </h3>
+          
+ 
+       </div>
+       <div class="text-center viewBtn mt-2">
+          <a data-toggle="collapse" href="#viewDetails" role="button" aria-expanded="false" aria-controls="viewDetails">
+          View Details
+          </a>
+       </div>
+       <div id="viewDetails" class="collapse viewDetails">
+           <div class="pro-attr">
+               <div class="d-flex justify-content-between">
+                   <span class="text-dark"><label>Make:</label>&nbsp;<strong>{{globtech_details.make}}</strong></span>
+                   <span class="text-dark"><label>Price:</label>&nbsp;<strong>{{globtech_details.price}}</strong></span>
+                   <span class="text-dark"><label>Location:</label>&nbsp;<strong>{{globtech_details.location}}</strong></span>
+                  
+               </div>
+           </div>
+       <div class="seller-info">
+             <h6 class="seller-title">SELLER: Professional</h6>
+             <div class="row clearfix">
+                <div class="col-md-5"><span class="sell-head">Name:</span><span class="sell-head">{{globtech_details.name}}</span></div>
+                <div class="col-md-7"><span class="sell-head">Email:</span><span class="sell-head">{{globtech_details.email}}</span></div>
+             </div>
+             <div class="row clearfix">
+                <div class="col-md-5"><span class="sell-head">Mobile:</span><span class="sell-head">{{globtech_details.mobile}}</span></div>
+                <div class="col-md-7"><span class="sell-head">Address:</span><span class="sell-head">{{globtech_details.address}}</span></div>
+             </div>
+          </div>
+          <div class="equipment_desc">
+             <h6 class="seller-title">Equipment Description:</h6>
+             <p>{{globtech_details.description}}</p>
+          </div>
+          <div class="row clearfix">
+             <div class="col-md-10 offset-md-1">
+                <div class="d-flex justify-content-around">
+                   
+                   <button class="btn brd_grey custom_btn_sm"><span
+                       class="btn inner_btn_sm bg_white text_grey" (click)="open(deleteGlobtechDetail)">Delete</span></button>
+
+                   <a (click)="editGlobtechModal(globtecheditModal, globtech_details)" (click)="modal.dismiss()" class="btn grad_brd custom_btn_sm" title="edit"><span
+                       class="btn glob_grad  inner_btn_sm">Edit</span></a>
+
+                </div>
+             </div>
+          </div> 
+       </div>
+    </div>
+</ng-template>
+<!--//-->
+<!--Delete Modal-->
+<ng-template #deleteGlobtechDetail let-modal>
+   <div class="modal-header">
+       <h5 class="modal-title" id="editProfileLabel"></h5>
+       <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+       </button>
+   </div>
+   <div class="modal-body">
+       <p class="modal-title text-center" id="editProfileLabel"><strong>Are you sure you want to delete this details?</strong></p>
+     </div> 
+    <div class="modalFooter d-flex justify-content-center">
+       <div class="brd_grey mr-3"><button type="button" (click)="modal.dismiss()" class="btn reset_btn bg_white ">DISMISS</button></div>
+       <div class="grad_brd reset_d mr-3"><button type="submit" class="btn reset_btn glob_grad" (click)="deleteGlobtech(globtech_details._id)">DELETE</button></div>
+    </div>
+</ng-template>
+<!--//-->
+<!--Edit modal-->
+<ng-template #globtecheditModal let-modal>
+   <div class="modal-header">
+       <h5 class="modal-title" id="editProfileLabel">Edit Globtech</h5>
+       <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+       </button>
+   </div>
+   <div class="modal-body">
+       <form [formGroup]="globtech_edit" (ngSubmit)="updateGlobtech()" class="formcl">
+       <div class="row clearfix">
+          <div class="col-md-10 offset-md-1">
+             <!-- <div class="upload_video">
+                <div class="pro_upload">
+                <img src="assets/images/file-upload.jpg" class="image-thumbnail mx-auto d-block">
+
+             <div class="vfile text-center">
+                 <div class="box mt-3">
+    <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+    <label for="file-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Upload Video&hellip;</span></label>
+ </div>
+
+ <h6 class="text-center vfile_desc">Or drag and drop video files</h6>
+             </div>
+             </div>
+             <div class="vfile_resolution">
+                <h6 class="vfile_desc">Supported Resolution "2K" 2048x1080 ,"4k"3840 x 2160.</h6>
+             </div>
+
+             </div> -->
+          </div>
+       </div>
+      <input type="hidden" class="form-control" formControlName="postId" [(ngModel)]="globtech_details._id">
+       <div class="row clearfix">
+          <div class="col-md-6">
+             <div class="form-group">
+                <label>Category</label>
+                <input type="text" class="form-control" formControlName="category" readonly>
+             </div>
+             
+          </div>
+          <div class="col-md-6">
+           <!-- <div class="form-group">
+               <label>Select the details to display for contact</label><br>
+            <div *ngFor="let choice of checks; let i=index">
+               <label>
+                 <input type="checkbox" [value]="choice.value" (change)="onCheckChange($event)">&nbsp;&nbsp;&nbsp;&nbsp;
+                 <label class="check_desc">{{choice.description}}</label>
+               </label>
+             </div>
+            </div> -->
+            <div class="form-group">
+               <label>Name</label>
+               <input type="text" class="form-control" formControlName="name" #name [(ngModel)]="globtech_details.name" [ngClass]="{'is-invalid':submitted && editGlobtech_val.name.errors}">
+               <div *ngIf="submitted && editGlobtech_val.name.errors" class="invalid-feedback">
+                   <div *ngIf="editGlobtech_val.name.errors.required">Name is required</div>
+               </div> 
+            </div>
+           
+           </div>
+       </div>
+       <div class="row clearfix">
+          <div class="col-md-6">
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="text" class="form-control" placeholder="" formControlName="mobile" #mobile [(ngModel)]="globtech_details.mobile" [ngClass]="{'is-invalid':submitted && editGlobtech_val.mobile.errors}">
+                <div *ngIf="submitted && editGlobtech_val.mobile.errors" class="invalid-feedback">
+                    <div *ngIf="editGlobtech_val.mobile.errors.required">MObile is required</div>
+                </div> 
+             </div>
+              <div class="form-group">
+                <label>Email ID</label>
+                <input type="email" class="form-control" placeholder="" formControlName="email" #email [(ngModel)]="globtech_details.email" [ngClass]="{'is-invalid':submitted && editGlobtech_val.email.errors}">
+                <div *ngIf="submitted && editGlobtech_val.email.errors" class="invalid-feedback">
+                    <div *ngIf="editGlobtech_val.email.errors.required">Email is required</div>
+                </div> 
+             </div>
+          </div>
+          <div class="col-md-6">
+             <div class="form-group">
+                <label>Address</label>
+                <textarea class="form-control" rows="5" formControlName="address" #address [(ngModel)]="globtech_details.address" [ngClass]="{'is-invalid':submitted && editGlobtech_val.address.errors}"></textarea>
+                <div *ngIf="submitted && editGlobtech_val.address.errors" class="invalid-feedback">
+                   <div *ngIf="editGlobtech_val.address.errors.required">Address is required</div>
+               </div> 
+               </div>
+               <div class="form-group">
+                   <label>Keywords</label>
+                   <input type="text" class="form-control" placeholder="" formControlName="keywords" #keywords [(ngModel)]="globtech_details.keywords" [ngClass]="{'is-invalid':submitted && editGlobtech_val.keywords.errors}">
+                   <div *ngIf="submitted && editGlobtech_val.keywords.errors" class="invalid-feedback">
+                       <div *ngIf="editGlobtech_val.keywords.errors.required">Keyword is required</div>
+                   </div>
+                </div>
+            
+          </div>
+       </div>
+       <div class="row clearfix">
+          <div class="col-md-6">
+             <div class="form-group">
+                <label>Description</label>
+                <textarea class="form-control" formControlName="description" #description [(ngModel)]="globtech_details.description" [ngClass]="{'is-invalid':submitted && editGlobtech_val.description.errors}"></textarea>
+                <div *ngIf="submitted && editGlobtech_val.description.errors" class="invalid-feedback">
+                   <div *ngIf="editGlobtech_val.description.errors.required">Description is required</div>
+               </div> 
+             </div>
+             
+          </div>
+          <div class="col-md-6">
+             <!-- <div class="form-group">
+                <label>Map</label>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14716.679368643816!2d75.86500349999999!3d22.7590774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1580720018491!5m2!1sen!2sin" rameborder="0" style="border:0;" width="100%"></iframe>
+          </div> -->
+      </div>
+
+       </div>
+       <h5 class="postad_features">FEATURES</h5>
+          <div class="row clearfix">
+             <div class="col-md-4">
+                <div class="form-group">
+                <label>Make</label>
+                <input type="text" class="form-control" placeholder="" formControlName="make" #make [(ngModel)]="globtech_details.make" [ngClass]="{'is-invalid':submitted && editGlobtech_val.make.errors}">
+                <div *ngIf="submitted && editGlobtech_val.make.errors" class="invalid-feedback">
+                    <div *ngIf="editGlobtech_val.make.errors.required">Make is required</div>
+                </div>
+             </div>
+             </div>
+             <div class="col-md-4">
+                <div class="form-group">
+                <label>Price</label>
+                <input type="text" class="form-control" placeholder="" formControlName="price" #price [(ngModel)]="globtech_details.price" [ngClass]="{'is-invalid':submitted && editGlobtech_val.price.errors}">
+                <div *ngIf="submitted && editGlobtech_val.price.errors" class="invalid-feedback">
+                    <div *ngIf="editGlobtech_val.price.errors.required">Price is required</div>
+                </div>
+             </div>
+             </div>
+             <div class="col-md-4">
+                <div class="form-group">
+                <label>Location</label>
+                <input type="text" class="form-control" placeholder="" formControlName="location" #location [(ngModel)]="globtech_details.location" [ngClass]="{'is-invalid':submitted && editGlobtech_val.location.errors}">
+                <div *ngIf="submitted && editGlobtech_val.location.errors" class="invalid-feedback">
+                    <div *ngIf="editGlobtech_val.location.errors.required">Location is required</div>
+                </div>
+             </div>
+             </div>
+
+            
+          </div>
+          <div class="row clearfix">
+             <div class="col-md-6 offset-md-3">
+                <div class="d-flex justify-content-around">
+                   
+                     <a href="#" class="btn brd_grey custom_btn_sm" title="delete"><span class="btn   inner_btn_sm bg_white text_grey">Cancel</span></a>
+                  
+                     <button [disabled]="loading" type="submit" class="btn grad_brd custom_btn_sm" title="Submit"><span
+                       class="btn glob_grad  inner_btn_sm"><span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>&nbsp;Submit</span></button>
+                  
+                </div>
+             </div>
+          </div>
+      </form>
+       
+     
+    </div>
+</ng-template>
+<!--//-->
+ <!--//-->
+<app-footer></app-footer>

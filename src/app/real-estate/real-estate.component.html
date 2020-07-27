@@ -1,0 +1,67 @@
+<app-inner-header></app-inner-header>
+<div class="pt-3 crumbActive">
+   <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Realestate</li>
+   </ol>
+</div>
+
+<div class="container-fluid">
+   <!-- <button (click)="openModal()">open the modal</button> -->
+   <section class="realstate_section">
+      <h3 class="section-heading">REAL ESTATE
+         <small class="float-right"><a routerLink="#" class="viewall" title="Viewall">Sort By &nbsp;<i
+                  class="fa fa-bars"></i></a></small>
+      </h3>
+      <div *ngIf="noRealestate">
+         <h6 class="error_msg">{{error_msg}}</h6>
+      </div>
+      <div class="row">
+
+         <div class="col-md-3 mb-4" *ngFor="let item of realestate">
+            <div class="pro-item border">
+               <!-- <a (click)="this.openModal(realestateModal,item)">
+                  <video class="video-fluid">
+                     <source src="assets/video/building2mb.mp4" type="video/mp4">
+                  
+                  </video>
+               </a> -->
+               <a [routerLink]="['/viewrealestate/' ,item._id]">
+                  <video class="video-fluid">
+                     <source src="assets/video/building2mb.mp4" type="video/mp4">
+                     <!-- <source src = {{item.video_url}} type="video/mp4"> -->
+                  </video>
+               </a>
+               <!-- {{item.video_url}} -->
+               <div class="pro-desc">
+                  <a title="description">
+                     <h3 class="pro-title">
+                        {{item.type}}
+                        <img src="assets/images/globautologo.png" class="brand-logo ml-1">
+                        <span class="float-right pro-price text-right">
+                           &euro; {{item.price}}
+                        </span>
+                     </h3>
+                  </a>
+                  <div class="pro-attr">
+                     <div class="d-flex justify-content-around">
+                        <span class="text-dark cc">{{item.type_of_space}}</span>
+                        <span class="text-dark km"><i class="fa fa-shower"></i>&nbsp;{{item.no_of_bathrooms}}</span>
+                        <span class="text-dark trans"><i class="fa fa-bed"></i>&nbsp;{{item.no_of_bedrooms}}</span>
+                        <span class="text-dark make"><i class="fa fa-square"></i>&nbsp;{{item.square_feet}}</span>
+                        <span class="flag"><img src="assets/images/flag.jpg"></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+   <!--//-->
+
+</div>
+
+
+<app-footer></app-footer>

@@ -1,0 +1,151 @@
+<!--Header new-->
+<div class="profile_header bg-primelight">
+    <div class="container-fluid">
+       <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" routerLink="/home">
+             <img src="assets/images/globegif5.gif" class="img-fluid" width="250">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle indivi_navlink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-th-large"></i>&nbsp;&nbsp;Client Gallery</a>
+                <ul class="dropdown-menu dashboard_menu" aria-labelledby="dropdownMenuButton">
+                   <li><a class="dropdown-item" routerLink="/clientlist">
+                      <div class="dashboard_item">
+                         <img src="assets/images/client_img.png" width="30">
+                         &nbsp;&nbsp;<span class="dashboard_subitem">Client Gallery</span>
+                      </div>
+                   </a></li>
+                   <li><a class="dropdown-item" routerLink="/dashboard">
+                      <div class="dashboard_item">
+                         <img src="assets/images/product_img.png" width="30">
+                         &nbsp;&nbsp;<span class="dashboard_subitem">Website</span>
+                      </div>
+                   </a></li>
+                   <li><a class="dropdown-item" routerLink="#">
+                      <div class="dashboard_item">
+                         <img src="assets/images/store_img.png" width="30">
+                         &nbsp;&nbsp;<span class="dashboard_subitem">Store</span>
+                      </div>
+                   </a></li>
+                   <div class="view_dashboarditem"><i class="fa fa-th-large"></i>&nbsp;&nbsp;View dashboard</div>
+                </ul>
+             </li>
+             
+            </ul>
+            
+            <ul class="navbar-nav mt-2 mt-lg-0">
+             <li class="nav-item">
+               <a class="nav-link" href="#"><i class="fa fa-bell fa-2x"></i></a>
+             </li>
+             <li class="nav-item dropdown profile_dropdown">
+                <a class="nav-link dropdown-toggle indivi_navlink" routerLink="#" title="My Profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="custom_profile"><span class="">b</span></div>
+                </a>
+                <ul class="dropdown-menu profile_dp_menu" aria-labelledby="dropdownMenuButton">
+                   <li><a class="dropdown-item" routerLink="#">User</a></li>
+                   <li><a class="dropdown-item" routerLink="/dashboard">Dashboard</a></li>
+                   <li><a class="dropdown-item" routerLink="/account">Account</a></li>
+                   <li><a class="dropdown-item" routerLink="#">change password</a></li>
+                   <li><a class="dropdown-item" routerLink="/myprofile">My Profile</a></li>
+                   <li><a class="dropdown-item" style="cursor:pointer" (click)="logout()">Logout</a></li>
+                </ul>
+             </li>
+             
+           </ul>
+          </div>
+        </nav>
+    </div>
+</div>
+    <!--//-->
+    <!--Header new-->
+<div class="profile_secondheader bg_second_hdr">
+    <div class="container-fluid">
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/profile">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/account">Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/billing">Billing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/domain">Domain</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/advancedsetting">Advanced Settings</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/referfriend">Refer a Friend</a>
+                  </li>
+             
+            </ul>
+            
+            <ul class="navbar-nav mt-2 mt-lg-0">
+             <li class="nav-item">
+               <a class="nav-link" href="#">My Homepage</a>
+             </li>
+             
+           </ul>
+          </div>
+        </nav>
+    </div>
+    </div>
+    <!--//-->
+    <div class="padding">
+        <div class="container">
+            <div class="prodetails">
+                
+                <div class="row clearfix">
+                    <div class="col-md-8 offset-md-2">
+                      <h4 class="mt-4">Account</h4>
+                   <hr>
+                        <div class="dasboard_accdetail">
+                           
+                            <div class="seller_info">
+                              <h4 class="mt-4 mb-4"><span
+                                class="domain_txt">Account Info</span></h4>
+                                <h6 class="seller_title"><strong>Username:</strong></h6>
+                                <div class="input-group form-group">
+                                    <input type="text" class="form-control" placeholder="Mansi">
+                                    <div class="input-group-append">
+                                      <span class="input-group-text"><a routerLink="#"><i class="fa fa-edit"></i></a></span>
+                                    </div>
+                                </div>
+                                <h6 class="seller_title"><strong>Account Email:</strong></h6>
+                                <div class="input-group form-group">
+                                    <input type="text" class="form-control" placeholder="mansi.brinfotech@gmail.com">
+                                    <div class="input-group-append">
+                                      <span class="input-group-text"><a routerLink="#"><i class="fa fa-edit"></i></a></span>
+                                    </div>
+                                </div>
+                                <h4 class="mt-4 mb-4"><span
+                                  class="domain_txt">Password</span></h4>
+                                <h6 class="seller_title"><strong>Account Password</strong></h6>
+                                <div class="input-group form-group">
+                                    <input type="password" class="form-control" placeholder="123456">
+                                    <div class="input-group-append">
+                                      <span class="input-group-text"><a routerLink="#"><i class="fa fa-edit"></i></a></span>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>

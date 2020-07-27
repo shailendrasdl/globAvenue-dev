@@ -1,0 +1,185 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <!-- Cat list -->
+    <section class="row" id="realstate">
+       <div class="col-md-12">
+          <h3 class="section-heading">REAL ESTATE
+             <small class="float-right"><a href="#" class="viewall" title="Viewall">View all <i class="fa fa-angle-right"></i></a></small>
+          </h3>
+          <div *ngIf="noRealestate">
+            <h6 class="error_msg">{{error_msg}}</h6>
+         </div>
+            <div class="carousel-wrap" id="realestate">
+            <owl-carousel [options]="carouselOptions" [items]="realestate" [carouselClasses]="['owl-theme', 'sliding']">
+                <div class="item pro-item border" *ngFor="let item of realestate;">
+                  
+                  <video  controls class="video-fluid">
+                     <source src="assets/video/building2mb.mp4" type="video/mp4">
+                     <!-- <source src = {{item.video_url}} type="video/mp4"> -->
+                  </video>
+                 
+                  <div class="pro-desc">
+                    <a [routerLink]="['/realestatedetails/' ,item._id]" title="description">
+                        <h3 class="pro-title">
+                           {{item.type}}
+                           <img src="assets/images/globautologo.png" class="brand-logo ml-1">
+                           <span class="float-right pro-price text-right">
+                           &euro; {{item.price}}
+                           </span>
+                        </h3>
+                     </a>
+                     <div class="pro-attr">
+                        <div class="d-flex justify-content-around">
+                           <span class="text-dark cc">{{item.type_of_space}}</span>
+                           <span class="text-dark km"><i class="fa fa-shower"></i>&nbsp;{{item.no_of_bathrooms}}</span>
+                           <span class="text-dark trans"><i class="fa fa-bed"></i>&nbsp;{{item.no_of_bedrooms}}</span>
+                           <span class="text-dark make"><i class="fa fa-square"></i>&nbsp;{{item.square_feet}}</span>
+                           <span class="flag"><img src="assets/images/flag.jpg"></span>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+              </owl-carousel>              
+          </div>
+       </div>
+    </section>
+    <!--//-->
+    <!-- Cat list -->
+    <section class="row" id="automobile">
+       <div class="col-md-12">
+          <h3 class="section-heading">AUTOMOBILE
+             <small class="float-right"><a href="#" class="viewall" title="View All">View all <i class="fa fa-angle-right"></i></a></small>
+          </h3>
+          <div *ngIf="noAutomobile">
+            <h6 class="error_msg">{{error_msg}}</h6>
+         </div>
+          <div class="carousel-wrap" id="automobiles">
+            <owl-carousel [options]="carouselOptions" [items]="automobile" [carouselClasses]="['owl-theme', 'sliding']">
+                <div class="item pro-item border" *ngFor="let automobile of automobile;let i= index">
+                    <div class="itemvideo">
+                        <!--  <img src="http://via.placeholder.com/700x400" class="img-fluid"> -->
+                        <video class="video-fluid z-depth-1" loop controls muted class="video-fluid">
+							<source src="assets/video/3mb.mp4" type="video/mp4" />
+						</video>
+                        <div class="item-caption">
+                            <i class="fa fa-star-o"></i>
+                        </div> 
+                    </div>
+					<div class="pro-desc">
+						<a [routerLink]="['/automobiledetail/' ,automobile._id]" title="description">
+							<h3 class="pro-title">
+							   {{automobile.make}}
+							   <img src="" class="brand-logo ml-1">
+							   <span class="float-right pro-price text-right">
+							   &euro; {{automobile.price}}
+							   </span>
+							</h3>
+						</a>
+						<div class="pro-attr">
+							<div class="d-flex justify-content-around">
+							   <span class="text-dark cc"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{automobile.engine}}</span>
+							   <span class="text-dark km"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{automobile.mileage}}</span>
+							   <span class="text-dark trans"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{automobile.gear_type}}</span>
+							   <span class="text-dark make"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{automobile.location}}</span>
+							   <span class="mt-1 flag"><img src="assets/images/flag.jpg"></span>
+							</div>
+						</div>
+					</div>
+                </div>
+            </owl-carousel> 
+          </div>
+       </div>
+    </section>
+    <!--//-->
+    <!-- Cat list -->
+   <section class="row" id="boats">
+       <div class="col-md-12">
+          <h3 class="section-heading">BOATS
+             <small class="float-right"><a href="#" title="View All" class="viewall">View all <i class="fa fa-angle-right"></i></a></small>
+          </h3>
+          <div *ngIf="noBoat">
+            <h6 class="error_msg">{{error_msg}}</h6>
+         </div>
+          <div class="carousel-wrap" id="boats">
+            <owl-carousel [options]="carouselOptions" [items]="boat" [carouselClasses]="['owl-theme', 'sliding']">
+                <div class="item pro-item border" *ngFor="let boats of boat;let i= index">
+                  <!-- <img class="card-img-top" src="{{image.image}}" alt="Card image cap"> -->
+                  <video width="300" controls class="video-fluid">
+                     <source src="assets/video/multimb.mp4" type="video/mp4">
+                     <!-- <source src = {{item.video_url}} type="video/mp4"> -->
+                  </video>
+
+                  <div class="pro-desc">
+                    <a [routerLink]="['/boatdetail/', boats._id]" title="description">
+                        <h3 class="pro-title">
+                           {{boats.make}}
+                           <!-- <img src="{{image.proimage}}" class="brand-logo ml-1"> -->
+                           <span class="float-right pro-price text-right">
+                           &euro; {{boats.price}}
+                           </span>
+                        </h3>
+                     </a>
+                     <div class="pro-attr">
+                        <div class="d-flex justify-content-around">
+                            <span class="text-dark cc">{{boats.boat_type}}</span>
+                            <span class="text-dark km"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{boats.no_of_bedrooms}}</span>
+                            <span class="text-dark trans"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{boats.no_of_bathrooms}}</span>
+                            <span class="text-dark make"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;{{boats.fuel}}</span>
+                            <span class="flag"><img src="assets/images/flag.jpg"></span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </owl-carousel>
+            </div>
+       </div>
+    </section>
+    <!--//-->
+    <!-- Cat list -->
+    <section class="row" id="globtech">
+       <div class="col-md-12">
+          <h3 class="section-heading">GLOBTECH
+             <small class="float-right"><a href="#" class="viewall" title="View All">View all <i class="fa fa-angle-right"></i></a></small>
+          </h3>
+          <div *ngIf="noGlobtech">
+            <h6 class="error_msg">{{error_msg}}</h6>
+         </div>
+          <div class="carousel-wrap" id="globtech">
+            <owl-carousel [options]="carouselOptions" [items]="globtech" [carouselClasses]="['owl-theme', 'sliding']">
+                <div class="item pro-item border" *ngFor="let globtech of globtech;let i= index">
+                  <!-- <img class="card-img-top" src="{{image.image}}" alt="Card image cap"> -->
+                  <div class="itemvideo">
+                     <!--  <img src="http://via.placeholder.com/700x400" class="img-fluid"> -->
+                     <video class="video-fluid z-depth-1" loop controls muted class="video-fluid">
+                  <source src="assets/video/3mb.mp4" type="video/mp4" />
+               </video>
+                     <div class="item-caption">
+                         <i class="fa fa-star-o"></i>
+                     </div> 
+                 </div>
+                  <div class="pro-desc">
+                    <a [routerLink]="['/globtechdetail/', globtech._id]" title="description">
+                        <h3 class="pro-title">
+                           Business Opportunity
+                           <!-- <img src="{{image.proimage}}" class="brand-logo ml-1"> -->
+                           <span class="float-right pro-price text-right">
+                           &euro; {{globtech.price}}</span>
+                        </h3>
+                     </a>
+                     <div class="pro-attr">
+                        <div class="d-flex justify-content-around">
+                            <span class="text-dark">&nbsp;<strong>{{globtech.make}}</strong></span>
+                            <span class="text-dark">&nbsp;<strong>{{globtech.price}}</strong></span>
+                            <span class="text-dark">&nbsp;<strong>{{globtech.location}}</strong></span>
+                           
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </owl-carousel>
+              
+          </div>
+       </div>
+    </section>
+</div>
+<app-footer></app-footer>

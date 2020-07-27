@@ -1,0 +1,753 @@
+<!--header-->
+<div class="container-fluid">
+    <!--Mobile view-->
+    <div class="mobileview">
+       <div class="row ">
+          <nav class="navbar navbar-expand-lg navbar-light">
+             <a class="navbar-brand" routerLink="home.html"> <img src="assets/images/logo_mobile.gif"
+                   class="img-fluid"></a>
+             <span class="bell-icon"><a class="" routerLink="#" title="Notification"><i
+                      class="fa fa-bell-o fa-lg"></i></a></span>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                   <li class="nav-item active">
+                      <a class="nav-link " routerLink="#" title="Home">Home <span class="sr-only">(current)</span></a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" routerLink="#" title="My Favorites">My Favorites</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" routerLink="#" title="My Alerts">My Alerts</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" routerLink="#" title="My Charts">My Charts</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" routerLink="#" title="My Posts">My Posts</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" routerLink="signin.html" title="My Posts">Login</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" routerLink="signup.html" title="My Posts">Sign UP</a>
+                   </li>
+                   <li class="nav-item">
+                      <a data-target="#postad_automobile" data-toggle="modal" class="btn grad_brd grad_custom_brd"
+                         title="Post AD"><span class="btn grad_btn_custom glob_grad"><i
+                               class="fa fa-plus"></i>&nbsp;&nbsp;POST AD</span></a>
+                   </li>
+                </ul>
+             </div>
+          </nav>
+          <div class="col-md-12 mt-3 mb-5">
+             <div class="d-flex justify-content-around">
+                <div class="p-2">
+                   <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/realestate"
+                      title="Realestate" class="single-category">
+                      <img src="assets/images/pro1.png" class="img-fluid not_selected" alt="Realestate">
+                      <img src="assets/images/ringpro1.jpg" class="img-fluid selected_image" alt="Realestate">
+                   </a>
+                </div>
+                <div class="p-2">
+                   <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/automobile"
+                      title="Automobiles" class="single-category"><img src="assets/images/pro2.png"
+                         class="img-fluid not_selected" alt="Automobiles">
+                      <img src="assets/images/ringpro2.jpg" class="img-fluid selected_image" alt="Automobiles">
+                   </a>
+                </div>
+                <div class="p-2">
+                   <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/boats"
+                      title="Boats" class="single-category">
+                      <img src="assets/images/pro3.png" class="img-fluid not_selected" alt="Boats">
+ 
+                      <img src="assets/images/ringpro3.jpg" class="img-fluid selected_image" alt="Boats">
+                   </a>
+                </div>
+                <div class="p-2">
+                   <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/globtech"
+                      title="Globtech" class="single-category"><img src="assets/images/pro4.png"
+                         class="img-fluid not_selected" alt="Globtech">
+                      <img src="assets/images/ringpro4.jpg" class="img-fluid selected_image" alt="Globtech">
+                   </a>
+                </div>
+                <div class="p-2">
+                   <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/globpage"
+                      title="Globpage" class="single-category">
+                      <img src="assets/images/pro5.png" class="img-fluid not_selected" alt="Globpage">
+                      <img src="assets/images/ringpro5.jpg" class="img-fluid selected_image" alt="Globpage">
+                   </a>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-12 primary-form">
+             <form [formGroup]="">
+                <div class="input-group md-form form-sm form-2 pl-0">
+                   <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+                   <div class="input-group-append">
+                      <span class="input-group-text red lighten-3" id="basic-text1" type="submit"><i
+                            class="fa fa-search text-grey" aria-hidden="true"></i></span>
+                   </div>
+                </div>
+             </form>
+          </div>
+       </div>
+    </div>
+    <!--//-->
+    <div class="webview">
+       <div class="row ">
+          <div class="col-md-8">
+             <!-- logo -->
+             <div class="row">
+                <div class="col-md-6 col-sm-4 border-bottom border-right">
+                   <a class="navbar-brand" routerLink="home.html">
+                      <img src="assets/images/globegif5.gif" class="img-fluid">
+                   </a>
+                   <button class="navbar-toggler" type="button" data-toggle="collapse"
+                      data-target="#bs-example-navbar-collapse-1">
+                      <span class="navbar-toggler-icon"></span>
+                   </button>
+                </div>
+                <div class="col-md-6 col-sm-8 border-bottom">
+                   <div class="row clearfix">
+                      <div class="primary-menu">
+                         <nav class="navbar navbar-expand-lg navbar-light">
+                            <!--  <a class="navbar-brand" routerLink="#">Brand</a> -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                               <ul class="navbar-nav">
+                                  <li class="nav-item active">
+                                     <a class="nav-link " routerLink="#" title="Home">Home <span
+                                           class="sr-only">(current)</span></a>
+                                  </li>
+                                  <li class="nav-item">
+                                     <a class="nav-link" routerLink="#" title="My Favorites">My Favorites</a>
+                                  </li>
+                                  <li class="nav-item">
+                                     <a class="nav-link" routerLink="#" title="My Alerts">My Alerts</a>
+                                  </li>
+                                  <li class="nav-item">
+                                     <a class="nav-link" routerLink="#" title="My Charts">My Charts</a>
+                                  </li>
+                                  <li class="nav-item">
+                                     <a class="nav-link" routerLink="#" title="My Posts">My Posts</a>
+                                  </li>
+                               </ul>
+                            </div>
+                         </nav>
+                      </div>
+                   </div>
+                   <div class="flex-row clearfix">
+                      <div class="d-flex  justify-content-around text-center">
+                         <div class="visitors_num"><span>100 836 5456</span><br> <span>Visitors</span></div>
+                         <a data-target="#postad_automobile" class="btn grad_brd grad_custom_brd" title="Post AD"
+                            data-toggle="modal"><span class="btn grad_btn_custom glob_grad"><i
+                                  class="fa fa-plus"></i>&nbsp;&nbsp;POST AD</span></a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="d-flex justify-content-around padding">
+                <a routerLinkActive=" cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/realestate"
+                   title="Realestate" class="single-category">
+                   <img src="assets/images/pro1.png" class="img-fluid not_selected" alt="realestate">
+ 
+                   <img src="assets/images/ringpro1.jpg" class="img-fluid selected_image" alt="realestate">
+                </a>
+ 
+                <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/automobile"
+                   title="Automobile" class="single-category">
+                   <img src="assets/images/pro2.png" class="img-fluid not_selected" alt="automobile">
+ 
+                   <img src="assets/images/ringpro2.jpg" class="img-fluid selected_image" alt="automobile">
+                </a>
+ 
+                <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/boats"
+                   title="Boats" class="single-category">
+                   <img src="assets/images/pro3.png" class="img-fluid not_selected" alt="Boats">
+ 
+                   <img src="assets/images/ringpro3.jpg" class="img-fluid selected_image" alt="Boats">
+                </a>
+                <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/globtech"
+                   title="Globtech" class="single-category">
+                   <img src="assets/images/pro4.png" class="img-fluid not_selected" alt="Globtech">
+ 
+                   <img src="assets/images/ringpro4.jpg" class="img-fluid selected_image" alt="Globtech">
+                </a>
+                <a routerLinkActive="cat_active" [routerLinkActiveOptions]="{exact: true}" routerLink="/globpage"
+                   title="Globpage" class="single-category">
+                   <img src="assets/images/pro5.png" class="img-fluid not_selected" alt="Globpage">
+ 
+                   <img src="assets/images/ringpro5.jpg" class="img-fluid selected_image" alt="Globpage">
+                </a>
+             </div>
+           
+         
+ 
+          </div>
+          <div class="col-md-4">
+             <div class="row">
+                <div class="navbar navbar-expand-lg right-navbar">
+                   <ul class="navbar-nav langoption">
+                      <li class="nav-item btn-group">
+                         <button class="dropdown-toggle lang-btn" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/images/eng.jpg">&nbsp;English
+                         </button>
+                         <div class="dropdown-menu">
+                            <a class="dropdown-item" routerLink="#"><img src="assets/images/france.jpg"
+                                  alt="">&nbsp;&nbsp;French</a>
+                            <a class="dropdown-item" routerLink="#"><img src="assets/images/japanese.jpg"
+                                  alt="#">&nbsp;&nbsp;Japanese</a>
+                         </div>
+                         <a routerLink="#" type="button" class="search_button" title="Search"><img
+                               src="assets/images/search_button.jpg"></a>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link" routerLink="#" title="Connection">Connection</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" routerLink="#" title="My Profile" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">My Profile</a>
+                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" routerLink="#">User</a></li>
+                            <li><a class="dropdown-item" routerLink="/dashboard">Dashboard</a></li>
+                            <li><a class="dropdown-item" routerLink="#">change password</a></li>
+                            <li><a class="dropdown-item" routerLink="/myprofile">My Profile</a></li>
+                            <li><a class="dropdown-item" style="cursor:pointer" (click)="logout()">Logout</a></li>
+                         </ul>
+                      </li>
+                   </ul>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-md-12 border p-3">
+                   <video class="video-fluid z-depth-1" loop  controls>
+                      <source src="assets/video/real-estate2.mp4" type="video/mp4" />
+                   </video>
+ 
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="row clearfix border-top pt-3 crumbActive">
+        <ol class="breadcrumb">
+           <li class="breadcrumb-item"><a routerLink="#">Home</a></li>
+           <li class="breadcrumb-item active" aria-current="page">Automobile</li>
+        </ol>
+     </div>
+    <div class="row clearfix  primary-form">
+       <div class="col-md-5">
+          <form [formGroup]="">
+             <div class="input-group md-form form-sm form-2 pl-0">
+                <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                   <span class="input-group-text red lighten-3" id="basic-text1" type="submit"><i
+                         class="fa fa-search text-grey" aria-hidden="true"></i></span>
+                </div>
+             </div>
+          </form>
+       </div>
+       <div class="col-md-3">
+          <div class="input-group md-form form-sm form-2 pl-0">
+             <input type="text" class="form-control my-0 py-1 red-border" type="text" placeholder="Search"
+                aria-label="Search" id="txtPlaces" placeholder="Enter a location">
+             <div class="input-group-append">
+                <span class="input-group-text red lighten-3" id="basic-text1"><i class="fa fa-map-marker text-grey" aria-hidden="true"></i></span>
+             </div>
+          </div>
+       </div>
+    </div>
+    <!--//-->
+ </div>
+ <!--//-->
+<div class="container-fluid">
+  
+   <!-- Cat list -->
+   <!-- Cat list -->
+   <section class="realstate_section">
+      <h3 class="section-heading">Automobile
+         <small class="float-right"><a href="#" class="viewall" title="Viewall">Sort By &nbsp;<i
+            class="fa fa-bars"></i></a></small>
+      </h3>
+      <div class="row mb-4">
+         <div class="col-md-3">
+            <div class="pro-item border">
+               <a href="#" data-toggle="modal" data-target="#automobile_details"><img class="card-img-top"
+                  src="assets/images/automobile.jpg" alt="Card image cap"></a>
+               <div class="pro-desc">
+                  <a href="#" title="description">
+                     <h3 class="pro-title">
+                        Mercedes SL 320
+                        <!--<img src="assets/images/globautologo.png" class="brand-logo ml-1">-->
+                        <span class="float-right pro-price text-right">
+                        &euro; 40,000.00
+                        </span>
+                     </h3>
+                  </a>
+                  <div class="pro-attr">
+                     <div class="d-flex justify-content-around">
+                        <span class="text-dark cc">730cc</span>
+                        <span class="text-dark km"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;12,000km</span>
+                        <span class="text-dark trans"><i class="fa fa-car"
+                           aria-hidden="true"></i>&nbsp;Automatic</span>
+                        <span class="text-dark make"><i class="fa fa-car"
+                           aria-hidden="true"></i>&nbsp;Buxelles</span>
+                        <span class="flag"><img src="assets/images/flag.jpg"></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3">
+            <div class="pro-item border">
+               <img class="card-img-top" src="assets/images/automobile.jpg" alt="Card image cap">
+               <div class="pro-desc">
+                  <a href="#" title="description">
+                     <h3 class="pro-title">
+                        Mercedes SL 320
+                        <!--<img src="assets/images/globautologo.png" class="brand-logo ml-1">-->
+                        <span class="float-right pro-price text-right">
+                        &euro; 40,000.00
+                        </span>
+                     </h3>
+                  </a>
+                  <div class="pro-attr">
+                     <div class="d-flex justify-content-around">
+                        <span class="text-dark cc">730cc</span>
+                        <span class="text-dark km"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;12,000km</span>
+                        <span class="text-dark trans"><i class="fa fa-car"
+                           aria-hidden="true"></i>&nbsp;Automatic</span>
+                        <span class="text-dark make"><i class="fa fa-car"
+                           aria-hidden="true"></i>&nbsp;Buxelles</span>
+                        <span class="flag"><img src="assets/images/flag.jpg"></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3">
+            <div class="pro-item border">
+               <img class="card-img-top" src="assets/images/automobile.jpg" alt="Card image cap">
+               <div class="pro-desc">
+                  <a href="#" title="description">
+                     <h3 class="pro-title">
+                        Mercedes SL 320
+                        <!--<img src="assets/images/globautologo.png" class="brand-logo ml-1">-->
+                        <span class="float-right pro-price text-right">
+                        &euro; 40,000.00
+                        </span>
+                     </h3>
+                  </a>
+                  <div class="pro-attr">
+                     <div class="d-flex justify-content-around">
+                        <span class="text-dark cc">730cc</span>
+                        <span class="text-dark km"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;12,000km</span>
+                        <span class="text-dark trans"><i class="fa fa-car"
+                           aria-hidden="true"></i>&nbsp;Automatic</span>
+                        <span class="text-dark make"><i class="fa fa-car"
+                           aria-hidden="true"></i>&nbsp;Buxelles</span>
+                        <span class="flag"><img src="assets/images/flag.jpg"></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3">
+            <div class="pro-item border">
+               <img class="card-img-top" src="assets/images/automobile.jpg" alt="Card image cap">
+               <div class="pro-desc">
+                  <a href="#" title="description">
+                     <h3 class="pro-title">
+                        Mercedes SL 320
+                        <!--<img src="assets/images/globautologo.png" class="brand-logo ml-1">-->
+                        <span class="float-right pro-price text-right">
+                        &euro; 40,000.00
+                        </span>
+                     </h3>
+                  </a>
+                  <div class="pro-attr">
+                     <div class="d-flex justify-content-around">
+                        <span class="text-dark cc">730cc</span>
+                        <span class="text-dark km"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;12,000km</span>
+                        <span class="text-dark trans"><i class="fa fa-car"
+                           aria-hidden="true"></i>&nbsp;Automatic</span>
+                        <span class="text-dark make"><i class="fa fa-car"
+                           aria-hidden="true"></i>&nbsp;Buxelles</span>
+                        <span class="flag"><img src="assets/images/flag.jpg"></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--//-->
+</div>
+
+<!--Automobile post modal-->
+<!--Postad Modal-->
+<div class="modal fade" id="postad_automobile" tabindex="-1" role="dialog" aria-labelledby="postad_form" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+       <div class="modal-content">
+          <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+             </button>
+          </div>
+          <div class="modal-body">
+            <!-- <form [formGroup]="form" (ngSubmit)="submit()">
+               <label formArrayName="orders" *ngFor="let order of form.controls.orders.controls; let i = index">
+                 <input type="checkbox" [formControlName]="i">
+                 {{orders[i].name}}
+               </label>
+             
+               <div *ngIf="!form.valid">At least one order must be selected</div>
+               <br>
+               <button [disabled]="!form.valid">submit</button>
+             </form> -->
+            <form [formGroup]="automobile_post" class="formcl" (ngSubmit)="postAutomobile(automobile_post)">
+            
+               <div class="row clearfix">
+                   <div class="col-md-10 offset-md-1">
+                    <div class="upload_video">
+                        <div class="pro_upload">
+                           <img src="assets/images/file-upload.jpg" class="image-thumbnail mx-auto d-block">
+
+                           <div class="vfile text-center">
+                              <div class="box mt-3">
+                                 <input type="file" (change)="picked($event)" formControlName="video_url"
+                                    id="video_url" class="inputfile inputfile-1" accept="video/*" base-sixty-four-input/>
+                                 <label for="video_url"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span>Upload
+                                       Video&hellip;</span></label>
+                                       <!-- <div *ngIf="submitted && postVal.video_url.errors" class="invalid-feedback">
+                                          <div *ngIf="postVal.video_url.errors.required">Video is required</div>
+                                      </div>       -->
+                              </div>
+                             
+                              <h6 class="text-center vfile_desc">Or drag and drop video files</h6>
+                           </div>
+                         
+                        </div>
+                        <div class="vfile_resolution">
+                           <h6 class="vfile_desc">Supported Resolution "2K" 2048x1080 ,"4k"3840 x 2160.</h6>
+                        </div>
+
+                     </div>
+                   </div>
+                </div>
+                
+                  <div class="row clearfix">    
+                   <div class="col-md-6">
+                      <div class="form-group">
+                         <label>Category</label>
+                         <input type="text" class="form-control" formControlName="category" placeholder="" readonly [ngClass]="{'is-invalid': submitted && postVal.category.errors}">
+                         <div *ngIf="submitted && postVal.category.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.category.errors.required">Category is required</div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                         <label>Name</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="name" [ngClass]="{'is-invalid': submitted && postVal.name.errors}">
+                         <div *ngIf="submitted && postVal.category.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.category.errors.required">Name is required</div>
+                        </div>
+                      </div>
+                   </div>
+                   <div class="col-md-6">
+                     <div class="form-group">
+                        <label>Select the details to display for contact</label><br>
+                     <div *ngFor="let choice of checks; let i=index">
+                        <label>
+                          <input type="checkbox" [value]="choice.value" (change)="onCheckChange($event)">&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label class="check_desc">{{choice.description}}</label>
+                        </label>
+                      </div>
+                     </div>
+                      <!-- <div class="form-group">
+                         <label>Select the details to display for contact</label><br>
+                         <input type="checkbox" formControlName="display" value="mobile">&nbsp;&nbsp;&nbsp;&nbsp;<label class="check_desc">Mobile Number</label><br>
+                         <input type="checkbox" formControlName="display" value="email">&nbsp;&nbsp;&nbsp;&nbsp;<label class="check_desc">Email ID</label>
+                         <br>
+                         <input type="checkbox" formControlName="display" value="address">&nbsp;&nbsp;&nbsp;&nbsp;<label class="check_desc">Address</label>
+                         <br>
+                         <input type="checkbox" formControlName="display" value="location">&nbsp;&nbsp;&nbsp;&nbsp;<label class="check_desc">Location</label>
+                      </div> -->
+                   </div>
+                </div>
+                <div class="row clearfix">
+                   <div class="col-md-6">
+                     <div class="form-group">
+                        <label>Mobile Number</label>
+                        <input type="text" class="form-control" placeholder="" formControlName="mobile" [ngClass]="{'is-invalid':submitted && postVal.mobile.errors}" [pattern]="mobNumberPattern">
+                        <div *ngIf="submitted && postVal.mobile.errors" class="invalid-feedback">
+                           <div *ngIf="postVal.mobile.errors.required">Mobile is required</div>
+                            <div *ngIf="postVal.mobile.errors.pattern">Enter Valid Mobile number</div>
+                       </div>
+                     </div>
+                      <div class="form-group">
+                         <label>Email ID</label>
+                         <input type="email" class="form-control" placeholder="" formControlName="email" [ngClass]="{'is-invalid': submitted && postVal.email.errors}">
+                         <div *ngIf="postVal.email.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.email.errors.required">Email is required.</div>
+                         </div>
+                     </div>
+                   </div>
+                   <div class="col-md-6">
+                      <div class="form-group">
+                         <label>Address</label>
+                         <textarea class="form-control" rows="5" formControlName="address" [ngClass]="{'is-invalid':submitted && postVal.address.errors}"></textarea>
+                         <div *ngIf="submitted && postVal.address.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.address.errors.required">Address is required</div>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="row clearfix">
+                   <div class="col-md-6">
+                      <div class="form-group">
+                         <label>Description</label>
+                         <textarea class="form-control" formControlName="description" [ngClass]="{'is-invalid':submitted && postVal.description.errors}"></textarea>
+                         <div *ngIf="submitted && postVal.description.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.description.errors.required">Description is required</div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                         <label>Keywords</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="keywords" [ngClass]="{'is-invalid':submitted && postVal.keywords.errors}">
+                        <div *ngIf="submitted && postVal.keywords.errors" class="invalid-feedback">
+                           <div *ngIf="postVal.keywords.errors.required">Keyword is required</div>
+                       </div>
+                      </div>
+                   </div>
+                   <div class="col-md-6">
+                      <div class="form-group">
+                         <label>Map</label>
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14716.679368643816!2d75.86500349999999!3d22.7590774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1580720018491!5m2!1sen!2sin" rameborder="0" style="border:0;" width="100%"></iframe>
+                      </div>
+                   </div>
+                </div>
+                <h5 class="postad_features">FEATURES</h5>
+                <div class="row clearfix">
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Make</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="make" [ngClass]="{'is-invalid': submitted && postVal.make.errors}">
+                         <div *ngIf="submitted && postVal.make.errors" class="invalid-feedback">
+                             <div *ngIf="postVal.make.errors.required">Make is required.</div>
+                         </div>
+                        </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Model</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="model" [ngClass]="{'is-invalid': submitted && postVal.model.errors}">
+                         <div *ngIf="submitted && postVal.model.errors" class="invalid-feedback">
+                             <div *ngIf="postVal.model.errors.required">Model is required.</div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Variant</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="variant" [ngClass]="{'is-invalid': submitted && postVal.variant.errors}">
+                         <div *ngIf="submitted && postVal.variant.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.variant.errors.required">Variant is required.</div>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Engine</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="engine" [ngClass]="{'is-invalid':submitted && postVal.engine.errors}">
+                         <div *ngIf="submitted && postVal.engine.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.engine.errors.required">Engine is required</div>
+                        </div>
+                        </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Horse Power</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="horse_power" [ngClass]="{'is-invalid':submitted && postVal.horse_power.errors}">
+                         <div *ngIf="submitted && postVal.horse_power.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.horse_power.errors.required">Horse Power is required</div>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Mileage</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="mileage" [ngClass]="{'is-invalid':submitted && postVal.mileage.errors}">
+                         <div *ngIf="submitted && postVal.mileage.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.mileage.errors.required">Mileage is required</div>
+                        </div>
+                        </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Fuel</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="fuel" [ngClass]="{'is-invalid':submitted && postVal.fuel.errors}">
+                         <div *ngIf="submitted && postVal.fuel.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.fuel.errors.required">Fuel is required</div>
+                        </div>
+                       </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Emission class</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="emission_class" [ngClass]="{'is-invalid':submitted && postVal.emission_class.errors}">
+                         <div *ngIf="submitted && postVal.emission_class.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.emission_class.errors.required">Emission Class is required</div>
+                        </div>
+                        </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Seller</label><br>
+                         <input type="radio" formControlName="seller" value="company" [ngClass]="{'is-invalid':submitted && postVal.seller.errors}">&nbsp;&nbsp;<label class="check_desc">Company</label><br>
+                         <input type="radio" formControlName="seller" value="individual" [ngClass]="{'is-invalid':submitted && postVal.seller.errors}">&nbsp;&nbsp;<label class="check_desc">Individual</label>
+                         <div *ngIf="submitted && postVal.seller.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.seller.errors.required">Seller is required</div>
+                        </div>
+                      </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Condition</label><br>
+                         <input type="radio" formControlName="condition" value="used" [ngClass]="{'is-invalid':submitted && postVal.condition.errors}">&nbsp;&nbsp;<label class="check_desc">Used</label><br>
+                         <input type="radio" formControlName="condition" value="new" [ngClass]="{'is-invalid':submitted && postVal.condition.errors}">&nbsp;&nbsp;<label class="check_desc">New</label><br>
+                         <div *ngIf="submitted && postVal.condition.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.condition.errors.required">Condition is required</div>
+                        </div>
+                      </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Gear type</label><br>
+                         <input type="radio" formControlName="gear_type" value="automatic" [ngClass]="{'is-invalid':submitted && postVal.gear_type.errors}">&nbsp;&nbsp;<label class="check_desc">Automatic</label><br>
+                         <input type="radio" formControlName="gear_type" value="manual" [ngClass]="{'is-invalid':submitted && postVal.gear_type.errors}">&nbsp;&nbsp;<label class="check_desc">Manual</label>
+                         <div *ngIf="submitted && postVal.gear_type.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.gear_type.errors.required">Gear Type is required</div>
+                        </div>
+                      </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>1st registration year</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="first_regst_year" [ngClass]="{'is-invalid':submitted && postVal.first_regst_year.errors}">
+                         <div *ngIf="submitted && postVal.fuel.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.fuel.errors.required">Registration year is required</div>
+                        </div>
+                        </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Currency</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="currency" [ngClass]="{'is-invalid':submitted && postVal.currency.errors}">
+                         <div *ngIf="submitted && postVal.currency.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.currency.errors.required">Currency is required</div>
+                        </div>
+                        </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Price</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="price" [ngClass]="{'is-invalid':submitted && postVal.price.errors}">
+                         <div *ngIf="submitted && postVal.price.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.price.errors.required">Price is required</div>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Guarantee</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="waranty" [ngClass]="{'is-invalid':submitted && postVal.waranty.errors}">
+                         <div *ngIf="submitted && postVal.waranty.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.waranty.errors.required">Guarantee is required</div>
+                        </div>    
+                    </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Location</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="location" [ngClass]="{'is-invalid':submitted && postVal.location.errors}">
+                         <div *ngIf="submitted && postVal.location.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.location.errors.required">Location is required</div>
+                        </div>  
+                        </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Color</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="color" [ngClass]="{'is-invalid':submitted && postVal.color.errors}">
+                         <div *ngIf="submitted && postVal.color.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.color.errors.required">Color is required</div>
+                        </div>  
+                    </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Interior seats</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="interior_seats" [ngClass]="{'is-invalid':submitted && postVal.interior_seats.errors}">
+                         <div *ngIf="submitted && postVal.interior_seats.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.interior_seats.errors.required">Interior Seat is required</div>
+                        </div> 
+                      </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Doors</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="doors" [ngClass]="{'is-invalid':submitted && postVal.doors.errors}">
+                         <div *ngIf="submitted && postVal.doors.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.doors.errors.required">Door is required</div>
+                        </div> 
+                    </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Seats</label>
+                         <input type="text" class="form-control" placeholder="" formControlName="seats" [ngClass]="{'is-invalid':submitted && postVal.seats.errors}">
+                         <div *ngIf="submitted && postVal.seats.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.seats.errors.required">Seat is required</div>
+                        </div> 
+                      </div>
+                   </div>
+                   <div class="col-md-6">
+                      <div class="form-group">
+                         <label class="">Equipment description</label>
+                         <textarea class="form-control" rows="4" formControlName="equipment_description" [ngClass]="{'is-invalid':submitted && postVal.equipment_description.errors}"></textarea>
+                         <div *ngIf="submitted && postVal.equipment_description.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.equipment_description.errors.required">Description is required</div>
+                        </div> 
+                      </div>
+                   </div>
+                   <div class="col-md-6">
+                      <div class="form-group">
+                         <label class="">Accessories</label>
+                         <textarea class="form-control" rows="4" formControlName="accessories" [ngClass]="{'is-invalid':submitted && postVal.accessories.errors}"></textarea>
+                         <div *ngIf="submitted && postVal.accessories.errors" class="invalid-feedback">
+                            <div *ngIf="postVal.accessories.errors.required">Accessories is required</div>
+                        </div> 
+                      </div>
+                   </div>
+                </div>
+                <div class="row clearfix">s
+                   <div class="col-md-6 offset-md-3">
+                      <div class="d-flex justify-content-around">
+                         <a href="#" class="btn brd_grey custom_btn_sm" title="delete"><span class="btn   inner_btn_sm bg_white text_grey">Cancel</span></a>
+                         <button type="submit" [disabled]="loading" class="btn grad_brd custom_btn_sm"><span class="btn glob_grad  inner_btn_sm"><span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>&nbsp;Submit</span></button>
+                      </div>
+                   </div>
+                </div>
+             </form>
+          </div>
+       </div>
+    </div>
+ </div>
+ <!--//-->
+<!--//-->
+
+<app-footer></app-footer>

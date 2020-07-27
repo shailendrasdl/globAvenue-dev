@@ -1,0 +1,129 @@
+<app-inner-header></app-inner-header>
+<div class="container-fluid">
+   <div class="bg_grey planSection">
+
+      <section class="col-md-8">
+
+         <div class="silver_plan mt-5" *ngIf="silver_plan">
+            <div class="row clearfix">
+               <div class="col-md-3 col-3 mt-3">
+                  <input type="radio" name="plan" value="silver">&nbsp;&nbsp;
+                  <label class="plan_type">{{silver?.plan_name}}</label>
+               </div>
+               <div class="col-md-9 col-9">
+                  <div class="row clearfix type_prodesc">
+                     <div class="col-md-4 col-4">
+                        <label class="price_title">Price</label>
+                     </div>
+                     <div class="col-md-4 col-4">
+                        <label class="price_title">Validity</label>
+                     </div>
+                     <div class="col-md-4 col-4">
+                        <label class="price_title">Post Validity</label>
+                     </div>
+                  </div>
+
+                  <div class="bg_white silver_pro">
+                     <div class="row clearfix">
+                        <div class="col-md-4">
+                           <h6 class="plan_desc">{{silver?.plan_price}} € <sub>Per Video</sub></h6>
+                        </div>
+                        <div class="col-md-4">
+                           <h6 class="plan_desc">{{silver?.plan_Validity}}</h6>
+                        </div>
+                        <div class="col-md-4">
+                           <h6 class="plan_desc">{{silver?.post_validity}} €</h6>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="gold_plan mt-3" *ngIf="gold_plan">
+            <div class="row clearfix">
+               <div class="col-md-3 col-3 mt-3">
+                  <input type="radio" name="plan" value="silver">&nbsp;&nbsp;
+                  <label class="plan_type">{{gold?.plan_name}}</label>
+               </div>
+               <div class="col-md-9 col-9">
+                  <div class="row clearfix type_prodesc">
+                     <div class="col-md-4 col-4">
+                        <label class="price_title">Price</label>
+                     </div>
+                     <div class="col-md-4 col-4">
+                        <label class="price_title">Validity</label>
+                     </div>
+                     <div class="col-md-4 col-4">
+                        <label class="price_title">Post Validity</label>
+                     </div>
+                  </div>
+
+                  <div class="bg_white silver_pro">
+                     <div class="row clearfix">
+                        <div class="col-md-4">
+                           <h6 class="plan_desc">{{gold?.plan_price}} € <sub>10 Videos</sub></h6>
+                        </div>
+                        <div class="col-md-4">
+                           <h6 class="plan_desc">{{gold?.plan_Validity}}</h6>
+                        </div>
+                        <div class="col-md-4">
+                           <h6 class="plan_desc">{{gold?.post_validity}} €</h6>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="platinum_plan mt-3" *ngIf="platinum_plan">
+            <div class="row clearfix">
+               <div class="col-md-3 col-3 mt-3">
+                  <input type="radio" name="plan" value="silver">&nbsp;&nbsp;
+                  <label class="plan_type">{{platinum?.plan_name}}</label>
+               </div>
+               <div class="col-md-9 col-9">
+                  <div class="row clearfix type_prodesc">
+                     <div class="col-md-4 col-4">
+                        <label class="price_title">Package <small><sub>Per month</sub></small></label>
+                     </div>
+                     <div class="col-md-4 col-4">
+                        <label class="price_title">Package <small><sub>Per month</sub></small></label>
+                     </div>
+                     <div class="col-md-4 col-4">
+                        <label class="price_title">Package <small><sub>Per month</sub></small></label>
+                     </div>
+                  </div>
+
+                  <div class="bg_white silver_pro">
+                     <div class="row clearfix">
+                        <div class="col-md-4">
+                           <h6 class="plan_desc">{{platinum?.plan_price}} € <sub>10 Videos</sub></h6>
+                        </div>
+                        <div class="col-md-4">
+                           <h6 class="plan_desc">{{platinum?.plan_Validity}} € <sub>20 Videos</sub></h6>
+                        </div>
+                        <div class="col-md-4">
+                           <h6 class="plan_desc">{{platinum?.post_validity}} € <sub>50 Videos</sub></h6>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="row clearfix mt-3">
+
+         <div class="col-md-8 offset-md-2">
+            <div class="row clearfix">
+               <div class="col-md-3">
+                  <div class="brd_grey reset_d"><a href="#" class="btn reset_btn bg_white text_grey">Cancel</a></div>
+               </div>
+               <div class="col-md-3">
+                  <div class="grad_brd reset_d"><a href="#" class="btn reset_btn glob_grad">POST AD</a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<app-footer></app-footer>

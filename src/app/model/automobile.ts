@@ -1,0 +1,33 @@
+export class Automobile{
+    user_id:number;
+    video_url:string;
+    category: string;   
+    name: string;
+    mobile: number;
+    email: string;
+    address: string;
+    description:string;
+    make:string;
+    model:string;
+    variant:string;
+    engine:string;
+    horse_power:string;
+    mileage:string;
+    fuel:string;
+    emission_class:string;
+    first_regst_year:string;
+    currency:string;
+    price:string;
+    warranty:string;
+    location:string;
+    color:string;
+    interior_seats:string;
+    doors:string;
+    seats:string;
+    equipment_description:string;
+    accessories:string;
+    seller:string;
+    gear_type:string;
+    condition:string;
+    display_contact:string;    
+}

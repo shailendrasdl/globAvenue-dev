@@ -1,0 +1,915 @@
+<!--Header new-->
+<div class="profile_header bg-light">
+    <div class="container-fluid">
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" routerLink="/home">
+             <img src="assets/images/globegif5.gif" class="img-fluid" width="250">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle indivi_navlink" routerLink="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-th-large"></i>&nbsp;&nbsp;Dashboard</a>
+                <ul class="dropdown-menu dashboard_menu" aria-labelledby="dropdownMenuButton">
+                   <li><a class="dropdown-item" routerLink="/clientlist" >
+                      <div class="dashboard_item">
+                         <img src="assets/images/client_img.png" width="30">
+                         &nbsp;&nbsp;<span class="dashboard_subitem">Client Gallery</span>
+                      </div>
+                   </a></li>
+                   <li><a class="dropdown-item" routerLink="/dashboard">
+                      <div class="dashboard_item">
+                         <img src="assets/images/product_img.png" width="30">
+                         &nbsp;&nbsp;<span class="dashboard_subitem">Website</span>
+                      </div>
+                   </a></li>
+                   <li><a class="dropdown-item" routerLink="#">
+                      <div class="dashboard_item">
+                         <img src="assets/images/store_img.png" width="30">
+                         &nbsp;&nbsp;<span class="dashboard_subitem">Store</span>
+                      </div>
+                   </a></li>
+                   <div class="view_dashboarditem"><a routerLink="/dashboard"><i class="fa fa-th-large"></i>&nbsp;&nbsp;View dashboard</a></div>
+                </ul>
+             </li>
+             
+            </ul>
+            
+            <ul class="navbar-nav mt-2 mt-lg-0">
+             <li class="nav-item">
+               <a class="nav-link" routerLink="#"><i class="fa fa-bell fa-2x"></i></a>
+             </li>
+             <li class="nav-item dropdown profile_dropdown">
+                <a class="nav-link dropdown-toggle indivi_navlink" routerLink="#" title="My Profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="custom_profile"><span class="">b</span></div>
+                </a>
+                <ul class="dropdown-menu profile_dp_menu" aria-labelledby="dropdownMenuButton">
+                   <li><a class="dropdown-item" routerLink="#">User</a></li>
+                   <li><a class="dropdown-item" routerLink="/dashboard">Dashboard</a></li>
+                   <li><a class="dropdown-item" routerLink="/account">Account</a></li>
+                   <li><a class="dropdown-item" routerLink="#">change password</a></li>
+                   <li><a class="dropdown-item" routerLink="/myprofile">My Profile</a></li>
+                   <li><a class="dropdown-item" style="cursor:pointer" (click)="logout()">Logout</a></li>
+                </ul>
+             </li>
+             
+           </ul>
+          </div>
+        </nav>
+    </div>
+</div>
+<!--//-->
+
+  
+<!--Carousel Wrapper-->
+<div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
+      <li data-target="#video-carousel-example2" data-slide-to="1"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <!-- First slide -->
+      <div class="carousel-item active">
+        <!--Mask color-->
+        <div class="view vd_view">
+          <!--Video source-->
+          <video class="video-fluid" autoplay loop muted>
+            <source src="assets/video/multimb.mp4" type="video/mp4" />
+          </video>
+          <div class="vd_form">
+            <div class="buy_rentform">
+              <div class="container py-5 py-md-4">
+                  <div class="col-md-6 buy_rentouter">
+                      <ngb-tabset [destroyOnHide]="false">
+                          <ngb-tab title="Buy">
+                            <ng-template ngbTabContent>
+                              <form  class="mb-0">
+                                  <div class="row clearfix">
+                                      <div class="col-md-12  form-group">
+                                          <label><span class="chc_head">Property Type</span></label>
+                                          
+                                          <div class="d-flex justify-content-between propertyType mb-2">
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-building"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-hotel"></i><input type="radio" name="home"></label>
+                                          </div>
+                                          <div class="d-flex justify-content-between propertyType">
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-building"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-hotel"></i><input type="radio" name="home"></label>
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      <div class="col-md-6 col-12 form-group">
+                                          <label><span class="chc_head">Choose Locations</span></label>
+                                          <select class="selectpicker form-control" style="width:100%; line-height: 30px;">
+                                              <option value="Any">Any</option>
+                                              <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                  
+                                                  <option value="Condo">Alaska</option>
+                                                  <option value="Villa">Hawaii</option>
+                                                 
+                                              </optgroup>
+                                              <optgroup label="Pacific Time Zone">
+                                                  <option value="Shop">California</option>
+                                                  <option value="Office">Nevada</option>
+                                                  <option value="Warehouse">Oregon</option>
+                                              </optgroup>
+                                          </select>
+                                      </div>
+                                      <div class="col-6 form-group">
+                                          <label for=""><span class="chc_head">Where</span></label>
+                                          <input type="text" class="form-control" placeholder="code postal">
+                                      </div>
+                                  </div>
+                                  <label><span class="chc_head">What is your budget</span></label>
+                                  <div class="row clearfix">
+                                     <div class="col-6 input-group form-group">
+                                         <select class="selectpicker form-control" style="width:100%; line-height: 30px;">
+                                              <option value="0">Minimum</option>
+                                              <option >Loreum</option>
+                                          </select>
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">&euro;</span>
+                                            </div>
+                                      </div>
+                                      <div class="col-6 input-group form-group">
+                                          
+                                          <select class="selectpicker form-control" style="width:100%; line-height: 30px;">
+                                              <option value="0">Maximum</option>
+                                              <option >Loreum</option>
+                                              
+                                          </select>
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">&euro;</span>
+                                            </div>
+                                      </div>
+                                  </div>
+                                  <label><span class="chc_head">How many pieces?</span></label>
+                                  <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="d-flex justify-content-between pieces_section">
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">4<br>rooms</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">5<br>pieces</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">6<br>pieces</span></label>
+                                     
+                                          </div>
+                                          <div class="d-flex justify-content-between pieces_section">
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">4<br>rooms</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">5<br>pieces</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">6<br>pieces</span></label>
+   
+                                          </div>
+                                          <ul class="pieces_section">
+                                         </ul>
+                                      </div>
+                                  </div>
+                                  <label><span class="chc_head">What Surface?</span></label>
+                                  <div class="row clearfix">
+                                     <div class="col-6 input-group form-group">
+                                      <input type="text" class="form-control" placeholder="Minimum">
+                                      <div class="input-group-append">
+                                          <span class="input-group-text">m<sup>2</sup></span>
+                                        </div>
+                                      </div>
+                                      <div class="col-6 input-group form-group">
+                                          <input type="text" class="form-control" placeholder="Maximum">
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">m<sup>2</sup></span>
+                                            </div>
+                                          </div>
+                                  </div>
+  
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <button class="btnGreenseach w-100 bg-blue">Search Properties</button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </ng-template>
+                          </ngb-tab>
+                          <ngb-tab>
+                            <ng-template ngbTabTitle>Rent</ng-template>
+                            <ng-template ngbTabContent>
+                              <form  class="mb-0">
+                                  <div class="row clearfix">
+                                      <div class="col-md-12  form-group">
+                                          <label><span class="chc_head">Property Type</span></label>
+                                          
+                                          <div class="d-flex justify-content-between propertyType mb-2">
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-building"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-hotel"></i><input type="radio" name="home"></label>
+                                          </div>
+                                          <div class="d-flex justify-content-between propertyType">
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-building"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-hotel"></i><input type="radio" name="home"></label>
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      <div class="col-md-6 col-12 form-group">
+                                          <label><span class="chc_head">Rental Locations</span></label>
+                                          <select class="selectpicker form-control" style="width:100%; line-height: 30px;">
+                                              <option value="Any">Any</option>
+                                              <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                  
+                                                  <option value="Condo">Alaska</option>
+                                                  <option value="Villa">Hawaii</option>
+                                                 
+                                              </optgroup>
+                                              <optgroup label="Pacific Time Zone">
+                                                  <option value="Shop">California</option>
+                                                  <option value="Office">Nevada</option>
+                                                  <option value="Warehouse">Oregon</option>
+                                              </optgroup>
+                                          </select>
+                                      </div>
+                                      <div class="col-6 form-group">
+                                          <label for=""><span class="chc_head">Where</span></label>
+                                          <input type="text" class="form-control" placeholder="code postal">
+                                      </div>
+                                  </div>
+                                  <label><span class="chc_head">What is your budget</span></label>
+                                  <div class="row clearfix">
+                                     <div class="col-6 input-group form-group">
+                                         <select class="selectpicker form-control" style="width:100%; line-height: 30px;">
+                                              <option value="0">Minimum</option>
+                                              <option >Loreum</option>
+                                          </select>
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">&euro;</span>
+                                            </div>
+                                      </div>
+                                      <div class="col-6 input-group form-group">
+                                          
+                                          <select class="selectpicker form-control" style="width:100%; line-height: 30px;">
+                                              <option value="0">Maximum</option>
+                                              <option >Loreum</option>
+                                              
+                                          </select>
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">&euro;</span>
+                                            </div>
+                                      </div>
+                                  </div>
+                                  <label><span class="chc_head">How many pieces?</span></label>
+                                  <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="d-flex justify-content-between pieces_section">
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">4<br>rooms</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">5<br>pieces</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">6<br>pieces</span></label>
+                                     
+                                          </div>
+                                          <div class="d-flex justify-content-between pieces_section">
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">4<br>rooms</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">5<br>pieces</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">6<br>pieces</span></label>
+   
+                                          </div>
+                                          <ul class="pieces_section">
+                                         </ul>
+                                      </div>
+                                  </div>
+                                  <label><span class="chc_head">What Surface?</span></label>
+                                  <div class="row clearfix">
+                                     <div class="col-6 input-group form-group">
+                                      <input type="text" class="form-control" placeholder="Minimum">
+                                      <div class="input-group-append">
+                                          <span class="input-group-text">m<sup>2</sup></span>
+                                        </div>
+                                      </div>
+                                      <div class="col-6 input-group form-group">
+                                          <input type="text" class="form-control" placeholder="Maximum">
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">m<sup>2</sup></span>
+                                            </div>
+                                          </div>
+                                  </div>
+  
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <button class="btnGreenseach w-100 bg-blue">Search Properties</button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </ng-template>
+                          </ngb-tab>
+                      </ngb-tabset>
+                      
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+          <div class="mask rgba-indigo-light"></div>
+        </div>
+      </div>
+      <!-- /.First slide -->
+  
+      <!-- Second slide -->
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view vd_view">
+          <!--Video source-->
+          <video class="video-fluid" autoplay loop muted>
+            <source src="assets/video/3mb.mp4" type="video/mp4" />
+          </video>
+          <div class="vd_form">
+            <div class="buy_rentform">
+              <div class="container py-5 py-md-4">
+                  <div class="col-md-6 buy_rentouter">
+                      
+                      <ngb-tabset [destroyOnHide]="false">
+                          <ngb-tab title="Buy">
+                            <ng-template ngbTabContent>
+                              <form  class="mb-0">
+                                  <div class="row clearfix">
+                                      <div class="col-md-12  form-group">
+                                          <label><span class="chc_head">Property Type</span></label>
+                                          
+                                          <div class="d-flex justify-content-between propertyType mb-2">
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-building"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-hotel"></i><input type="radio" name="home"></label>
+                                          </div>
+                                          <div class="d-flex justify-content-between propertyType">
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-building"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-hotel"></i><input type="radio" name="home"></label>
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      <div class="col-md-6 col-12 form-group">
+                                          <label><span class="chc_head">Choose Locations</span></label>
+                                          <select class="selectpicker form-control" style="width:100%; line-height: 30px;">
+                                              <option value="Any">Any</option>
+                                              <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                  
+                                                  <option value="Condo">Alaska</option>
+                                                  <option value="Villa">Hawaii</option>
+                                                 
+                                              </optgroup>
+                                              <optgroup label="Pacific Time Zone">
+                                                  <option value="Shop">California</option>
+                                                  <option value="Office">Nevada</option>
+                                                  <option value="Warehouse">Oregon</option>
+                                              </optgroup>
+                                          </select>
+                                      </div>
+                                      <div class="col-6 form-group">
+                                          <label for=""><span class="chc_head">Where</span></label>
+                                          <input type="text" class="form-control" placeholder="code postal">
+                                      </div>
+                                  </div>
+                                  <label><span class="chc_head">What is your budget</span></label>
+                                  <div class="row clearfix">
+                                     <div class="col-6 input-group form-group">
+                                         <select class="selectpicker form-control" style="width:100%; line-height: 30px;">
+                                              <option value="0">Minimum</option>
+                                              <option >Loreum</option>
+                                          </select>
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">&euro;</span>
+                                            </div>
+                                      </div>
+                                      <div class="col-6 input-group form-group">
+                                          
+                                          <select class="selectpicker form-control" style="width:100%; line-height: 30px;">
+                                              <option value="0">Maximum</option>
+                                              <option >Loreum</option>
+                                              
+                                          </select>
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">&euro;</span>
+                                            </div>
+                                      </div>
+                                  </div>
+                                  <label><span class="chc_head">How many pieces?</span></label>
+                                  <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="d-flex justify-content-between pieces_section">
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">4<br>rooms</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">5<br>pieces</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">6<br>pieces</span></label>
+                                     
+                                          </div>
+                                          <div class="d-flex justify-content-between pieces_section">
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">4<br>rooms</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">5<br>pieces</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">6<br>pieces</span></label>
+   
+                                          </div>
+                                          <ul class="pieces_section">
+                                         </ul>
+                                      </div>
+                                  </div>
+                                  <label><span class="chc_head">What Surface?</span></label>
+                                  <div class="row clearfix">
+                                     <div class="col-6 input-group form-group">
+                                      <input type="text" class="form-control" placeholder="Minimum">
+                                      <div class="input-group-append">
+                                          <span class="input-group-text">m<sup>2</sup></span>
+                                        </div>
+                                      </div>
+                                      <div class="col-6 input-group form-group">
+                                          <input type="text" class="form-control" placeholder="Maximum">
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">m<sup>2</sup></span>
+                                            </div>
+                                          </div>
+                                  </div>
+  
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <button class="btnGreenseach w-100 bg-blue">Search Properties</button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </ng-template>
+                          </ngb-tab>
+                          <ngb-tab>
+                            <ng-template ngbTabTitle>Rent</ng-template>
+                            <ng-template ngbTabContent>
+                              <form  class="mb-0">
+                                  <div class="row clearfix">
+                                      <div class="col-md-12  form-group">
+                                          <label><span class="chc_head">Property Type</span></label>
+                                          
+                                          <div class="d-flex justify-content-between propertyType mb-2">
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-building"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-hotel"></i><input type="radio" name="home"></label>
+                                          </div>
+                                          <div class="d-flex justify-content-between propertyType">
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-building"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-home"></i><input type="radio" name="home"></label>
+                                              <label><i class="fa fa-hotel"></i><input type="radio" name="home"></label>
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      <div class="col-md-6 col-12 form-group">
+                                          <label><span class="chc_head">Rental Locations</span></label>
+                                          <select class="selectpicker form-control" style="width:100%; line-height: 30px;">
+                                              <option value="Any">Any</option>
+                                              <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                  
+                                                  <option value="Condo">Alaska</option>
+                                                  <option value="Villa">Hawaii</option>
+                                                 
+                                              </optgroup>
+                                              <optgroup label="Pacific Time Zone">
+                                                  <option value="Shop">California</option>
+                                                  <option value="Office">Nevada</option>
+                                                  <option value="Warehouse">Oregon</option>
+                                              </optgroup>
+                                          </select>
+                                      </div>
+                                      <div class="col-6 form-group">
+                                          <label for=""><span class="chc_head">Where</span></label>
+                                          <input type="text" class="form-control" placeholder="code postal">
+                                      </div>
+                                  </div>
+                                  <label><span class="chc_head">What is your budget</span></label>
+                                  <div class="row clearfix">
+                                     <div class="col-6 input-group form-group">
+                                         <select class="selectpicker form-control" style="width:100%; line-height: 30px;">
+                                              <option value="0">Minimum</option>
+                                              <option >Loreum</option>
+                                          </select>
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">&euro;</span>
+                                            </div>
+                                      </div>
+                                      <div class="col-6 input-group form-group">
+                                          
+                                          <select class="selectpicker form-control" style="width:100%; line-height: 30px;">
+                                              <option value="0">Maximum</option>
+                                              <option >Loreum</option>
+                                              
+                                          </select>
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">&euro;</span>
+                                            </div>
+                                      </div>
+                                  </div>
+                                  <label><span class="chc_head">How many pieces?</span></label>
+                                  <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="d-flex justify-content-between pieces_section">
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">4<br>rooms</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">5<br>pieces</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">6<br>pieces</span></label>
+                                     
+                                          </div>
+                                          <div class="d-flex justify-content-between pieces_section">
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">4<br>rooms</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">5<br>pieces</span></label>
+                                              <label><input type="checkbox"><i class="fa fa-square"></i>&nbsp;&nbsp;<span class="float-right">6<br>pieces</span></label>
+   
+                                          </div>
+                                          <ul class="pieces_section">
+                                         </ul>
+                                      </div>
+                                  </div>
+                                  <label><span class="chc_head">What Surface?</span></label>
+                                  <div class="row clearfix">
+                                     <div class="col-6 input-group form-group">
+                                      <input type="text" class="form-control" placeholder="Minimum">
+                                      <div class="input-group-append">
+                                          <span class="input-group-text">m<sup>2</sup></span>
+                                        </div>
+                                      </div>
+                                      <div class="col-6 input-group form-group">
+                                          <input type="text" class="form-control" placeholder="Maximum">
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">m<sup>2</sup></span>
+                                            </div>
+                                          </div>
+                                  </div>
+  
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <button class="btnGreenseach w-100 bg-blue">Search Properties</button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </ng-template>
+                          </ngb-tab>
+                      </ngb-tabset>
+                      
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+          <div class="mask rgba-purple-slight"></div>
+        </div>
+      </div>
+      <!-- /.Second slide -->
+  
+     
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#video-carousel-example2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#video-carousel-example2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+<!--Carousel Wrapper-->
+
+<div class="automobile_car">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="assets/images/realestate_featured1.jpg" class="img-fluid w-100">
+        </div>
+        <div class="col-md-4">
+            <img src="assets/images/realestate_featured3.jpg" class="img-fluid w-100">
+        </div>
+        <div class="col-md-4">
+            <img src="assets/images/realestate_featured6.jpg" class="img-fluid w-100">
+        </div>
+    </div>
+  </div>
+    <!---->
+    <div class="realestateFeature">
+        <div class="content-wrap">
+        <div class="container">
+            <div class="row col-mb-50">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-realestate-my-house"></i></a>
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="font-weight-normal">Hassle Free</h3>
+                            <p>Canvas provides support for Native HTML5 Videos that can be added to a Full Width Background.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="fas fa-hammer"></i></a>
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="font-weight-normal">Well Constructed</h3>
+                            <p>Display your Content attractively using Parallax Sections that have unlimited customizable areas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="fa fa-garage"></i></a>
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="font-weight-normal">Free Utilites</h3>
+                            <p>You have complete easy control on each &amp; every element that provides endless customization possibilities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-realestate-rent"></i></a>
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="font-weight-normal">Flexible Rentals</h3>
+                            <p>Canvas provides support for Native HTML5 Videos that can be added to a Full Width Background.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-realestate-credit"></i></a>
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="font-weight-normal">Easy Financing</h3>
+                            <p>Display your Content attractively using Parallax Sections that have unlimited customizable areas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-realestate-doc"></i></a>
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="font-weight-normal">Solid Paperwork</h3>
+                            <p>You have complete easy control on each &amp; every element that provides endless customization possibilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--//-->
+    
+    <!---->
+    <div class="realestate_featured mb-4">
+        <div class="container">
+            <h3 class=" mb-4"><strong>Featured Properties</strong></h3>
+            <div class="row clearfix">
+                <div class="col-md-4">
+                    <img src="assets/images/realestate_featured1.jpg" class="img-fluid">
+                    <div class="feat_desc">
+                        <h4>3 Bedroom Villa<a routerLink="#"><span class="float-right feat_desc_info"><i class="fa fa-info"></i></span></a></h4>
+                        <p>Seminyak Area</p>
+                    </div>
+                    <hr>
+                    <div class="feat_properties d-flex justify-content-between">
+                        <span>Beds:3</span>
+                        <span>Baths:3</span>
+                        <span>Area:150 sqm</span>
+                    </div>
+                    <div class="feat_properties d-flex justify-content-between">
+                        <span>Pools:&nbsp;<span><i class="fa fa-check-square"></i></span></span>
+                        <span>Internet:3&nbsp;<span><i class="fa fa-check-square"></i></span></span>
+                        <span>Cleaning:150 sqm&nbsp;<span><i class="fa fa-minus-square"></i></span></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/images/realestate_featured2.jpg" class="img-fluid">
+                    <div class="feat_desc">
+                        <h4>3 Bedroom Villa<a routerLink="#"><span class="float-right feat_desc_info"><i class="fa fa-info"></i></span></a></h4>
+                        <p>Seminyak Area</p>
+                    </div>
+                    <hr>
+                    <div class="feat_properties d-flex justify-content-between">
+                        <span>Beds:3</span>
+                        <span>Baths:3</span>
+                        <span>Area:150 sqm</span>
+                    </div>
+                    <div class="feat_properties d-flex justify-content-between">
+                        <span>Pools:&nbsp;<span><i class="fa fa-check-square"></i></span></span>
+                        <span>Internet:3&nbsp;<span><i class="fa fa-check-square"></i></span></span>
+                        <span>Cleaning:150 sqm&nbsp;<span><i class="fa fa-minus-square"></i></span></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/images/realestate_featured3.jpg" class="img-fluid">
+                    <div class="feat_desc">
+                        <h4>3 Bedroom Villa<a routerLink="#"><span class="float-right feat_desc_info"><i class="fa fa-info"></i></span></a></h4>
+                        <p>Seminyak Area</p>
+                    </div>
+                    <hr>
+                    <div class="feat_properties d-flex justify-content-between">
+                        <span>Beds:3</span>
+                        <span>Baths:3</span>
+                        <span>Area:150 sqm</span>
+                    </div>
+                    <div class="feat_properties d-flex justify-content-between">
+                        <span>Pools:&nbsp;<span><i class="fa fa-check-square"></i></span></span>
+                        <span>Internet:3&nbsp;<span><i class="fa fa-check-square"></i></span></span>
+                        <span>Cleaning:150 sqm&nbsp;<span><i class="fa fa-minus-square"></i></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--//-->
+
+    <div class="promoSection content-wrap">
+        <div class="container">
+            <div class="promo promo-dark pbg-color  p-4">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg">
+                        <h3 class="font-weight-normal ls1">Special Offers on Villa Long Term Rentals &amp; Lease Agreements</h3>
+                    </div>
+                    <div class="col-12 col-lg-auto mt-4 mt-lg-0">
+                        <a href="#" class="promo_button button-rounded">Contact Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!---->
+    <div class="property_section mb-5">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-7 mb-3">
+                    <div class="indivi_sect">
+                        <img src="assets/images/cities1.jpg" class="img-fluid">
+                        <div class="indivi_secttitle">
+                            <h3 class="text-white">California</h3>
+                            <p class="text-white">23 Properties</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <div class="indivi_sect">
+                        <img src="assets/images/cities2.jpg" class="img-fluid">
+                        <div class="indivi_secttitle">
+                            <h3 class="text-white">San Francisco</h3>
+                            <p class="text-white">30 Properties</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="indivi_sect"> 
+                        <img src="assets/images/cities3.jpg" class="img-fluid">
+                        <div class="indivi_secttitle">
+                            <h3 class="text-white">New York</h3>
+                            <p class="text-white">25 Properties</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="indivi_sect"> 
+                        <img src="assets/images/cities4.jpg" class="img-fluid">
+                        <div class="indivi_secttitle">
+                            <h3 class="text-white">Texas</h3>
+                            <p class="text-white">10 Properties</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="indivi_sect">
+                        <img src="assets/images/cities5.jpg" class="img-fluid">
+                        <div class="indivi_secttitle">
+                            <h3 class="text-white">New Orleans</h3>
+                            <p class="text-white">50 Properties</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!--//-->
+    
+    <!---->
+    <div class="quicknote_section content-wrap">
+        <div class="container">
+            <div class="row clearfix">
+                
+                <div class="col-lg-4" style="background-color: #E5E5E5;">
+                    <div style="padding: 40px;">
+                        <h4 class="font-body font-weight-semibold ls1">Our Headquarters</h4>
+
+                        <div style="font-size: 15px; line-height: 1.7;">
+                            <address style="line-height: 1.7;">
+                                <strong>North America:</strong><br>
+                                795 Folsom Ave, Suite 600<br>
+                                San Francisco, CA 94107.<br><br>
+                                <abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br>
+                                <abbr title="Email Address"><strong>Email:</strong></abbr> real-estate@canvas.com
+                            </address>
+
+                            <div class="clear topmargin-sm"></div>
+
+                            <h4 class="font-body font-weight-medium" style="font-size: 17px; margin-bottom: 10px;">Working Hours:</h4>
+
+                            <abbr title="Mondays to Fridays"><strong>Mon-Fri:</strong></abbr> 10AM to 6PM<br>
+                            <abbr title="Saturday"><strong>Saturday:</strong></abbr> 11AM to 3PM<br>
+                            <abbr title="Sunday"><strong>Sunday:</strong></abbr> Closed
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 bgGreen">
+                    <div class="col-padding">
+                        <div class="quick-contact clearfix">
+
+                            <h3 class="text-white">Get a Quick Quote</h3>
+                            <form  class="quick-contact-form padding">
+                                   
+                                <input type="text" class="form-control" placeholder="Full Name" />
+
+                                <input type="email" class="form-control"  placeholder="Email Address" />
+
+                                <input type="text" class="form-control" placeholder="Phone Number (+1-555-2221)" />
+
+                                <textarea class="form-control" rows="5" cols="30" placeholder="What are you Looking for? (Ex: Villa on the Beach)"></textarea>
+
+                                <button type="button" class="button know_morebtn">Send Email</button>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//-->
+    <!---->
+    <div class="builder_section">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-8 buildtabSection">
+                    <ngb-tabset [destroyOnHide]="false">
+                        <ngb-tab title="Why Us?">
+                          <ng-template ngbTabContent>
+                            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                            
+                        </ng-template>
+                        </ngb-tab>
+                        <ngb-tab>
+                          <ng-template ngbTabTitle>Properties</ng-template>
+                          <ng-template ngbTabContent><p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                          </ng-template>
+                        </ngb-tab>
+                        <ngb-tab>
+                            <ng-template ngbTabTitle>Legal</ng-template>
+                            <ng-template ngbTabContent><p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor.</p>
+                            </ng-template>
+   
+                        </ngb-tab>
+                        
+                      </ngb-tabset>
+                
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-center builder_heading">Top Builders</h4>
+                    <ul class="clients-grid grid-2 mb-0">
+                        <li class="grid-item" style="padding: 20px;"><a href="#" class="op-09"><img src="assets/images/builders_1.png" alt="Clients"></a></li>
+                        <li class="grid-item" style="padding: 20px;"><a href="#" class="op-09"><img src="assets/images/builders_2.png" alt="Clients"></a></li>
+                        <li class="grid-item" style="padding: 20px;"><a href="#" class="op-09"><img src="assets/images/builders_3.png" alt="Clients"></a></li>
+                        <li class="grid-item" style="padding: 20px;"><a href="#" class="op-09"><img src="assets/images/builders_4.png" alt="Clients"></a></li>
+                    </ul>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    <!---//-->
+
+    <app-footer></app-footer>

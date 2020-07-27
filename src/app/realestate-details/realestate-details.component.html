@@ -1,0 +1,236 @@
+<app-header></app-header>
+<div class="bg_grey padding">
+   <div class="container-fluid">
+      <h4>View Details</h4>
+      <!--Property Detail tab-->
+      <div class="real_prodetails">
+         <h5>Features</h5>
+            <hr>
+         <div class="row clearfix">
+            <div class="col-md-4">
+              <div class="row clearfix">
+                <div class="col-md-12">
+               <!-- <img src="assets/images/realestate2.jpg" class="img-fluid"> -->
+               <!-- <video class="video-fluid z-depth-1" width="290" autoplay controls>
+                  <source src="{{realestate_detail.video_url}}" type="video/mp4">
+                  </video> -->
+               <div class="videoSection">
+                  <mat-video [ngClass]="['video-fluid']" [autoplay]="true" [preload]="true" [fullscreen]="false" [download]="false" color="accent" spinner="spin" height="300">
+                  <source matVideoSource src="assets/video/building2mb.mp4" type="video/mp4" [ngStyle]="{'height': 'auto'}">
+                  </mat-video>
+               </div>
+               </div>
+               </div>
+               <div class="row clearfix">
+                 <div class="col-md-12">
+                   <div class="average_rating bg_grey">
+                     <h6><span class="fa fa-star avg_rate"></span>&nbsp;&nbsp;<span class="avg_score">{{avg_rating[0]?.average_rating}}<sub>/5</sub></span></h6>
+                     <h6 class="avg_title">Average Rating</h6>
+                     
+                   </div>
+                 </div>
+               </div>
+            </div>
+            <div class="col-md-8">
+               <div class="row clearfix">
+                  <div class="col-md-12">
+                     <table class="table table-responsive real_protable">
+                        <tbody>
+                           <tr>
+                              <td><strong>Type:</strong>&nbsp;&nbsp;{{realestate_detail.type}}</td>
+                              <td><strong>Purpose:</strong> &nbsp;&nbsp;{{realestate_detail.purpose}}</td>
+                              <td><strong>Time of avaliability:</strong>&nbsp;&nbsp;{{realestate_detail.time_of_avaliability}}</td>
+                           </tr>
+                           <tr>
+                              <td><strong>Type of Space:</strong> &nbsp;&nbsp;{{realestate_detail.type_of_space}}</td>
+                              <td><strong>Square feet:</strong> &nbsp;&nbsp;{{realestate_detail.square_feet}}</td>
+                              <td><strong>Location:</strong> &nbsp;&nbsp;{{realestate_detail.location}}</td>
+                           </tr>
+                           <tr>
+                              <td><strong>No of bathrooms:</strong>&nbsp;&nbsp;{{realestate_detail.no_of_bathrooms}}</td>
+                              <td><strong>No of bedrooms:</strong>&nbsp;&nbsp;{{realestate_detail.no_of_bedrooms}}</td>
+                              <td><strong>Resedential/Holiday:</strong>&nbsp;&nbsp;{{realestate_detail.residential_or_holiday}}</td>
+                           </tr>
+                           <tr>
+                              <td><strong>Condition:</strong> &nbsp;&nbsp;{{realestate_detail.condition}}</td>
+                              <td><strong>Garage Included:</strong>&nbsp;&nbsp;{{realestate_detail.garage_included}}</td>
+                              <td><strong>Lift:</strong> &nbsp;&nbsp;{{realestate_detail.lift}}</td>
+                           </tr>
+                           <tr>
+                              <td><strong>Currency:</strong> &nbsp;&nbsp;{{realestate_detail.currency}}</td>
+                              <td><strong>Price:</strong> &nbsp;&nbsp;{{realestate_detail.price}}</td>
+                              <td><strong>Rent Price:</strong>&nbsp;&nbsp;{{realestate_detail.rent_price}}</td>
+                           </tr>
+                           <tr>
+                              <td><strong>Monthly Charges:</strong>&nbsp;&nbsp;{{realestate_detail.monthly_charges}}</td>
+                              <td><strong>Level:</strong> &nbsp;&nbsp;{{realestate_detail.level}}</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     
+                  </div>
+               </div>
+               <div class="row clearfix">
+                  <div class="col-md-3">
+                      <button type="button" class="btn btn-danger  w-100" (click)="openContact(contactForm)">Contact</button>
+                  </div>
+              </div>
+            </div>
+         </div>
+      </div>
+      <div class="row clearfix">
+         <div class="col-md-9">
+             <div class="real_prodetails">
+                 <h5>Equipment Description</h5>
+                 <hr>
+                 <p>{{realestate_detail.description}}</p>
+             </div>
+             <div class="real_prodetails">
+                 <h5>Amenities</h5>
+                 <hr>
+                 <p>{{realestate_detail.amenities}}</p>
+             </div>
+         </div>
+         <div class="col-md-3">
+             <div class="real_prodetails">
+                 <h6><strong>Seller: Professional</strong></h6>
+                 <hr>
+                 <div class="seller_info">
+                     <h6 class="seller_title"><strong>Name:</strong>&nbsp;&nbsp;<span
+                             class="seller_about">{{realestate_detail.name}}</span></h6>
+                     <h6 class="seller_title"><strong>Email:</strong>&nbsp;&nbsp;<span
+                             class="seller_about">{{realestate_detail.email}}</span></h6>
+                     <h6 class="seller_title"><strong>Address:</strong>&nbsp;&nbsp;<span
+                             class="seller_about">{{realestate_detail.address}}</span></h6>
+                     <h6 class="seller_title"><strong>Phone:</strong>&nbsp;&nbsp;<span class="seller_about">{{realestate_detail.mobile}}</span></h6>
+                 </div>
+             </div>
+             
+         </div>
+     </div>
+      <!--Rating section-->
+      <div class="row clearfix">
+         <div class="col-md-9">
+             <div class="real_prodetails">
+
+                 <h5>Reviews</h5>
+                 <hr>
+                 <div class="row clearfix" *ngFor="let ratings of rating_list">
+                    <div class="col-md-4">
+                        <div class="rating_user">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="assets/images/review_user.png" class="img-fluid">
+                                </div>
+                                <div class="col-md-8 px-1">
+                                    <div class="rating_desc">
+                                        <h6 class="rating_days">{{ratings.created_at}}</h6>
+                                        <h6 class="rating_head">{{ratings.name}}</h6>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="rating_desc">
+                            <ngb-rating [(rate)]="ratings.rating"  (hover)="hovered=$event" (leave)="hovered=0"
+                                [readonly]="readonly" [max]="5">
+                                <ng-template let-fill="fill" let-index="index">
+                                    <span class="star" [class.filled]="fill === 100"
+                                        [class.bad]="index < 10">&#9733;</span>
+                                </ng-template>
+                            </ngb-rating>
+                            <p>
+                               {{ratings.review}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                 <!-- <div class="rating_section mt-2">
+         
+                     <a class="btn btn-danger col-md-3" data-toggle="collapse" href="#send_review" role="button" aria-expanded="false"
+                     aria-controls="send_review">Send Review</a>
+                     <div id="send_review" class="collapse send_review mt-4 bg_grey">
+                        <textarea rows="4" class="form-control" placeholder="Enter a Review here....."></textarea>
+                        <div class="rating_submit text-right">
+                           <ngb-rating [(rate)]="currentRate">
+                              <ng-template let-fill="fill" let-index="index">
+                                 <span class="star" [class.filled]="fill === 100" [class.bad]="index < 10">&#9733;</span>
+                              </ng-template>
+                              </ngb-rating>
+                        </div>
+                        <div class="row clearfix">
+                           <div class="col-md-3 offset-md-9">
+                              <button type="button" class="btn btn-success mt-2 w-100">Save</button>
+                           </div>
+                        </div>
+                     
+                        
+                     </div>
+                  </div> -->
+             </div>
+         </div>
+        
+     </div>
+     
+      <!--//-->
+      <!--//-->
+   </div>
+</div>
+<!--Contact Form-->
+<ng-template #contactForm let-modal>
+   <div class="modal-header">
+      <h5 class="modal-title" id="editProfileLabel">Contact</h5>
+      <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+      </button>
+  </div>
+  <div class="modal-body">
+  <form  [formGroup]="contact_form" (ngSubmit)="submitContact()">
+
+     <input type="hidden" formControlName="category" [(ngModel)]="realestate_detail.category" class="form-control"> 
+   <div class="row">
+     <div class="col-md-6 form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" placeholder="" formControlName="fname">
+     </div>
+     <div class="col-md-6 form-group">
+      <label>Last Name</label>
+      <input type="text" class="form-control" placeholder="" formControlName="lname">
+   </div>
+   </div>
+   <div class="form-group">
+      <label>email</label>
+      <input type="email" class="form-control" placeholder="" formControlName="email">
+   </div>
+   <div class="form-group">
+      <label>Phone</label>
+      <input type="text" class="form-control" placeholder="" formControlName="phone">
+   </div>
+   <div class="row">
+   <div class="col-md-6 form-group">
+      <label>Country</label>
+      <input type="text" class="form-control" placeholder="" formControlName="country">
+   </div>
+   <div class="col-md-6 form-group">
+      <label>State</label>
+      <input type="text" class="form-control" placeholder="" formControlName="state">
+   </div>
+   </div>
+   <div class="form-group">
+      <label>Zip Code</label>
+      <input type="text" class="form-control" placeholder="" formControlName="zip_code">
+   </div>
+   <div class="form-group">
+      <label>Address</label>
+      <input type="text" class="form-control" placeholder="" formControlName="address">
+   </div>
+   <button class="btn btn-danger  w-100" type="submit">Submit</button>
+  </form>
+  </div>
+  
+</ng-template>
+<!--//-->
+<app-footer></app-footer>

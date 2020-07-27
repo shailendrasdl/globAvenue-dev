@@ -1,0 +1,188 @@
+<!--Header new-->
+<div class="profile_header bg-primelight">
+    <div class="container-fluid">
+       <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" routerLink="/home">
+             <img src="assets/images/globegif5.gif" class="img-fluid" width="250">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle indivi_navlink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-th-large"></i>&nbsp;&nbsp;Client Gallery</a>
+                <ul class="dropdown-menu dashboard_menu" aria-labelledby="dropdownMenuButton">
+                   <li><a class="dropdown-item" routerLink="/clientlist">
+                      <div class="dashboard_item">
+                         <img src="assets/images/client_img.png" width="30">
+                         &nbsp;&nbsp;<span class="dashboard_subitem">Client Gallery</span>
+                      </div>
+                   </a></li>
+                   <li><a class="dropdown-item" routerLink="/dashboard">
+                      <div class="dashboard_item">
+                         <img src="assets/images/product_img.png" width="30">
+                         &nbsp;&nbsp;<span class="dashboard_subitem">Website</span>
+                      </div>
+                   </a></li>
+                   <li><a class="dropdown-item" routerLink="#">
+                      <div class="dashboard_item">
+                         <img src="assets/images/store_img.png" width="30">
+                         &nbsp;&nbsp;<span class="dashboard_subitem">Store</span>
+                      </div>
+                   </a></li>
+                   <div class="view_dashboarditem"><i class="fa fa-th-large"></i>&nbsp;&nbsp;View dashboard</div>
+                </ul>
+             </li>
+             
+            </ul>
+            
+            <ul class="navbar-nav mt-2 mt-lg-0">
+             <li class="nav-item">
+               <a class="nav-link" href="#"><i class="fa fa-bell fa-2x"></i></a>
+             </li>
+             <li class="nav-item dropdown profile_dropdown">
+                <a class="nav-link dropdown-toggle indivi_navlink" routerLink="#" title="My Profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="custom_profile"><span class="">b</span></div>
+                </a>
+                <ul class="dropdown-menu profile_dp_menu" aria-labelledby="dropdownMenuButton">
+                   <li><a class="dropdown-item" routerLink="#">User</a></li>
+                   <li><a class="dropdown-item" routerLink="/dashboard">Dashboard</a></li>
+                   <li><a class="dropdown-item" routerLink="/account">Account</a></li>
+                   <li><a class="dropdown-item" routerLink="#">change password</a></li>
+                   <li><a class="dropdown-item" routerLink="/myprofile">My Profile</a></li>
+                   <li><a class="dropdown-item" style="cursor:pointer" (click)="logout()">Logout</a></li>
+                </ul>
+             </li>
+             
+           </ul>
+          </div>
+        </nav>
+    </div>
+    </div>
+    <!--//-->
+    <!--Header new-->
+<div class="profile_secondheader bg_second_hdr">
+    <div class="container-fluid">
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/profile">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/account">Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/billing">Billing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/domain">Domain</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/advancedsetting">Advanced Settings</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/referfriend">Refer a Friend</a>
+                  </li>
+             
+            </ul>
+            
+            <ul class="navbar-nav mt-2 mt-lg-0">
+             <li class="nav-item">
+               <a class="nav-link" href="#">My Homepage</a>
+             </li>
+             
+           </ul>
+          </div>
+        </nav>
+    </div>
+    </div>
+    <!--//-->
+
+    <!--refer friend-->
+    <div class="refer_mainsection">
+        <div class="container">
+          <div class="row clearfix">
+            <div class="col-md-8 offset-md-2">
+              <div class="refer_sect">
+              <h3 class="refer_heading text-center">Refer friends. Spread the love.</h3>
+              <p class="refer_desc text-center">Get bonus storage and credit for every friend you refer.</p>
+              
+              <div class="row clearfix">
+                <div class="col-md-8 offset-md-2 input-group newsletter padding">
+                  <input type="email" class="form-control" placeholder="Enter your email">
+                  <span class="input-group-btn">
+                     <button class="btn" type="button">Invite</button>
+                  </span>
+               </div>
+              </div>
+
+              <div class="d-flex justify-content-center share_referral">
+                <span class="refferal_link"><i class="fa fa-link"></i>&nbsp;Get referral link</span>
+                <span class="refferal_link"><i class="fa fa-facebook"></i>&nbsp;Share via Facebook</span>
+                <span class="refferal_link"><i class="fa fa-twitter"></i>&nbsp;Tweet about it</span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--//-->
+
+    <!--Refer bonus-->
+    <div class="bonus_section">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-md-6 offset-md-3">
+            <div class="earn_bonus">
+              <h4 class="mt-3 mb-3">Earn Bonus</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//--> 
+    <!--Referral Table-->
+    <div class="refer_section p-4 mb-4">
+    <div class="container">
+      <div class="row clearfix">
+        <div class="col-md-12">
+          <table class="table referral_table">
+            <thead>
+              <tr>
+                <th>Referrals</th>
+                <th>Invited</th>
+                <th>Signed up</th>
+                <th>Started using Globavenue</th>
+                <th>Upgraded to a paid account</th>
+                <th>Earned Rewards</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>50</th>
+                <td>40</td>
+                <td>15</td>
+                <td>10</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>50</th>
+                <td>40</td>
+                <td>15</td>
+                <td>10</td>
+                <td></td>
+                <td></td>
+              </tr>              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+   </div>
+    <!--//-->

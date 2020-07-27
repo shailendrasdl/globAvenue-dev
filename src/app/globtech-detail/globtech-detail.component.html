@@ -1,0 +1,194 @@
+<app-header></app-header>
+<!--content section-->
+<div class="bg_grey padding">
+    <div class="container-fluid">
+        <h4>View Details</h4>
+        <div class="real_prodetails">
+            <h5>Features</h5>
+            <hr>
+            <div class="row clearfix">
+                <div class="col-md-4">
+                    <div class="row clearfix">
+                        <div class="col-md-12">
+                            <div class="videoSection"> 
+                                <mat-video [ngClass]="['video-fluid']" [autoplay]="true" [preload]="true" [fullscreen]="true" [download]="false" color="accent" spinner="spin" height="300">
+                                 <source matVideoSource src="assets/video/3mb.mp4" type="video/mp4" [ngStyle]="{'height': 'auto'}">
+                               </mat-video>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-md-12">
+                          <div class="average_rating bg_grey">
+                            <h6><span class="fa fa-star avg_rate"></span>&nbsp;&nbsp;<span class="avg_score">{{avg_rating[0]?.average_rating}}<sub>/5</sub></span></h6>
+                            <h6 class="avg_title">Average Rating</h6>
+                          </div>
+                        </div>
+                      </div>
+                  
+                </div>
+                <div class="col-md-8">
+                    <div class="row clearfix">
+                        <div class="col-md-12">
+                            <table class="table table-responsive real_protable">
+                                <tbody>
+                                   <tr>
+                                     <td><strong>Make:</strong>&nbsp;&nbsp;{{globtech_detail?.make}}</td>
+                                   </tr>
+                                   <tr>
+                                    <td><strong>Price:</strong> &nbsp;&nbsp;{{globtech_detail?.price}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td><strong>Location:</strong>&nbsp;&nbsp;{{globtech_detail?.location}}</td>
+                                  </tr>
+                                 </tbody>
+                             </table>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-danger  w-100">Contact</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-md-9">
+                <div class="real_prodetails">
+                    <h5>Description</h5>
+                    <hr>
+                    <p>{{globtech_detail?.description}}</p>
+                </div>
+               
+            </div>
+            <div class="col-md-3">
+                <div class="real_prodetails">
+                    <h6><strong>Seller: Professional</strong></h6>
+                    <hr>
+                    <div class="seller_info">
+                        <h6 class="seller_title"><strong>Name:</strong>&nbsp;&nbsp;<span
+                                class="seller_about">{{globtech_detail?.name}}</span></h6>
+                        <h6 class="seller_title"><strong>Email:</strong>&nbsp;&nbsp;<span
+                                class="seller_about">{{globtech_detail?.email}}</span></h6>
+                        <h6 class="seller_title"><strong>Address:</strong>&nbsp;&nbsp;<span
+                                class="seller_about">{{globtech_detail?.address}}</span></h6>
+                        <h6 class="seller_title"><strong>Phone:</strong>&nbsp;&nbsp;<span class="seller_about">{{globtech_detail?.mobile}}</span></h6>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="row clearfix">
+            <div class="col-md-9">
+                <div class="real_prodetails">
+
+                    <h5>Reviews</h5>
+                    <hr>
+                    <div class="row clearfix">
+                        <div class="col-md-4">
+                            <div class="rating_user">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="assets/images/review_user.png" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-8 px-1">
+                                        <div class="rating_desc">
+                                            <h6 class="rating_days">8 days ago</h6>
+                                            <h6 class="rating_head">Tom Kok</h6>
+                                            <p class="rating_report">report</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="rating_desc">
+                                <ngb-rating [(rate)]="selected" (hover)="hovered=$event" (leave)="hovered=0"
+                                    [readonly]="readonly" [max]="5">
+                                    <ng-template let-fill="fill" let-index="index">
+                                        <span class="star" [class.filled]="fill === 100"
+                                            [class.bad]="index < 10">&#9733;</span>
+                                    </ng-template>
+                                </ngb-rating>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-md-4">
+                            <div class="rating_user">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="assets/images/review_user2.png" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-8 px-1">
+                                        <div class="rating_desc">
+                                            <h6 class="rating_days">8 days ago</h6>
+                                            <h6 class="rating_head">Tom Kok</h6>
+                                            <p class="rating_report">report</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="rating_desc">
+                                <ngb-rating [(rate)]="selected" (hover)="hovered=$event" (leave)="hovered=0"
+                                    [readonly]="readonly" [max]="5">
+                                    <ng-template let-fill="fill" let-index="index">
+                                        <span class="star" [class.filled]="fill === 100"
+                                            [class.bad]="index < 10">&#9733;</span>
+                                    </ng-template>
+                                </ngb-rating>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating_section">
+            
+                        <a class="btn btn-danger col-md-3" data-toggle="collapse" href="#send_review" role="button" aria-expanded="false"
+                        aria-controls="send_review">Send Review</a>
+                        <div id="send_review" class="collapse send_review mt-4 bg_grey">
+                           <textarea rows="4" class="form-control" placeholder="Enter a Review here....."></textarea>
+                           <div class="rating_submit text-right">
+                              <ngb-rating [(rate)]="currentRate">
+                                 <ng-template let-fill="fill" let-index="index">
+                                    <span class="star" [class.filled]="fill === 100" [class.bad]="index < 10">&#9733;</span>
+                                 </ng-template>
+                                 </ngb-rating>
+                           </div>
+                           <div class="row clearfix">
+                              <div class="col-md-3 offset-md-9">
+                                 <button type="button" class="btn btn-success mt-2 w-100">Save</button>
+                              </div>
+                           </div>
+                        
+                           
+                        </div>
+                     </div>
+                </div>
+            </div>
+           
+        </div>
+        
+    </div>
+</div>
+<!--//-->
+
+<app-footer></app-footer>

@@ -1,0 +1,43 @@
+    
+    .table-filter {
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+    }
+    .table-filter tbody tr:hover {
+        cursor: pointer;
+        background-color: #eee;
+    }
+    .table-filter tbody tr td {
+        padding: 10px;
+        vertical-align: middle;
+        border-top-color: #eee;
+    }
+    .table-filter tbody tr.selected td {
+        background-color: #eee;
+    }
+
+    .table-filter .media-photo {
+        width: 35px;
+        
+    }
+    .table-filter .media-body {
+        display: block;
+        /* Had to use this style to force the div to expand (wasn't necessary with my bootstrap version 3.3.6) */
+    }
+    .table-filter .media .title {
+        color: #2BBCDE;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: normal;
+        margin: 0;
+    }
+    .table-filter .media .title span {
+        font-size: .8em;
+        margin-right: 20px;
+    }
+    
+    .table-filter .media .summary {
+        font-size: 14px;
+    }
+    
+    .table-filter .media .media-meta{margin-top:15px;}

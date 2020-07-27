@@ -1,0 +1,42 @@
+@font-face{font-family:Helvetica;src:url(/fonts/HELR45W.ttf) format("ttf")}
+body{font-size:14px;font-family:Helvetica;background:#fff;position:relative;font-weight:400}
+a{text-decoration:none;color:#858585;}
+/*h1, h2, h3, h4, h5, h6{line-height: 1.5;font-weight: 600;margin:0 0 30px 0;}*/
+/*h3{font-size:18px;font-weight: bold;}*/
+
+
+.text-dark{color:#000 !important;}
+
+
+/*Custom CSS*/
+section{margin-top:15px;margin-bottom:15px;clear:both}
+.section-heading{margin-top: 20px;margin-bottom: 30px;font-weight: bold;}
+.section-heading small{font-size: 65%}
+
+
+/*.primary-menu nav .navbar-nav li.nav-item{margin:0 4px 0 4px;}*/
+.primary-menu .navbar-nav li.nav-item a{font-size:12px;text-transform:uppercase;font-weight:normal;}
+.primary-menu .navbar-nav li.nav-item a.active{color:#000;}
+.navbar-nav li.nav-item a{font-size:14px;text-transform: uppercase;font-weight: bold;letter-spacing:0.6px;}
+.primary-form .form-control{border-radius:0;}
+.primary-form .input-group-text{background: transparent;border-radius: 0;}
+.carousel-wrap {width: 100%;position: relative;}
+/*proitem*/
+.pro-item{border-color:#DEDEDE;}
+.pro-item .pro-desc{padding: 5px;}
+.pro-item .pro-desc .pro-title{font-size: 16px;margin-top:15px;margin-bottom: 20px;color:#000;}
+.pro-item .pro-desc .pro-title .brand-logo{height:15px;width:auto;display: initial; }
+.pro-item .pro-desc .pro-title .pro-price{font-weight: bold;font-size: 20px;}
+.pro-item .pro-attr{color:#DEDEDE;font-size:10px}
+.pro-item{}
+.pro-item{}
+.welcome{padding-top:53px;padding-bottom:46px;}
+.welcome .wel-title{color:#3A3A3A;font-weight: bold;}
+.welcome .wel-desc{color:#888888;}
+.ftr .ftr-title{font-size:19px;color:#191916;font-weight: bold;}
+.ftr .ftr-desc h6 span{font-size:18px !important;font-weight: bold}
+.ftr .ftr-desc h6 small{font-size:11px;color:#7B7C7D;font-weight: bold}
+.ftr ul.foot-links{}
+.ftr ul.foot-links li{font-size:18px; font-weight:bold}
+.ftr ul.foot-links li a{line-height: 40px;}
+

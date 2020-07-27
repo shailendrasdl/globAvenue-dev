@@ -1,0 +1,69 @@
+
+<body class="bg_dark bg_img">
+  <div class="container">
+     <div class="row clearfix ">
+        <div class="col-md-6">
+           <!-- <img src="assets/images/bgimg2.png" class="img-fluid"> -->
+        </div>
+        <div class="col-md-6 signupForm">
+           <div class="row clearfix">
+              <div class="col-md-10 offset-md-1">
+                 <h2 class="text_white text-center">LOGIN</h2>
+                 <!--Personal-->              
+                 <div id='show-me' class="personal_form">
+                    <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+                      <div class="form-group">
+                        <!-- <label for="email">Email</label> -->
+                        <br>
+                        <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && fval.email.errors }" placeholder="Enter email here"/>
+                        <div *ngIf="submitted && fval.email.errors" class="invalid-feedback">
+                           <div *ngIf="fval.email.errors.required">Email is required</div>
+                           <div *ngIf="fval.email.errors.email">Enter valid email address</div>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                      <!-- <label for="password" class="text-white">Password</label> -->
+                      <br>
+                      <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && fval.password.errors }" placeholder="Enter password here" />
+                      <div *ngIf="submitted && fval.password.errors" class="invalid-feedback">
+                         <div *ngIf="fval.password.errors.required">Password is required</div>
+                      </div>
+                   </div>
+                    <!-- <div class="submit_personal text-center mt-3">
+                       <button type="button" class="cbutton gradient_btn" [disabled]="loading">
+                       <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                       LOGIN</button>
+                    </div> -->
+
+                    <div class="submit_personal text-center mt-3 form-group">
+                      <button [disabled]="loading" class="cbutton gradient_btn">
+                      <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                      Login
+                      </button>
+                      
+                   </div>
+
+                    </form>
+                    <p class="fp_login"><a routerLink="/forgotpassword">FORGOT PASSWORD?</a></p>
+                    <div class="separator">or</div>
+                    <p class="text-center fp_log_with">Login with</p>
+                    <div class="d-flex justify-content-center login_socialSection">
+                       <div class="login_indivi">
+                          <a href="#" title="Facebook"><i class="fa fa-facebook gradient_btn"></i></a>
+                       </div>
+                       <div class="login_indivi">
+                          <a href="#" title="Linkedin"><i class="fa fa-linkedin gradient_btn"></i></a>
+                       </div>
+                       <div class="login_indivi">
+                          <a href="#" title=""><i class="fa fa-instagram gradient_btn"></i></a>
+                       </div>
+                    </div>
+                    <p class="fp_acc ">Don't have an account?&nbsp;&nbsp; <a routerLink="/signup">SIGN UP</a></p>
+                 </div>
+                 <!--//--> 
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</body>

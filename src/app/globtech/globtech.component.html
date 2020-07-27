@@ -1,0 +1,85 @@
+<app-inner-header></app-inner-header>
+<div class="pt-3 crumbActive">
+    <ol class="breadcrumb">
+       <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+       <li class="breadcrumb-item active" aria-current="page">Globtech</li>
+    </ol>
+ </div>
+<div class="container-fluid">
+    <!-- Cat list -->
+    <section class="realstate_section glob_sect">
+
+
+        <div class="row clearfix mb-4 glob_viewsection">
+            <div class="col-md-4">
+                <h5 class="text-center mb-3">GLOBTECH SHOPPING</h5>
+                <a href="#">
+                    <div class="grad_brd brd_sectprimary">
+                        <div class="glob_btnsectprimary bg_white">
+                            VIEW
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="grad_brd brd_sect">
+                        <div class="glob_grad glob_btnsect ">
+                            VIEW ALL
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-center mb-3">BUSINESS OPPORTUNITY</h5>
+                <a href="#">
+                    <div class="grad_brd brd_sectprimary">
+                        <div class="glob_btnsectprimary bg_white">
+                            VIEW
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <h3 class="section-heading">Globtech
+            <small class="float-right"><span class="viewall" title="Viewall">Sort By &nbsp;<i
+                        class="fa fa-bars"></i></span></small>
+        </h3>
+        <div *ngIf="noGlobtech">
+            <h6 class="error_msg">{{error_msg}}</h6>
+         </div>
+        <div class="row mb-4">
+            <div class="col-md-3" *ngFor="let globtech of globtech">
+                <div class="pro-item border">
+                    <a [routerLink]="['/viewglobtech/', globtech._id]"> 
+                        <video class="video-fluid">
+                        <source src="assets/video/3mb.mp4" type="video/mp4">
+                        <!-- <source src = {{globtech.video_url}} type="video/mp4"> -->
+                     </video></a>
+                    <div class="pro-desc">
+                        <div title="description">
+                            <h3 class="pro-title">
+                                {{globtech.make}}
+                                <!--<img src="assets/images/globautologo.png" class="brand-logo ml-1">-->
+                                <span class="float-right pro-price text-right">
+                                    &euro; {{globtech.price}} <br>
+                                    <span class="trans_sect">Transport included</span>
+                                </span>
+                            </h3>
+
+                        </div>
+
+                        <div class="pro-attr d-flex align-items-start">
+                            <span class="text-dark make p-1">Delivery</span>
+                            <span class="flag p-1"><img src="assets/images/flag.jpg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+    <!--//-->
+</div>
+<app-footer></app-footer>

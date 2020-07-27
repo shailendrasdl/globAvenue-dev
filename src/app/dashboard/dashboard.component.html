@@ -1,0 +1,96 @@
+<!--Header new-->
+<div class="profile_header bg-light">
+<div class="container-fluid">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" routerLink="/home">
+         <img src="assets/images/globegif5.gif" class="img-fluid" width="250">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle indivi_navlink" routerLink="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-th-large"></i>&nbsp;&nbsp;Dashboard</a>
+            <ul class="dropdown-menu dashboard_menu" aria-labelledby="dropdownMenuButton">
+               <li><a class="dropdown-item" routerLink="/clientlist" >
+                  <div class="dashboard_item">
+                     <img src="assets/images/client_img.png" width="30">
+                     &nbsp;&nbsp;<span class="dashboard_subitem">Client Gallery</span>
+                  </div>
+               </a></li>
+               <li><a class="dropdown-item" routerLink="/dashboard">
+                  <div class="dashboard_item">
+                     <img src="assets/images/product_img.png" width="30">
+                     &nbsp;&nbsp;<span class="dashboard_subitem">Website</span>
+                  </div>
+               </a></li>
+               <li><a class="dropdown-item" routerLink="#">
+                  <div class="dashboard_item">
+                     <img src="assets/images/store_img.png" width="30">
+                     &nbsp;&nbsp;<span class="dashboard_subitem">Store</span>
+                  </div>
+               </a></li>
+               <div class="view_dashboarditem"><a routerLink="/dashboard"><i class="fa fa-th-large"></i>&nbsp;&nbsp;View dashboard</a></div>
+            </ul>
+         </li>
+         
+        </ul>
+        
+        <ul class="navbar-nav mt-2 mt-lg-0">
+         <li class="nav-item">
+           <a class="nav-link" routerLink="#"><i class="fa fa-bell fa-2x"></i></a>
+         </li>
+         <li class="nav-item dropdown profile_dropdown">
+            <a class="nav-link dropdown-toggle indivi_navlink" routerLink="#" title="My Profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="custom_profile"><span class="">b</span></div>
+            </a>
+            <ul class="dropdown-menu profile_dp_menu" aria-labelledby="dropdownMenuButton">
+               <li><a class="dropdown-item" routerLink="#">User</a></li>
+               <li><a class="dropdown-item" routerLink="/dashboard">Dashboard</a></li>
+               <li><a class="dropdown-item" routerLink="/account">Account</a></li>
+               <li><a class="dropdown-item" routerLink="#">change password</a></li>
+               <li><a class="dropdown-item" routerLink="/myprofile">My Profile</a></li>
+               <li><a class="dropdown-item" style="cursor:pointer" (click)="logout()">Logout</a></li>
+            </ul>
+         </li>
+         
+       </ul>
+      </div>
+    </nav>
+</div>
+</div>
+<!--//-->
+
+<div class="container">
+   <h3 class="mt-4">Dashboard</h3>
+   <div class="row clearfix border-bottom">
+      <div class="col-md-4 product_dash">
+         <img src="assets/images/client_img.png" class="d-block mx-auto" width="50px">
+         <h5 class="title_prd">Client</h5>
+      </div>
+      <div class="col-md-4 product_dash">
+         <img src="assets/images/product_img.png" class="d-block mx-auto" width="50px">
+         <h5 class="title_prd">Website</h5>
+      </div>
+      <div class="col-md-4 product_dash">
+         <img src="assets/images/store_img.png" class="d-block mx-auto" width="50px">
+         <h5 class="title_prd">Store</h5>
+      </div>
+   </div>
+   <div class="row clearfix">
+      <div class="col-md-4 product_links">
+         <a routerLink="/clientlist">Cient List</a>
+      </div>
+      <div class="col-md-4 product_links">
+         <a routerLink="#">Edit Website</a>
+
+      </div>
+      <div class="col-md-4 product_links">
+         <a routerLink="#">Store</a>
+
+      </div>
+   </div>
+
+</div>
